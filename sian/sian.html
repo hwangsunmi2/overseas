@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/overseas/sian/jquery.rwdImageMaps.min.js"></script>
+    <title>국외소재문화재단 시안</title>
+</head>
+<body>
+    <style>
+        img {display: block;margin:0 auto;}
+        @media only screen and (max-width: 1800px){
+            img {width:100%;}
+        }
+    </style>
+    <img src="/overseas/sian/sian_intro.png" alt="" usemap="#map">
+    <map name="map">
+        <area shape="rect" coords="530,801,834,861" href="/overseas/sian/a.html" alt="" target="_blank">
+        <area shape="rect" coords="1464,801,1768,861" href="/overseas/sian/b.html" alt="" target="_blank">
+
+		<area  alt="" title="" href="http://wnc05.cafe24.com/" shape="rect" coords="120,840,191,868" target="_blank"/>
+		<area  alt="" title="" href="https://www.gtck.re.kr/gtck/index.do" shape="rect" coords="1056,837,1163,871" target="_blank"/>
+		<area  alt="" title="" href="http://dmzecopeace.com/" shape="rect" coords="1168,837,1346,871" target="_blank/">
+    </map>
+
+	
+
+</body>
+<script type="text/javascript">
+		let scrollHeight = 0;
+
+		// 이미지맵 반응형
+		$(document).ready(function() {
+			$('img[usemap]').rwdImageMaps();
+
+			const scrollY = localStorage.getItem("scrolly");
+			if (scrollY != null && scrollY != '' && scrollY > 0) {
+				window.scrollTo(0, scrollY);
+			}
+		});
+
+	</script>
+</html>
