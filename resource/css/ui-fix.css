@@ -16,3 +16,25 @@
 .mb-120 {
   margin-bottom: 120px;
 }
+
+.txt-depth--01 {
+  font-size: 24px;
+}
+.txt-depth--02 {
+  font-size: 22px;
+}
+.txt-depth--03 {
+  font-size: 20px;
+}
+.txt-depth--04 {
+  font-size: 18px;
+}
+.txt-depth--05 {
+  font-size: 16px;
+}
+.txt-depth--06 {
+  font-size: 14px;
+}
+.txt-depth--07 {
+  font-size: 12px;
+}

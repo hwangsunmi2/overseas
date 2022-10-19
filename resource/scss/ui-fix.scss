@@ -29,3 +29,30 @@
         }
     }
 }
+
+//font
+.txt{
+    &-depth{
+        &--01{
+            font-size:24px
+        }
+        &--02{
+            font-size:22px
+        }
+        &--03{
+            font-size:20px
+        }
+        &--04{
+            font-size:18px
+        }
+        &--05{
+            font-size:16px
+        }
+        &--06{
+            font-size:14px
+        }
+        &--07{
+            font-size:12px
+        }
+    }
+}
