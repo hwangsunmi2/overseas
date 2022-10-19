@@ -1,0 +1,122 @@
+.sch-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sch-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+.sch-form__select {
+  min-width: 130px;
+  height: 100%;
+  margin-right: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #d2d5dc;
+  background-color: #fff;
+  background-image: url("../image/common/icon/icon-clampDown.png");
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+.sch-form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+}
+.sch-form__input {
+  height: 100%;
+  border: 1px solid #d2d5dc;
+}
+.sch-form__input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__input::-moz-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__input::placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__btn {
+  width: 50px;
+  background: #4568a9 url("../image/common/icon/icon-sch.png") no-repeat center center;
+}
+
+@media (max-width: 1024px) {
+  .sch-form {
+    height: 5rem;
+  }
+  .sch-form__select {
+    line-height: 5rem;
+    font-size: 1.6rem;
+    background-size: 1.4rem 0.8rem;
+  }
+  .sch-form__input::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .sch-form__input::-moz-placeholder {
+    font-size: 1.6rem;
+  }
+  .sch-form__input:-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .sch-form__input::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .sch-form__input::placeholder {
+    font-size: 1.6rem;
+  }
+  .sch-form__btn {
+    width: 5rem;
+    background-size: 2.2rem 2.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .sch-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sch-wrap > * {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sch-form__select {
+    min-width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+  }
+  .sch-form__label {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 70%;
+            flex: 1 1 70%;
+  }
+  .sch-form__input {
+    width: calc(100% - 5rem);
+  }
+  .count-wrap {
+    margin-bottom: 1.5rem;
+  }
+}
