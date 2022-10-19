@@ -1,0 +1,183 @@
+.se1 {
+    border:1px solid aquamarine;
+        z-index: 1;
+    .swiper-slide {
+
+        width:100%;
+        height:120.7rem;
+        background: url(../image/main/swiper_bg1.png) no-repeat center top;
+        background-size: cover;
+    }
+
+    .tabBox {
+        position:relative;
+        top:-10rem;
+        z-index: 1;
+        .tab_wrap {
+            position: relative;
+            overflow: hidden;
+            height:40.5rem;
+            h3  {
+                position: relative;
+                padding: 0;
+                margin:0;
+                margin-left: 1px;
+                float: left;
+                font-size: 4.2rem;
+                text-align:left;
+                cursor: pointer;
+                z-index: 10;
+                &:first-child {
+                    margin-left:0;
+                }
+                a {
+                    color: #a7abb3;
+                    font-weight: 300;
+                }
+                &.on {
+                    a {
+                        color:#497ede;
+                        font-weight:500;
+                    }
+                }
+                &:nth-child(3) {
+                    position:relative;
+                    margin-left:8rem;
+                    &::before {
+                        position:absolute;
+                        top:1.8rem;
+                        left:-4rem;
+                        width: 1.1rem;
+                        height: 1.1rem;
+                        background: url(../image/common/icon/icon_rhombus_g.png);
+                        content:'';
+                    }
+                }
+                &:nth-child(5) {
+                    position:relative;
+                    margin-left:8rem;
+                    &::before {
+                        position:absolute;
+                        top:1.8rem;
+                        left:-4rem;
+                        width: 1.1rem;
+                        height: 1.1rem;
+                        background: url(../image/common/icon/icon_rhombus_g.png);
+                        content:'';
+                    }
+                }
+            }
+            .tab_cont {
+                position:absolute;
+                overflow-x: scroll;
+                display:none;
+                padding:0 0 3.5rem 0;
+                width:100%;
+                top:8rem;
+                box-sizing:border-box;
+                &.on {
+                    display:block;
+                }
+                ul {
+                    margin:0;
+                    padding:0;
+                    li {
+                        position: relative;
+                        width: 100%;
+                        list-style: none;
+                        font-size:18px;
+                        box-sizing: border-box;
+                        a {
+                            position:relative;
+                            display: block;
+                            padding:3rem;
+                            width:44rem;
+                            height:28.5rem;
+                            border:2px solid #d2d5dc;
+                            border-radius: 1rem 0 1rem 0;
+                            box-sizing: border-box;
+                            background-color: #f8f9fa;
+                            &::after {
+                                position:absolute;
+                                bottom: 0;
+                                right: 0;
+                                width:22.3rem;
+                                height:15.8rem;
+                                background: url(../image/main/section1_contentbg.png) no-repeat;
+                                content:'';
+                            }
+                            
+                            p {
+                                font-size: 1.6rem;
+                                font-weight:500;
+                            }
+                            .tit {
+                                padding-top:2rem;
+                                font-size: 2.2rem;
+                                font-weight:500;
+                                line-height:3rem;
+                                letter-spacing: -0.5px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                            }
+                            .txt {
+                                padding-top:2.5rem;
+                                font-size: 1.8rem;
+                                line-height:3rem;
+                                color:#545454;
+                                letter-spacing: -0.5px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                            }   
+                            em {
+                                float:left;
+                                padding-top:3rem;
+                                font-size: 1.6rem;
+                                color:#8a8a8a;
+                            }
+                        }
+                        &+li {
+                            margin-left:4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+h2 {
+    font-size: 4.2rem;
+    font-weight:600;
+    letter-spacing: -1px;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* section1:hover */
+@media (min-width: 1200px) {
+    .se1 {
+        .tabBox {
+            .tab_wrap {
+                .tab_cont {
+                    ul {
+                        li {
+                            a {
+                                &:hover {
+                                    background-color: #f5f8fe;
+                                    border:2px solid #8daae0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
