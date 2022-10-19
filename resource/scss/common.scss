@@ -1,0 +1,29 @@
+@charset 'utf-8';
+@import 'mixin';
+
+#skipNavigation {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    #skipNavigation a {
+        display: block;
+        left: -9000px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 500;
+
+        &:hover,&:focus,&:active {
+            position: Absolute;
+            padding: 0.15rem 0;
+            left: 0;
+            color: #000;
+            font-size: 2rem;
+            z-index: 500;
+            border: 1px solid #000;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    }
+}
