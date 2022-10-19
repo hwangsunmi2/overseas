@@ -2,3 +2,47 @@
   width: 50px;
   background: #4568a9 url("../image/common/icon/icon-sch.png") no-repeat center center;
 }
+
+.btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.btn-wrap--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.btn--list {
+  width: 132px;
+  height: 54px;
+  background-color: #4568a9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn--download {
+  width: 117px;
+  height: 40px;
+  padding-left: 30px;
+  color: #4568a9;
+  font-size: 16px;
+  border: 1px solid #4568a9;
+  background: #fff url(../image/common/icon/icon-download.png) no-repeat 20px center;
+}
+
+@media (max-width: 1024px) {
+  .btn--download {
+    width: 11.7rem;
+    height: 4rem;
+    padding-left: 3rem;
+    font-size: 1.6rem;
+    background-size: 1.8rem 1.8rem;
+    background-position: 2rem center;
+  }
+  .btn--list {
+    width: 13.2rem;
+    height: 5.4rem;
+    font-size: 1.8rem;
+  }
+}
