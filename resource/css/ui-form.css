@@ -59,10 +59,6 @@
   color: #000;
   font-weight: 400;
 }
-.sch-form__btn {
-  width: 50px;
-  background: #4568a9 url("../image/common/icon/icon-sch.png") no-repeat center center;
-}
 
 @media (max-width: 1024px) {
   .sch-form {

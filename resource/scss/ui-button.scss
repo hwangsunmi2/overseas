@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.sch{
+    &-form{
+        &__btn{
+            width:50px;
+            background:#4568a9 url('../image/common/icon/icon-sch.png') no-repeat center center;
+        }
+    }
+}

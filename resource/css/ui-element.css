@@ -169,6 +169,38 @@
   font-size: 16px;
   color: #8a8a8a;
 }
+.board-detail {
+  border-top: 1px solid #4568a9;
+}
+.board-detail__tit {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+.board-detail__capt {
+  text-align: center;
+}
+.board-detail__capt * {
+  font-size: 20px;
+  font-weight: 400;
+}
+.board-detail__capt span {
+  position: relative;
+  padding: 0 30px;
+}
+.board-detail__capt span + span::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 22px;
+  background-color: #a3a3a3;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
 
 .pagination {
   width: 100%;
