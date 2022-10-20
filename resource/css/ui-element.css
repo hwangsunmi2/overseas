@@ -1,17 +1,8 @@
 .subVisual {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   height: 340px;
   background-repeat: no-repeat;
 }
@@ -25,8 +16,6 @@
   color: #fff;
 }
 .subVisual__crumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .subVisual__crumb li {
@@ -59,24 +48,14 @@
   width: 100%;
 }
 .tab-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 0;
 }
 .tab-link a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 100%;
 }
 
 .subTab {
@@ -101,13 +80,10 @@
   border: 1px solid #355a9e;
   color: #fff;
   background: #4568a9 url("../image/sub/img-subTab-bg.png") no-repeat right 15px;
-  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
-          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
 }
 
 .count-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .count-wrap * {
@@ -126,11 +102,8 @@
 }
 
 .board-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: 30px;
   margin-bottom: -60px;
@@ -199,13 +172,10 @@
   width: 1px;
   height: 22px;
   background-color: #a3a3a3;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   content: "";
 }
 .board-detail__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 35px;
   border-top: 1px solid #d2d5dc;
@@ -233,11 +203,8 @@
   width: 100%;
 }
 .board-info__dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 40px;
   font-size: 18px;
 }
@@ -254,30 +221,18 @@
 
 .pagination {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .pagination-wrap {
   width: 100%;
   text-align: center;
 }
 .pagination > a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   font-size: 18px;
@@ -333,8 +288,6 @@
   font-size: 18px;
 }
 .link-post > * {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 25px 0;
   border-top: 1px solid #d2d5dc;
@@ -446,32 +399,23 @@
     font-size: 1.6rem;
   }
   .board-detail__info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .board-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 100%;
     padding-bottom: 5rem;
   }
   .board-info__img {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 32.8rem;
-            flex: 1 1 32.8rem;
+    flex: 1 1 32.8rem;
   }
   .board-info__dl {
     display: grid;
     grid-template-columns: 10.8rem calc(100% - 10.8rem);
     grid-auto-rows: minmax(3rem, auto);
-    -ms-flex-line-pack: start;
-        align-content: start;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 calc(100% - 35.8rem);
-            flex: 1 1 calc(100% - 35.8rem);
+    align-content: start;
+    flex: 1 1 calc(100% - 35.8rem);
     margin-top: 0;
     margin-left: 3rem;
     font-size: 1.8rem;
@@ -533,21 +477,15 @@
 }
 @media (max-width: 576px) {
   .board-info {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 4rem 2rem;
   }
   .board-info__img {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    flex: none;
     width: 220px;
   }
   .board-info__dl {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
     margin-top: 2rem;
     margin-left: 0;
   }

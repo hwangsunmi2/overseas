@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/** 소통마당 > 공지사항 */
+.subVisual--talk {
+  background-image: url("../image/sub/img-subVisual--01.jpg");
+  background-position: center 0;
+}
