@@ -1,6 +1,7 @@
 $(document).ready(function () {
     mainSwiper();
     mainTab();
+    vrSwiper();
 
 });
 function mainSwiper() {
@@ -28,4 +29,17 @@ function mainTab() {
         $(this).addClass("on");
         $nListID.css('display','block');
     });
+}
+
+function vrSwiper() {
+    var swiper = new Swiper(".vr .mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".vrBtn .swiper-button-next",
+          prevEl: ".vrBtn .swiper-button-prev",
+        },
+    }); 
 }

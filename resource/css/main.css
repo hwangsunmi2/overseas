@@ -6,17 +6,24 @@
   width: 100%;
   height: 120.7rem;
   background: url(../image/main/swiper_bg1.png) no-repeat center top;
-  background-size: cover;
+  background-size: contain;
 }
 .se1 .tabBox {
-  position: relative;
-  top: -10rem;
+  position: absolute;
+  width: 100%;
+  max-width: 1400px;
+  bottom: -42rem;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 1;
 }
 .se1 .tabBox .tab_wrap {
   position: relative;
   overflow: hidden;
   height: 40.5rem;
+  max-width: 1400px;
 }
 .se1 .tabBox .tab_wrap h3 {
   position: relative;
@@ -150,7 +157,7 @@
   margin-left: 4rem;
 }
 
-h2 {
+section h2 {
   font-size: 4.2rem;
   font-weight: 600;
   letter-spacing: -1px;
@@ -164,9 +171,15 @@ h2 {
   background: url(../image/main/section2_bg.png) no-repeat center bottom;
   background-size: cover;
 }
+.se2 h2 {
+  padding-top: 8rem;
+}
+.se2 ul {
+  padding-top: 5rem;
+}
 .se2 ul li {
   position: relative;
-  padding: 6.1rem 3rem;
+  padding: 6.1rem 2.9rem;
   width: 26.4rem;
   height: 40rem;
   border: 1px solid #d2d5dc;
@@ -212,6 +225,11 @@ h2 {
 .se2 ul li + li {
   margin-left: 2rem;
 }
+.se2 ul li:nth-child(1) {
+  width: 26.2rem;
+  height: 39.8rem;
+  background: url(../image/main/section2_conbg1.png) no-repeat center center;
+}
 .se2 ul li:nth-child(1) .content {
   position: relative;
   top: 14rem;
@@ -226,6 +244,11 @@ h2 {
   height: 8rem;
   background: url(../image/main/section2_icon1.png) no-repeat center center;
   content: "";
+}
+.se2 ul li:nth-child(2) {
+  width: 26.2rem;
+  height: 39.8rem;
+  background: url(../image/main/section2_conbg2.png) no-repeat center center;
 }
 .se2 ul li:nth-child(2) .content {
   position: relative;
@@ -242,6 +265,11 @@ h2 {
   background: url(../image/main/section2_icon2.png) no-repeat center center;
   content: "";
 }
+.se2 ul li:nth-child(3) {
+  width: 26.2rem;
+  height: 39.8rem;
+  background: url(../image/main/section2_conbg3.png) no-repeat center center;
+}
 .se2 ul li:nth-child(3) .content {
   position: relative;
   top: 14rem;
@@ -256,6 +284,11 @@ h2 {
   height: 8rem;
   background: url(../image/main/section2_icon3.png) no-repeat center center;
   content: "";
+}
+.se2 ul li:nth-child(4) {
+  width: 26.2rem;
+  height: 39.8rem;
+  background: url(../image/main/section2_conbg4.png) no-repeat center center;
 }
 .se2 ul li:nth-child(4) .content {
   position: relative;
@@ -272,6 +305,11 @@ h2 {
   background: url(../image/main/section2_icon4.png) no-repeat center center;
   content: "";
 }
+.se2 ul li:nth-child(5) {
+  width: 26.2rem;
+  height: 39.8rem;
+  background: url(../image/main/section2_conbg5.png) no-repeat center center;
+}
 .se2 ul li:nth-child(5) .content {
   position: relative;
   top: 14rem;
@@ -287,6 +325,11 @@ h2 {
   background: url(../image/main/section2_icon5.png) no-repeat center center;
   content: "";
 }
+.se2 ul li:nth-child(6) {
+  width: 26.2rem;
+  height: 39.8rem;
+  background: url(../image/main/section2_conbg6.png) no-repeat center center;
+}
 .se2 ul li:nth-child(6) .content {
   position: relative;
   top: 14rem;
@@ -301,6 +344,324 @@ h2 {
   height: 8rem;
   background: url(../image/main/section2_icon6.png) no-repeat center center;
   content: "";
+}
+
+.se3 {
+  padding-bottom: 10rem;
+}
+.se3 h2 {
+  padding-top: 10rem;
+}
+.se3 .status {
+  padding: 0 3rem;
+  margin-top: 5rem;
+  width: 100%;
+  height: 9.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url(../image/main/section3_banner.png) no-repeat center bottom;
+}
+.se3 .status p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+}
+.se3 .status p span {
+  margin-left: 2.3rem;
+  padding: 1.1rem 3rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #7a9dde;
+  border-radius: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.se3 .status a {
+  position: relative;
+  padding-right: 2.3rem;
+  font-size: 2rem;
+  color: #fff;
+}
+.se3 .status a::after {
+  position: absolute;
+  right: 0;
+  width: 1.3rem;
+  height: 1.9rem;
+  background: url(../image/common/icon/icon_arrowNext_w_bold.png) no-repeat center bottom;
+  content: "";
+}
+.se3 .se3Wrap {
+  position: relative;
+  height: 47.5rem;
+  margin-top: 4rem;
+}
+.se3 .se3Wrap .se3Box {
+  display: inline-block;
+  padding: 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.se3 .se3Wrap .se3Box.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 69.1rem;
+  height: 47.6rem;
+  background: url(../image/main/section3_heritageBg.jpg) no-repeat center bottom;
+}
+.se3 .se3Wrap .se3Box.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 69.1rem;
+  height: 47.6rem;
+  background: url(../image/main/section3_dataBg.jpg) no-repeat center bottom;
+}
+.se3 .se3Wrap .se3Box .tit {
+  font-size: 2rem;
+  font-weight: 600;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.se3 .se3Wrap .se3Box ul {
+  padding-top: 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.se3 .se3Wrap .se3Box ul li + li {
+  margin-left: 2rem;
+}
+.se3 .se3Wrap .se3Box ul li:nth-child(4n+1) {
+  margin-left: 0;
+}
+.se3 .se3Wrap .se3Box ul li + li + li + li + li {
+  margin-top: 2.2rem;
+}
+
+.se4 .se4Wrap .se4Box {
+  width: 50%;
+}
+.se4 .se4Wrap .se4Box h2 {
+  padding-top: 6rem;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn {
+  border: 1px solid pink;
+}
+.se4 .se4Wrap .se4Box.left {
+  position: relative;
+  padding-bottom: 7rem;
+  padding-right: 8.7rem;
+  background-color: #f7faff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.se4 .se4Wrap .se4Box.left::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background-color: #f7faff;
+  content: "";
+}
+.se4 .se4Wrap .se4Box.left p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.se4 .se4Wrap .se4Box.right {
+  position: relative;
+  padding-bottom: 7rem;
+  padding-left: 8.7rem;
+  background-color: #fff8f8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.se4 .se4Wrap .se4Box.right::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  top: 0;
+  background-color: #fff8f8;
+  content: "";
+}
+.se4 .se4Wrap .se4Box.right p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.se4 .se4Wrap .se4Box .se4_cont {
+  margin-top: 2.8rem;
+}
+.se4 .se4Wrap .se4Box .se4_cont.vr {
+  overflow: hidden;
+}
+.se4 .se4Wrap .se4Box .se4_cont .tit {
+  padding-top: 4rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.se4 .se4Wrap .se4Box .se4_cont .txt {
+  padding-top: 2.5rem;
+  line-height: 2.5rem;
+}
+.se4 .se4Wrap .se4Box .se4_cont .txt p {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  color: #545454;
+}
+.se4 .se4Wrap .se4Box .se4_cont .txt .youtubeRegDate {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 2rem 0 3rem 0;
+}
+.se4 .se4Wrap .se4Box .se4_cont .txt .youtubeRegDate p {
+  font-size: 1.6rem;
+}
+.se4 .se4Wrap .se4Box .se4_cont .txt .youtubeRegDate p + p {
+  position: relative;
+  padding-left: 2.3rem;
+}
+.se4 .se4Wrap .se4Box .se4_cont .txt .youtubeRegDate p + p::before {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  width: 1px;
+  height: 1.5rem;
+  background-color: #545454;
+  content: "";
+}
+.se4 .se4Wrap .se4Box .vedioLink {
+  width: 100%;
+}
+.se4 .se4Wrap .se4Box .vedioLink a {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 7.6rem;
+  padding-left: 2rem;
+  line-height: 7.6rem;
+  border: 1px solid #d8e0eb;
+  background-color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.se4 .se4Wrap .se4Box .vedioLink a::after {
+  position: absolute;
+  width: 0.8rem;
+  height: 1.2rem;
+  top: 53%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../image/common/icon/icon_arrownext_dg.png) no-repeat center center;
+  content: "";
+}
+.se4 .se4Wrap .se4Box .vedioLink a + a {
+  margin-left: -3px;
+}
+.se4 .se4Wrap .se4Box .vrLink {
+  margin-top: 3rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+.se4 .se4Wrap .se4Box .vrLink a {
+  position: relative;
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #f38e88;
+}
+.se4 .se4Wrap .se4Box .vrLink a::after {
+  position: absolute;
+  top: 0.4rem;
+  right: -2rem;
+  width: 0.8rem;
+  height: 1.2rem;
+  background: url(../image/common/icon/icon_arrownext_p.png) no-repeat center center;
+  content: "";
+}
+
+.se5 h2 {
+  margin-top: 10rem;
+}
+.se5 .se5Wrap {
+  margin-top: 6.9rem;
+}
+.se5 .se5Wrap .se5Box {
+  width: 50%;
+}
+.se5 .se5Wrap .se5Box.goSite img {
+  position: relative;
+  margin-left: -5.5rem;
+}
+.se5 .se5Wrap .se5Box.sponsor {
+  position: relative;
+  padding: 3rem 9.3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.se5 .se5Wrap .se5Box.sponsor::after {
+  position: absolute;
+  width: 34.4rem;
+  height: 21.8rem;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../image/main/section5_img.png) no-repeat center center;
+  content: "";
+}
+.se5 .se5Wrap .se5Box.sponsor .cont > div {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "GyeonggiTitle";
+  line-height: 4rem;
+}
+.se5 .se5Wrap .se5Box.sponsor .cont p {
+  padding-top: 2rem;
+  font-size: 2.1rem;
+  font-weight: 300;
+  font-family: "GyeonggiTitle";
+  line-height: 3rem;
+}
+.se5 .se5Wrap .se5Box.sponsor a {
+  margin-top: 8rem;
+  display: inline-block;
+  width: 13rem;
+  height: 4.6rem;
+  line-height: 4.6rem;
+  color: #fff;
+  text-align: center;
+  background-color: #8daae0;
+  font-size: 1.8rem;
+  border-radius: 1rem 0 1rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* section1:hover */
