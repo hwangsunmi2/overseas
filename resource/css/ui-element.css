@@ -154,7 +154,14 @@
   line-height: 1.3;
   text-align: center;
 }
+.board-detail__category {
+  margin-right: 1.2rem;
+  font-size: 36px;
+  font-weight: 500;
+  color: #4568a9;
+}
 .board-detail__capt {
+  margin-bottom: 35px;
   text-align: center;
 }
 .board-detail__capt * {
@@ -219,7 +226,6 @@
   width: calc(100% - 108px);
 }
 .board-view__inner {
-  margin-top: 35px;
   padding-top: 5rem;
   padding-bottom: 8rem;
   border-top: 1px solid #d2d5dc;
@@ -227,6 +233,12 @@
 .board-view__inner * {
   font-size: 1.8rem;
   line-height: 3.6rem;
+}
+.board-file__inner {
+  margin-top: 35px;
+  padding: 3rem 4rem;
+  background: #fafcff;
+  border-top: 1px solid #d2d5dc;
 }
 
 .pagination {
