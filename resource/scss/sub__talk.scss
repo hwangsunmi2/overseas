@@ -1,0 +1,52 @@
+@charset 'utf-8';
+@import 'mixin';
+
+/** 소통마당 > 공지사항 */
+.subVisual{
+    &--talk{
+        background-image:url('../image/sub/img-subVisual--01.jpg');
+        background-position:center 0;
+    }
+}
+
+/* 소통마당 > Q&A */
+.ui-text{
+    .list{
+        &-dot{
+            li{
+                position:relative;
+                padding-left: 8px;
+                font: {
+                    size:1.6rem;
+                    weight:300;
+                }
+                line-height: 3rem;
+                &::before{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0px;
+                    left: 0;
+                    margin-right: 5px;
+                    font: {
+                        size:1.6rem;
+                        weight:300;
+                    }
+                    content:" · "
+                }
+            }
+        }
+    }
+}
+.ui{
+    &-form{
+        &+.ui-text{
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+
+// responsive
+@include media-breakpoint-down(n-md){ //1024
+    
+}

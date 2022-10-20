@@ -1,0 +1,48 @@
+@charset 'utf-8';
+@import 'mixin';
+
+/** 재단소개 > 공지사항 */
+.subVisual{
+    &--intro{
+        background-image:url('../image/sub/img-subVisual--01.jpg');
+        background-position:center 0;
+    }
+}
+
+/* 재단소개 > 오시는 길 */
+// 지도
+.root_daum_roughmap .wrap_controllers{
+    display: none;
+}
+.wayAbout{
+    &-info{
+        padding:5rem;
+        background: #fafcff;
+        border-top:1px solid #81a1dc;
+        dl{
+            display: inline-block;
+            &+dl{
+                margin-left: 3rem;
+            }
+        }
+        dt, dd{
+            display: inline-block;
+            font-size: 1.8rem;
+        }
+        dt{
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+    }
+    &-route{
+        &__inner{
+            margin-top: 3rem;
+        }
+    }
+}
+
+
+// responsive
+@include media-breakpoint-down(n-md){ //1024
+    
+}
