@@ -73,8 +73,7 @@
   padding: 0 0 3.5rem 0;
   width: 100%;
   top: 8rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .se1 .tabBox .tab_wrap .tab_cont.on {
   display: block;
@@ -88,8 +87,7 @@
   width: 100%;
   list-style: none;
   font-size: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .se1 .tabBox .tab_wrap .tab_cont ul li a {
   position: relative;
@@ -99,8 +97,7 @@
   height: 28.5rem;
   border: 2px solid #d2d5dc;
   border-radius: 1rem 0 1rem 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #f8f9fa;
 }
 .se1 .tabBox .tab_wrap .tab_cont ul li a::after {
@@ -171,8 +168,7 @@ h2 {
   height: 40rem;
   border: 1px solid #d2d5dc;
   background-color: #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .se2 ul li .tit {
   font-size: 2.2rem;
@@ -182,8 +178,7 @@ h2 {
 }
 .se2 ul li .content {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 .se2 ul li .content .num {
@@ -220,8 +215,7 @@ h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon1.png) no-repeat center center;
@@ -235,8 +229,7 @@ h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon2.png) no-repeat center center;
@@ -250,8 +243,7 @@ h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon3.png) no-repeat center center;
@@ -265,8 +257,7 @@ h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon4.png) no-repeat center center;
@@ -280,8 +271,7 @@ h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon5.png) no-repeat center center;
@@ -295,8 +285,7 @@ h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon6.png) no-repeat center center;

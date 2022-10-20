@@ -26,9 +26,9 @@
 }
 
 .d-flex {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
 }
@@ -40,8 +40,7 @@
 
 .wrap {
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -53,17 +52,14 @@ header .gotoSite {
   font-size: 1.6rem;
 }
 header .gotoSite .d-flex {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 header .gotoSite .d-flex .site {
   position: relative;
   display: inline-block;
   width: 28rem;
   padding: 0 6rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 header .gotoSite .d-flex .site::after {
   position: absolute;
@@ -92,8 +88,7 @@ header .gotoSite .d-flex ul li a {
   text-align: center;
   font-size: 1.6rem;
   color: #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 header .gotoSite .d-flex ul li a:hover {
   background-color: #fff;
@@ -104,26 +99,16 @@ header .nav .navWrap {
   max-width: 1920px;
   margin: 0 auto;
   height: 9.4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 header .nav .navWrap ul {
   width: 136rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 header .nav .navWrap ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 16.66%;
   height: 100%;
   text-align: center;
@@ -135,9 +120,7 @@ header .nav .navWrap ul li a {
   font-size: 2.4rem;
 }
 header .nav .topRight {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 header .nav .topRight .search {
   width: 2.8rem;
@@ -153,8 +136,7 @@ header .nav .topRight select {
   margin-left: 5rem;
   width: 13.2rem;
   height: 4.2rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 2px solid #000;
   background: url(../image/common/icon/icon_arrowdown_b.png) no-repeat right 0.5rem center;
 }
