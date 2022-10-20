@@ -218,6 +218,16 @@
 .board-info__dl dd {
   width: calc(100% - 108px);
 }
+.board-view__inner {
+  margin-top: 35px;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  border-top: 1px solid #d2d5dc;
+}
+.board-view__inner * {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+}
 
 .pagination {
   width: 100%;

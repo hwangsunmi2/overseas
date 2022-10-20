@@ -231,6 +231,18 @@
             }
         }
     }
+    &-view{
+        &__inner{
+            margin-top: 35px;
+            padding-top:5rem;
+            padding-bottom: 8rem;
+            border-top: 1px solid #d2d5dc;
+            *{
+                font-size: 1.8rem;
+                line-height: 3.6rem;
+            }
+        }
+    }
 }
 .pagination{
     width:100%;
