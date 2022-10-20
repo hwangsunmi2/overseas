@@ -1,4 +1,5 @@
 .sch-form__btn {
+  flex: none;
   width: 50px;
   background: #4568a9 url("../image/common/icon/icon-sch.png") no-repeat center center;
 }
@@ -8,6 +9,12 @@
 }
 .btn-wrap--center {
   justify-content: center;
+}
+.btn-wrap--center .btn {
+  width: 13.2rem;
+}
+.btn-wrap--center .btn + .btn {
+  margin-left: 0.5rem;
 }
 .btn--list {
   width: 132px;

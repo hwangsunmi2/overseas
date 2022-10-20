@@ -41,23 +41,75 @@
 .board-table__list tbody td a {
   font-size: 1.8rem;
 }
-.board-table__list tbody td.td-title {
+.board-table__list .td-title {
   padding-left: 4rem;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.board-table__list tbody td .td-titlelink {
+.board-table__list .td-title__inner {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+}
+.board-table__list .td-title .icon-secret {
+  display: inline-block;
+  width: 1.3rem;
+  height: 2rem;
+  margin-left: 1rem;
+  vertical-align: top;
+  background: url(../image/common/icon/icon-secret.png) no-repeat center;
+  background-size: 1.3rem 2rem;
+  flex: none;
+}
+.board-table__list .td-titlelink {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.board-table__list tbody td .td-filelink {
+.board-table__list .td-filelink {
   display: inline-block;
   width: 2.3rem;
   height: 2.3rem;
   background: url(../image/common/icon/icon-download__table.png) no-repeat center;
   background-size: cover;
+}
+.board-table__list .td-process .badge-process {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.2rem;
+  height: 4rem;
+  margin: 0 auto;
+  border: 1px solid #4568a9;
+  font-size: 1.6rem;
+  color: #4568a9;
+  box-sizing: border-box;
+}
+.board-table__list .td-process .badge-process__end {
+  background: #4568a9;
+  color: #ffffff;
+}
+.board-table__list--press thead .num {
+  width: 8.572%;
+}
+.board-table__list--press thead .press {
+  width: 8.6%;
+}
+.board-table__list--press .td-titlelink {
+  padding-left: 3rem;
+  background: url(../image/common/icon/icon-pressLink.png) no-repeat left center;
+  background-size: 1.7rem;
+}
+.board-table__list--qna thead .num, .board-table__list--qna thead .process, .board-table__list--qna thead .author {
+  width: 8.572%;
 }
 .board-table__view table {
   border-top: 2px solid #365ca3;
@@ -83,6 +135,11 @@
   text-align: left;
 }
 
+@media (max-width: 1024px) {
+  .board-table__list--qna thead .process {
+    width: 14%;
+  }
+}
 @media (max-width: 768px) {
   .board-table__list .board-table__inner {
     position: relative;
@@ -110,5 +167,11 @@
   }
   .board-table__list thead .category {
     width: 9.6%;
+  }
+  .board-table__list--press thead .press {
+    width: 12%;
+  }
+  .board-table__list--qna thead .num, .board-table__list--qna thead .author {
+    width: 10%;
   }
 }

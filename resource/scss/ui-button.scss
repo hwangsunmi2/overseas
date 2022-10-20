@@ -4,6 +4,7 @@
 .sch{
     &-form{
         &__btn{
+            flex:none;
             width:50px;
             background:#4568a9 url('../image/common/icon/icon-sch.png') no-repeat center center;
         }
@@ -14,6 +15,12 @@
         display:flex;
         &--center{
             justify-content:center;
+            .btn{
+                width: 13.2rem;
+                &+.btn{
+                    margin-left: .5rem;
+                }
+            }
         }
     }
     &--list{
