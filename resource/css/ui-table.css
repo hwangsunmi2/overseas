@@ -3,13 +3,13 @@
 .board-table {
   margin-top: 3rem;
 }
-.board-table__list table {
-  table-layout: fixed;
-}
-.board-table__list th {
+.board-table th {
   font-size: 1.8rem;
   font-weight: 500;
   vertical-align: middle;
+}
+.board-table__list table {
+  table-layout: fixed;
 }
 .board-table__list thead tr {
   height: 6.9rem;
@@ -59,13 +59,36 @@
   background: url(../image/common/icon/icon-download__table.png) no-repeat center;
   background-size: cover;
 }
+.board-table__view table {
+  border-top: 2px solid #365ca3;
+}
+.board-table__view .ver-th {
+  width: 28rem;
+}
+.board-table__view tr {
+  border-bottom: 1px solid #cccfd6;
+}
+.board-table__view th, .board-table__view td {
+  vertical-align: middle;
+}
+.board-table__view th {
+  height: 8rem;
+  border-right: 1px solid #cccfd6;
+  background: #fafcff;
+}
+.board-table__view td {
+  height: 8rem;
+  padding: 1.5rem;
+  padding-right: 0;
+  text-align: left;
+}
 
 @media (max-width: 768px) {
-  .board-table__inner {
+  .board-table__list .board-table__inner {
     position: relative;
     overflow-x: scroll;
   }
-  .board-table__inner::before {
+  .board-table__list .board-table__inner::before {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,11 +102,11 @@
     content: "표를 밀어보세요";
     z-index: 1;
   }
-  .board-table__inner.removeBefore::before {
+  .board-table__list .board-table__inner.removeBefore::before {
     display: none;
   }
   .board-table__list table {
-    width: 76.8rem;
+    min-width: 76.8rem;
   }
   .board-table__list thead .category {
     width: 9.6%;

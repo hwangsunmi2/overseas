@@ -33,6 +33,19 @@
         border:1px solid #4568a9;
         background:#fff url(../image/common/icon/icon-download.png) no-repeat 20px center
     }
+    &--border{
+        &-color{
+            &-gray{
+                width: 14.4rem;
+                height:5.4rem;
+                font: {
+                    size:1.8rem;
+                    weight:500;
+                }
+                border:1px solid #d2d5dc;
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(n-md){ //1024
@@ -50,5 +63,6 @@
             height:5.4rem;
             font-size:1.8rem;
         }
+        
     }
 }

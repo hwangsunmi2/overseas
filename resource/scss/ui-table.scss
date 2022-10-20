@@ -4,15 +4,15 @@
 /** 소통마당 > 공지사항 */
 .board-table{
     margin-top:3rem;
+    th{
+        font-size:1.8rem;
+        font-weight: 500;
+        vertical-align: middle;
+    }
     &__list{
         table{
             table-layout: fixed;
-        }
-        th{
-            font-size:1.8rem;
-            font-weight: 500;
-            vertical-align: middle;
-        }
+        }   
         thead{
             tr{
                 height:6.9rem;
@@ -64,45 +64,72 @@
             }
         }
     }
+    &__view{
+        table{
+            border-top:2px solid #365ca3;
+        }
+        .ver-th{
+            width: 28rem;
+        }
+        tr{
+            border-bottom:1px solid #cccfd6;
+        }
+        th, td{
+            vertical-align: middle;
+        }
+        th{
+            height: 8rem;
+            border-right:1px solid #cccfd6;
+            background:#fafcff;
+        }
+        td{
+            height: 8rem;
+            padding: 1.5rem;
+            padding-right:0;
+            text-align: left;
+        }
+    }
 }
 
 
 // responsive
 @include media-breakpoint-down(n-sm){ //768
     .board-table{
-        &__inner{
-            position: relative;
-            overflow-x: scroll;
-            &::before{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.48);
-                color: #ffffff;
-                font-size: 2rem;
-                content: "표를 밀어보세요";
-                z-index: 1;
-            }
-            &.removeBefore{
-                &::before{
-                    display: none;
+        &__list{
+            .board-table{
+                &__inner{
+                    position: relative;
+                    overflow-x: scroll;
+                    &::before{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.48);
+                        color: #ffffff;
+                        font-size: 2rem;
+                        content: "표를 밀어보세요";
+                        z-index: 1;
+                    }
+                    &.removeBefore{
+                        &::before{
+                            display: none;
+                        }
+                    }
                 }
             }
-        }
-        &__list{
-            
             table{
-                width: 76.8rem;
+                min-width: 76.8rem;
             }
             thead {
                 .category{
                     width: 9.6%; 
                 }
             }
+           
         }
     }
 }

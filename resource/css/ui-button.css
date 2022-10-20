@@ -15,7 +15,7 @@
   background-color: #4568a9;
   color: #fff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .btn--download {
   width: 117px;
@@ -25,6 +25,13 @@
   font-size: 16px;
   border: 1px solid #4568a9;
   background: #fff url(../image/common/icon/icon-download.png) no-repeat 20px center;
+}
+.btn--border-color-gray {
+  width: 14.4rem;
+  height: 5.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 1px solid #d2d5dc;
 }
 
 @media (max-width: 1024px) {

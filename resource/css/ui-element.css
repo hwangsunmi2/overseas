@@ -240,6 +240,27 @@
   background: #fafcff;
   border-top: 1px solid #d2d5dc;
 }
+.board-file__inner dl {
+  display: flex;
+}
+.board-file__inner dt, .board-file__inner dd {
+  font-size: 1.8rem;
+}
+.board-file__inner dt {
+  margin-right: 4rem;
+  font-weight: 500;
+  flex: none;
+}
+.board-file__inner .board-file__link {
+  display: block;
+  padding-left: 3.5rem;
+  background: url(../image/common/icon/icon-download.png) no-repeat left top 0.4rem;
+  background-size: 1.8rem;
+  line-height: normal;
+}
+.board-file__inner .board-file__link + .board-file__link {
+  margin-top: 1.5rem;
+}
 
 .pagination {
   width: 100%;
@@ -355,6 +376,9 @@
     margin-top: 4rem;
     margin-bottom: 3rem;
     padding: 0 1rem;
+    font-size: 3.6rem;
+  }
+  .board-detail__category {
     font-size: 3.6rem;
   }
   .board-detail__capt * {
@@ -510,6 +534,13 @@
     flex: 1 1 100%;
     margin-top: 2rem;
     margin-left: 0;
+  }
+  .board-file__inner dl {
+    flex-direction: column;
+  }
+  .board-file__inner dt {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
   .link-post > * a {
     display: block;
