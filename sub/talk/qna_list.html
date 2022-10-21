@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../resource/css/ux-common.css">
     <link rel="stylesheet" href="../../resource/css/sub__talk.css">
 
     <script src="../../resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../resource/js/bootstrap.min.js"></script>
+    <script src="../../resource/js/include.js"></script>
+    
     <script src="../../resource/js/sub.js"></script>
     <title>국외소재문화재재단 &gt; 자료마당 &gt; 발간자료 리스트</title>
 </head>
 <body>
     <div class="wrap">
         <!-- header -->
-        <header></header>
+        <!-- [include] header -->
+        <header data-include-file="../../include/header.html" class="header-wrap js-include"></header>
+        <!-- //[include] header -->
 
         <!-- container -->
         <div class="container">
@@ -89,8 +95,9 @@
                                                     
                                                     <td class="td-title">
                                                         <div class="td-title__inner">
-                                                            <a href="" class="td-titlelink">코로나19 국민예방행동수칙 안내</a>
-                                                            <i class="icon-secret"></i>
+                                                            <!-- 전달사항 :: 비밀글 클릭시 하단 모달 표출 -->
+                                                            <a href="javascript:void(0)" class="td-titlelink" data-toggle="modal" data-target="#exampleModal">코로나19 국민예방행동수칙 안내</a>
+                                                            <i class="icon-secret"></i><!-- 전달사항 :: 비밀글 아이콘 입니다. -->
                                                         </div>
                                                     </td>
                                                     <td class="td-file">
@@ -155,24 +162,32 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="pagination-wrap mt-60 mb-120">
-                                    <div class="pagination">
-                                        <a href="" class="link-move link-first"></a>
-                                        <a href="" class="link-move link-prev"></a>
-                                        <a href="" class="on">1</a>
-                                        <a href="">2</a>
-                                        <a href="">3</a>
-                                        <a href="">4</a>
-                                        <a href="">5</a>
-                                        <a href="">6</a>
-                                        <a href="">7</a>
-                                        <a href="">8</a>
-                                        <a href="">9</a>
-                                        <a href="">10</a>
-                                        <a href="" class="link-move link-next on"></a>
-                                        <a href="" class="link-move link-last on"></a>
+
+                                <div class="board-table__bottom">
+                                    <div class="pagination-wrap mt-60 mb-120">
+                                        <div class="pagination">
+                                            <a href="" class="link-move link-first"></a>
+                                            <a href="" class="link-move link-prev"></a>
+                                            <a href="" class="on">1</a>
+                                            <a href="">2</a>
+                                            <a href="">3</a>
+                                            <a href="">4</a>
+                                            <a href="">5</a>
+                                            <a href="">6</a>
+                                            <a href="">7</a>
+                                            <a href="">8</a>
+                                            <a href="">9</a>
+                                            <a href="">10</a>
+                                            <a href="" class="link-move link-next on"></a>
+                                            <a href="" class="link-move link-last on"></a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap btn-wrap--absolute">
+                                        <button type="button" class="btn btn--list btn--width-auto" onclick="location.href='./qna_certi.html'">본인인증 후 문의하기</button>
                                     </div>
                                 </div>
+
+                                
                             </article>
                         </section>
                     </div>
@@ -181,7 +196,36 @@
         </div>
 
         <!-- footer -->
-        <footer></footer>
+        <!-- [include] header -->
+        <footer data-include-file="../../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] header -->
+
+
+        <!-- 모달 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <h6 class="modal-tit">비밀번호를 입력해 주세요.</h6>
+                        <div class="ui-form">
+                            <input type="password" class="ui-input ui-input__width-400 ui-input__bg-gray" />
+                        </div>
+                        <div class="btn-wrap btn-wrap--center mt-20">
+                            <button type="button" class="btn btn--list">확인</button>
+                            <button type="button" class="btn btn--border-color-gray" data-dismiss="modal">취소</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- //모달 -->
+
+
+
+
+
     </div>
 </body>
 </html>

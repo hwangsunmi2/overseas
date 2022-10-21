@@ -83,6 +83,12 @@
 .ui-input__width-m {
   width: 32.2rem;
 }
+.ui-input__width-400 {
+  width: 40rem;
+}
+.ui-input__bg-gray {
+  background: #f8f8f8;
+}
 .ui-textarea {
   height: 15rem;
   padding: 1.5rem 2rem;

@@ -8,6 +8,7 @@
         font-size:1.8rem;
         font-weight: 500;
         vertical-align: middle;
+        text-align: center;
     }
     &__list{
         table{
@@ -146,6 +147,17 @@
             padding: 1.5rem;
             padding-right:0;
             text-align: left;
+        }
+    }
+    &__bottom{
+        position: relative;
+        padding-top:4.5rem;
+        .btn-wrap--absolute{
+            top: 3rem;
+            right:0;
+        }
+        .pagination-wrap{
+            margin-top: 0;
         }
     }
 }

@@ -92,6 +92,14 @@
             &-m{
                 width:32.2rem;
             }
+            &-400{
+                width:40rem;
+            }
+        }
+        &__bg{
+            &-gray{
+                background: #f8f8f8;
+            }
         }
     }
     &-textarea{
