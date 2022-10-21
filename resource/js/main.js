@@ -5,11 +5,11 @@ $(document).ready(function () {
 
 });
 function mainSwiper() {
-    var mainswiper = new Swiper(".section1.mySwiper", {
+    var mainswiper = new Swiper(".section1 .mySwiper", {
         pagination: {
-          el: ".section1 .swiper-pagination",
+          el: ".dot .swiper-pagination",
         },
-      }); 
+    }); 
 }
 
 function mainTab() {
@@ -32,14 +32,29 @@ function mainTab() {
 }
 
 function vrSwiper() {
-    var swiper = new Swiper(".vr .mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
+    var vrswiper = new Swiper(".vr .swiper", {
+      loop: true,
+      autoplay: {
+          delay: 1000,
+      },
+      pagination: {
+          el: ".vrBtn .swiper-pagination",
           type: "fraction",
         },
         navigation: {
-          nextEl: ".vrBtn .swiper-button-next",
-          prevEl: ".vrBtn .swiper-button-prev",
+          nextEl: ".se4Wrap .vrBtn .swiper-button-next",
+          prevEl: ".se4Wrap .vrBtn .swiper-button-prev",
         },
-    }); 
+    });
+
+    $('.vrBtn .swiper-button-pause').click(function () {
+      if ($(this).hasClass('off')) {
+        $(this).removeClass('off');
+        vrswiper.autoplay.start();
+      } else {
+        $(this).addClass('off');
+        vrswiper.autoplay.stop();
+      }
+   });
+    
 }

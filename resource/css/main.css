@@ -1,12 +1,76 @@
 .se1 {
-  border: 1px solid aquamarine;
   z-index: 1;
 }
-.se1 .swiper-slide {
+.se1 .section1 .swiper-slide {
   width: 100%;
   height: 120.7rem;
   background: url(../image/main/swiper_bg1.png) no-repeat center top;
   background-size: contain;
+}
+.se1 .section1 .swiper-slide .txtBox {
+  position: absolute;
+  font-size: 3.9rem;
+  color: #fff;
+  width: 48rem;
+  top: 22.5rem;
+  left: 73%;
+  text-align: right;
+  -webkit-transform: translateX(-73%);
+          transform: translateX(-73%);
+  text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.22);
+  letter-spacing: -0.5px;
+}
+.se1 .section1 .swiper-slide .txtBox .title {
+  font-family: "Noto Serif KR";
+  font-size: 8rem;
+  letter-spacing: -1px;
+}
+.se1 .section1 .swiper-slide .txtBox .title p {
+  padding-top: 2rem;
+  font-family: "Noto Serif KR";
+  font-size: 8rem;
+  font-weight: 500;
+}
+.se1 .section1 .swiper-slide .txtBox .number {
+  padding-top: 4.5rem;
+  font-family: "Noto Serif KR";
+  font-size: 6rem;
+  font-weight: 500;
+  color: #ffd560;
+}
+.se1 .section1 .swiper-slide .txtBox .number span {
+  font-family: "Noto Serif KR";
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #ffd560;
+}
+.se1 .section1 .dot {
+  position: absolute;
+  width: 48rem;
+  height: 2rem;
+  top: 78rem;
+  left: 73%;
+  -webkit-transform: translateX(-73%);
+          transform: translateX(-73%);
+  z-index: 1;
+}
+.se1 .section1 .dot .swiper-pagination {
+  right: 0;
+}
+.se1 .section1 .dot .swiper-pagination .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  -webkit-box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.22);
+  background-color: #fff;
+  opacity: 1;
+}
+.se1 .section1 .dot .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffd560;
+  opacity: 1;
+}
+.se1 .section1 .dot .swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 1.7rem;
 }
 .se1 .tabBox {
   position: absolute;
@@ -77,13 +141,25 @@
   position: absolute;
   overflow-x: scroll;
   display: none;
-  padding: 0 0 3.5rem 0;
+  padding: 0 0 3.2rem 0;
   width: 100%;
   top: 8rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se1 .tabBox .tab_wrap .tab_cont.on {
   display: block;
+}
+.se1 .tabBox .tab_wrap .tab_cont::-webkit-scrollbar {
+  height: 0.3rem;
+}
+.se1 .tabBox .tab_wrap .tab_cont::-webkit-scrollbar-thumb {
+  background-color: #d9dde5;
+}
+.se1 .tabBox .tab_wrap .tab_cont::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  -webkit-box-shadow: inset 0px 0px 5px white;
+          box-shadow: inset 0px 0px 5px white;
 }
 .se1 .tabBox .tab_wrap .tab_cont ul {
   margin: 0;
@@ -94,7 +170,8 @@
   width: 100%;
   list-style: none;
   font-size: 18px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se1 .tabBox .tab_wrap .tab_cont ul li a {
   position: relative;
@@ -104,7 +181,8 @@
   height: 28.5rem;
   border: 2px solid #d2d5dc;
   border-radius: 1rem 0 1rem 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #f8f9fa;
 }
 .se1 .tabBox .tab_wrap .tab_cont ul li a::after {
@@ -181,7 +259,8 @@ section h2 {
   height: 40rem;
   border: 1px solid #d2d5dc;
   background-color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se2 ul li .tit {
   font-size: 2.2rem;
@@ -191,7 +270,8 @@ section h2 {
 }
 .se2 ul li .content {
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
 }
 .se2 ul li .content .num {
@@ -233,7 +313,8 @@ section h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon1.png) no-repeat center center;
@@ -252,7 +333,8 @@ section h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon2.png) no-repeat center center;
@@ -271,7 +353,8 @@ section h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon3.png) no-repeat center center;
@@ -290,7 +373,8 @@ section h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon4.png) no-repeat center center;
@@ -309,7 +393,8 @@ section h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon5.png) no-repeat center center;
@@ -328,7 +413,8 @@ section h2 {
   position: absolute;
   top: -11.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 8.6rem;
   height: 8rem;
   background: url(../image/main/section2_icon6.png) no-repeat center center;
@@ -449,7 +535,89 @@ section h2 {
           justify-content: space-between;
 }
 .se4 .se4Wrap .se4Box h2 .vrBtn {
-  border: 1px solid pink;
+  position: relative;
+  display: block;
+  width: 9rem;
+  height: 1.3rem;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-pagination {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 69%;
+  -webkit-transform: translateX(-69%);
+          transform: translateX(-69%);
+  top: 0;
+  width: 2.4rem;
+  line-height: 1.3rem;
+  height: 1.3rem;
+  bottom: top;
+  text-align: center;
+  margin: 0 auto;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-pagination span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-pagination span.swiper-pagination-current {
+  color: #f57771;
+  font-weight: 500;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 2.6rem;
+  width: 0.8rem;
+  height: 1.2rem;
+  margin: 0;
+  background: url(../image/common/icon/icon_arrowprev_b.png) no-repeat center center;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  cursor: pointer;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-prev::after {
+  display: none;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.5;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 0;
+  width: 0.8rem;
+  height: 1.2rem;
+  margin: 0;
+  background: url(../image/common/icon/icon_arrownext_b.png) no-repeat center center;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  cursor: pointer;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-next::after {
+  display: none;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-next.swiper-button-disabled {
+  opacity: 0.5;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-pause {
+  position: relative;
+  top: 55%;
+  left: auto;
+  width: 1.2rem;
+  height: 1.5rem;
+  margin: 0;
+  background: url(../image/common/icon/icon_pause_b.png) no-repeat center center;
+  -webkit-transform: translateY(-50%);
+  background-size: contain;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.se4 .se4Wrap .se4Box h2 .vrBtn .swiper-button-pause.off {
+  background: url(../image/common/icon/icon_play_b.png) no-repeat center center;
 }
 .se4 .se4Wrap .se4Box.left {
   position: relative;
@@ -474,6 +642,19 @@ section h2 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.se4 .se4Wrap .se4Box.left .vedio .tit {
+  position: relative;
+  padding-left: 4.4rem;
+}
+.se4 .se4Wrap .se4Box.left .vedio .tit::before {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  width: 2.9rem;
+  height: 2rem;
+  background: url(../image/main/youtube.jpg) no-repeat center center;
+  content: "";
 }
 .se4 .se4Wrap .se4Box.right {
   position: relative;
