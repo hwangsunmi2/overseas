@@ -128,8 +128,7 @@ header .nav .topRight select {
   margin-left: 5rem;
   width: 13.2rem;
   height: 4.2rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-indent: 0;
   border: 0;
   border-bottom: 2px solid #000;
@@ -213,8 +212,7 @@ footer .footerBottom {
 }
 footer .footerBottom .footer.link ul {
   padding: 3rem 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 footer .footerBottom .footer.link ul li a {
   color: #fff;
@@ -226,12 +224,9 @@ footer .footerBottom .footer.link ul li + li {
 footer .footerBottom .footer.info {
   position: relative;
   padding: 5rem 0 8rem 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-top: 1px solid #303a4c;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 footer .footerBottom .footer.info::before {
   position: absolute;

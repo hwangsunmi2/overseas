@@ -14,6 +14,7 @@
 .root_daum_roughmap .wrap_controllers{
     display: none;
 }
+
 .wayAbout{
     &-info{
         padding:5rem;
@@ -28,6 +29,7 @@
         dt, dd{
             display: inline-block;
             font-size: 1.8rem;
+            line-height: normal;
         }
         dt{
             margin-right: 1rem;
@@ -37,12 +39,187 @@
     &-route{
         &__inner{
             margin-top: 3rem;
+            table{
+                border-top:1px solid #81a1dc;
+                tr{
+                    border-bottom:1px solid #d2d5dc;
+                }
+                th{
+                    background: #fafcff;
+                    border-right:1px solid #d2d5dc;
+                }
+                th, td{
+                    padding:3rem 4rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+        &__th{
+            width:23.3rem;
         }
     }
 }
 
+.route-way{
+    &__txt{
+        margin-top: 1rem;
+        font : {
+            size:1.7rem;
+            weight:500;
+        }
+    }
+    &__how{
+        &-item{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            &--left, &--right{
+                display: flex;
+                align-items: center;
+            }
+            *{
+                flex:none;
+            }
+            &+&{
+                margin-top: 1rem;
+            }
+            &--ps{
+                margin-top:1.5rem;
+                font-size:1.6rem;
+            }
+        }
+        &-icon{
+            display: inline-block;
+            width:2.2rem;
+            height:2.2rem;
+            margin-right: 1.5rem;
+            background-size: 2.2rem;
+            &.subway{
+                &-line{
+                    &6{
+                        background-image: url(../image/sub/icon-line6.png);
+                        
+                    }
+                    &air{
+                        background-image: url(../image/sub/icon-lineair.png);
+                        
+                    }
+                }
+            }
+            &.bus{
+                &-blue{
+                    background-image: url(../image/sub/icon-bus__blue.png);
+                }
+                &-green{
+                    background-image: url(../image/sub/icon-bus__green.png);
+                }
+                &-red{
+                    background-image: url(../image/sub/icon-bus__red.png);
+                }
+            }
+        }
+        &-tit, &-txt{
+            font-size:1.8rem;
+        }
+        &-tit{
+            width: 8.5rem;
+            font-weight:500;
+        }
+        &-txt{
+            // &+&{
+            //     &::before{
+            //         display: inline-block;
+            //         width: .8rem;
+            //         height:1.3rem;
+            //         margin: 0 1rem;
+            //         background: url(../image/common/icon/icon-next.png) no-repeat center;
+            //         background-size: .8rem 1.3rem;
+            //         content: "";
+            //     }
+            // }
+            &--next{
+                display: inline-block;
+                width: .8rem;
+                height:1.3rem;
+                margin: 0 1rem;
+                background: url(../image/common/icon/icon-next.png) no-repeat center;
+                background-size: .8rem 1.3rem;
+            }
+        }
+    }
+}
 
 // responsive
-@include media-breakpoint-down(n-md){ //1024
-    
+@include media-breakpoint-down(n-ml){ //1400
+    .wayAbout{
+        &-info{
+            padding:2.5rem;
+            &__inner{
+                display: flex;
+                flex-wrap: wrap;
+                margin: -1.5rem -2rem;
+                dl{
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    padding: 1.5rem 2rem;
+                    dt{
+                        margin-bottom: 1rem;
+                    }
+                    &+dl{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        &-route{
+            &__inner{
+                table{
+                    th, td{
+                        padding:2rem 3rem;
+                    }
+                }
+            }
+            &__th{
+                width:17.5rem;
+            }
+        }
+    }
+    .route-way{
+        // >img{
+        //     width:40%;
+        // }
+        &__how{
+            &-item{
+                flex-direction: column;
+                align-items: flex-start;
+                &+&{
+                    margin-top: 1.5rem;
+                }
+                &--left{
+                    margin-bottom: .6rem;
+                }
+                &--right{
+                    display: inline-block;
+                    width:100%;
+                    margin: 0;
+                    *{
+                        display:inline-block;
+                        line-height: normal;
+                    }
+                }
+                &--normal{
+                    display: inline-block;
+                    width:100%;
+                    *{
+                        display:inline-block;
+                        line-height: normal;
+                    }
+                }
+                &--ps{
+                    line-height: normal;
+                }
+            }
+        }
+    }
 }

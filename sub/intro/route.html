@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="../../resource/css/sub__intro.css">
 
     <script src="../../resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../resource/js/include.js"></script>
     <script src="../../resource/js/sub.js"></script>
     <title>국외소재문화재재단 &gt; 자료마당 &gt; 발간자료 리스트</title>
 </head>
 <body>
     <div class="wrap">
         <!-- header -->
-        <header></header>
+
+        <!-- [include] header -->
+        <header data-include-file="../../include/header.html" class="header-wrap js-include"></header>
+        <!-- //[include] header -->
 
         <!-- container -->
         <div class="container">
@@ -77,39 +81,126 @@
                                 </div>
 
                                 <div class="wayAbout-info">
-                                    <dl>
-                                        <dt>주소</dt>
-                                        <dd>서울특별시 마포구 월드컵북로 396 누리꿈스퀘어 비즈니스타워 7층 우.03925</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>전화</dt>
-                                        <dd>02-6902-0756 </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>팩스</dt>
-                                        <dd>02-6902-0799</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>메일</dt>
-                                        <dd><a href="mailto:okchf@okchf.or.kr">okchf@okchf.or.kr</a></dd>
-                                    </dl>
+                                    <div class="wayAbout-info__inner">
+                                        <dl>
+                                            <dt>주소</dt>
+                                            <dd>서울특별시 마포구 월드컵북로 396 누리꿈스퀘어 비즈니스타워 7층 우.03925</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>전화</dt>
+                                            <dd>02-6902-0756 </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>팩스</dt>
+                                            <dd>02-6902-0799</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>메일</dt>
+                                            <dd><a href="mailto:okchf@okchf.or.kr">okchf@okchf.or.kr</a></dd>
+                                        </dl>
+                                    </div>
                                 </div>
 
                                 <div class="wayAbout-route">
                                     <div class="wayAbout-route__inner">
                                         <table>
+                                            <colgroup>
+                                                <col class="wayAbout-route__th">
+                                            </colgroup>
                                             <tbody>
                                                 <tr>
-                                                    <th></th>
-                                                    <td></td>
+                                                    <th>
+                                                        <div class="route-way route-way__subway">
+                                                            <img src="../../resource/image/sub/icon-subway.png" alt="">
+                                                            <p class="route-way__txt">지하철 이용</p>   
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="route-way__how">
+                                                            <ul>
+                                                                <li class="route-way__how-item">
+                                                                    <div class="route-way__how-item--left">
+                                                                        <i class="route-way__how-icon subway-line6"></i>
+                                                                        <p class="route-way__how-tit">6호선</p>
+                                                                    </div>
+                                                                    <div class="route-way__how-item--right">
+                                                                        <p class="route-way__how-txt">디지털미디어 시티역 2번출구 건너편 정류장에서 <i class="route-way__how-txt--next"></i> 7711, 7730번 버스 승차 후 <i class="route-way__how-txt--next"></i> 누리꿈스퀘어 앞 하차</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="route-way__how-item">
+                                                                    <div class="route-way__how-item--left">
+                                                                        <i class="route-way__how-icon subway-lineair"></i>
+                                                                        <p class="route-way__how-tit">공항철도</p>
+                                                                    </div>
+                                                                    <div class="route-way__how-item--right">
+                                                                        <p class="route-way__how-txt">9번 출구 도보 15분</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th></th>
-                                                    <td></td>
+                                                    <th>
+                                                        <div class="route-way route-way__subway">
+                                                            <img src="../../resource/image/sub/icon-bus.png" alt="">
+                                                            <p class="route-way__txt">버스 이용</p>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="route-way__how">
+                                                            <ul>
+                                                                <li class="route-way__how-item">
+                                                                    <div class="route-way__how-item--left">
+                                                                        <i class="route-way__how-icon bus-blue"></i>
+                                                                        <p class="route-way__how-tit">간선버스</p>
+                                                                    </div>
+                                                                    <div class="route-way__how-item--right">
+                                                                        <p class="route-way__how-txt">171, 271, 470, 710번 버스 승차후 <i class="route-way__how-txt--next"></i> 누리꿈스퀘어 앞 하차</p>
+                                                                        
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li class="route-way__how-item">
+                                                                    <div class="route-way__how-item--left">
+                                                                        <i class="route-way__how-icon bus-green"></i>
+                                                                        <p class="route-way__how-tit">지선버스</p>
+                                                                    </div>
+                                                                    <div class="route-way__how-item--right">
+                                                                        <p class="route-way__how-txt">6715, 7013A, 7013B, 7019, 7711, 7715,  7730번 버스 승차후 <i class="route-way__how-txt--next"></i> 누리꿈스퀘어 앞 하차 </p>
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                </li>
+                                                                <li class="route-way__how-item">
+                                                                    <div class="route-way__how-item--left">
+                                                                        <i class="route-way__how-icon bus-red"></i>
+                                                                        <p class="route-way__how-tit">광역버스</p>
+                                                                    </div>
+                                                                    <div class="route-way__how-item--right">
+                                                                        <p class="route-way__how-txt">9711번 버스 승차후 <i class="route-way__how-txt--next"></i> 누리꿈스퀘어 앞 하차</p>
+
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th></th>
-                                                    <td></td>
+                                                    <th>
+                                                        <div class="route-way route-way__subway">
+                                                            <img src="../../resource/image/sub/icon-car.png" alt="">
+                                                            <p class="route-way__txt">차량 이용</p>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <li class="route-way__how-item route-way__how-item--normal">
+                                                            <p class="route-way__how-txt">내부순환도로 중동사거리에서 우회전 후<i class="route-way__how-txt--next"></i>중앙교에서 직진 상암교 지난 후<i class="route-way__how-txt--next"></i>난지천공원 방향으로 직진 후<i class="route-way__how-txt--next"></i>상암아파트 단지에서 우회전</p>
+                                                            
+                                                        </li>
+                                                        <li class="route-way__how-item--ps">※ 주차장 이용요금 안내  :  방문객 최초 30분 무료｜초과 10분당 500원｜1일 20,000원</li>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -126,7 +217,9 @@
         </div>
 
         <!-- footer -->
-        <footer></footer>
+        <!-- [include] header -->
+        <footer data-include-file="../../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] header -->
     </div>
 </body>
 </html>

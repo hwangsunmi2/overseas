@@ -24,6 +24,7 @@
 .wayAbout-info dt, .wayAbout-info dd {
   display: inline-block;
   font-size: 1.8rem;
+  line-height: normal;
 }
 .wayAbout-info dt {
   margin-right: 1rem;
@@ -31,4 +32,142 @@
 }
 .wayAbout-route__inner {
   margin-top: 3rem;
+}
+.wayAbout-route__inner table {
+  border-top: 1px solid #81a1dc;
+}
+.wayAbout-route__inner table tr {
+  border-bottom: 1px solid #d2d5dc;
+}
+.wayAbout-route__inner table th {
+  background: #fafcff;
+  border-right: 1px solid #d2d5dc;
+}
+.wayAbout-route__inner table th, .wayAbout-route__inner table td {
+  padding: 3rem 4rem;
+  vertical-align: middle;
+}
+.wayAbout-route__th {
+  width: 23.3rem;
+}
+
+.route-way__txt {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.route-way__how-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.route-way__how-item--left, .route-way__how-item--right {
+  display: flex;
+  align-items: center;
+}
+.route-way__how-item * {
+  flex: none;
+}
+.route-way__how-item + .route-way__how-item {
+  margin-top: 1rem;
+}
+.route-way__how-item--ps {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+.route-way__how-icon {
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 1.5rem;
+  background-size: 2.2rem;
+}
+.route-way__how-icon.subway-line6 {
+  background-image: url(../image/sub/icon-line6.png);
+}
+.route-way__how-icon.subway-lineair {
+  background-image: url(../image/sub/icon-lineair.png);
+}
+.route-way__how-icon.bus-blue {
+  background-image: url(../image/sub/icon-bus__blue.png);
+}
+.route-way__how-icon.bus-green {
+  background-image: url(../image/sub/icon-bus__green.png);
+}
+.route-way__how-icon.bus-red {
+  background-image: url(../image/sub/icon-bus__red.png);
+}
+.route-way__how-tit, .route-way__how-txt {
+  font-size: 1.8rem;
+}
+.route-way__how-tit {
+  width: 8.5rem;
+  font-weight: 500;
+}
+.route-way__how-txt--next {
+  display: inline-block;
+  width: 0.8rem;
+  height: 1.3rem;
+  margin: 0 1rem;
+  background: url(../image/common/icon/icon-next.png) no-repeat center;
+  background-size: 0.8rem 1.3rem;
+}
+
+@media (max-width: 1400px) {
+  .wayAbout-info {
+    padding: 2.5rem;
+  }
+  .wayAbout-info__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1.5rem -2rem;
+  }
+  .wayAbout-info__inner dl {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1.5rem 2rem;
+  }
+  .wayAbout-info__inner dl dt {
+    margin-bottom: 1rem;
+  }
+  .wayAbout-info__inner dl + dl {
+    margin-left: 0;
+  }
+  .wayAbout-route__inner table th, .wayAbout-route__inner table td {
+    padding: 2rem 3rem;
+  }
+  .wayAbout-route__th {
+    width: 17.5rem;
+  }
+  .route-way__how-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .route-way__how-item + .route-way__how-item {
+    margin-top: 1.5rem;
+  }
+  .route-way__how-item--left {
+    margin-bottom: 0.6rem;
+  }
+  .route-way__how-item--right {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+  .route-way__how-item--right * {
+    display: inline-block;
+    line-height: normal;
+  }
+  .route-way__how-item--normal {
+    display: inline-block;
+    width: 100%;
+  }
+  .route-way__how-item--normal * {
+    display: inline-block;
+    line-height: normal;
+  }
+  .route-way__how-item--ps {
+    line-height: normal;
+  }
 }
