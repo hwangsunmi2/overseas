@@ -378,19 +378,26 @@
                             <h3 class="el-tab__tit">BUTTON</h3>
                             <div class="mt-20">
                                 <div class="el-box-tip">
-                                    tip
+                                    button은 <strong>&lt;div class="btn-wrap&gt;</strong>으로 감싸서 사용한다. <br>
+                                    기본 버튼 사이즈는 <strong>width: 13.2rem; height:5.4rem;</strong> 이며, <br>
+                                    width나 height 변경시 class 추가하여 사용함. <br>
+                                    ex) <strong>btn--width-숫자 btn--height-숫자</strong>
                                 </div>
-                                <div class="el-txt">
+                                <!-- <div class="el-txt">
                                     txt
-                                </div>
-
+                                </div> -->
                                 <div class="el-example lay-item--1600">
-                                    example
+                                    <div class="btn-wrap btn-wrap--center mt-50">
+                                        <button type="button" class="btn btn--list">목록</button>
+                                        <button type="button" class="btn btn--border-color-gray">수정하기</button>
+                                    </div>
+                                    
                                 </div>
                                 <div class="el-code-wrap">
                                     <!-- 코드 삽입 -->
                                     <pre class="language-html"><code>
-                                        </code>
+                                        &lt;button type="button" class="btn--list"&gt;목록&lt;/button&gt;
+                                        &lt;button type="button" class="btn--border-color-gray"&gt;수정하기&lt;/button&gt;</code>
                                     </pre>
                                 </div>
                             </div>

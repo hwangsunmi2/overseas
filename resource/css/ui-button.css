@@ -7,6 +7,16 @@
 .btn-wrap {
   display: flex;
 }
+.btn-wrap .btn {
+  width: 13.2rem;
+  height: 5.4rem;
+}
+.btn-wrap .btn--width-260 {
+  width: 26rem !important;
+}
+.btn-wrap .btn--height-100 {
+  height: 10rem;
+}
 .btn-wrap--center {
   justify-content: center;
 }
@@ -39,6 +49,10 @@
   font-size: 1.8rem;
   font-weight: 500;
   border: 1px solid #d2d5dc;
+}
+.btn-ps {
+  font-size: 1.6rem;
+  font-weight: 100;
 }
 
 @media (max-width: 1024px) {
