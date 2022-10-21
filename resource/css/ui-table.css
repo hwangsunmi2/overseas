@@ -7,6 +7,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   vertical-align: middle;
+  text-align: center;
 }
 .board-table__list table {
   table-layout: fixed;
@@ -143,6 +144,17 @@
   padding: 1.5rem;
   padding-right: 0;
   text-align: left;
+}
+.board-table__bottom {
+  position: relative;
+  padding-top: 4.5rem;
+}
+.board-table__bottom .btn-wrap--absolute {
+  top: 3rem;
+  right: 0;
+}
+.board-table__bottom .pagination-wrap {
+  margin-top: 0;
 }
 
 @media (max-width: 1024px) {

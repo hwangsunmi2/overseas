@@ -1,0 +1,36 @@
+@charset 'utf-8';
+@import 'mixin';
+
+.modal {
+    padding-right: 0 !important;
+    &-dialog{
+        justify-content: center;
+    }
+    &-content{
+        width:auto;
+        padding:4rem 3rem;
+        box-shadow: 1rem 1rem 1.8rem rgba(0,0,0,0.1);
+        border:1px solid #d2d5dc;
+        border-radius: 0;
+    }
+    &-tit{
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    &-backdrop{
+        background: transparent;
+    }
+}
+
+@include media-breakpoint-down(n-sm){ //768
+    .modal{
+        &-content{
+            max-width: 80%;
+            .ui-input__width-400{
+                width:100%;
+            }
+        }
+    }
+    
+}
