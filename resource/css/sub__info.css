@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/** 재단소개 > 공지사항 */
+.subVisual--info {
+  background-image: url("../image/sub/img-subVisual--06.jpg");
+  background-position: center 0;
+}

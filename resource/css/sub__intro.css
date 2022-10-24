@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /** 재단소개 > 공지사항 */
 .subVisual--intro {
-  background-image: url("../image/sub/img-subVisual--01.jpg");
+  background-image: url("../image/sub/img-subVisual--05.jpg");
   background-position: center 0;
 }
 
@@ -197,6 +197,18 @@
   width: 1px;
   height: 1px;
   font-size: 0;
+}
+
+/* 재단소개 > CI */
+.ci-title {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 5rem;
+  text-align: center;
+}
+.ci-title span {
+  font-weight: 500;
+  color: #4568a9;
 }
 
 @media (max-width: 1400px) {

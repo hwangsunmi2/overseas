@@ -4,7 +4,7 @@
 /** 재단소개 > 공지사항 */
 .subVisual{
     &--intro{
-        background-image:url('../image/sub/img-subVisual--01.jpg');
+        background-image:url('../image/sub/img-subVisual--05.jpg');
         background-position:center 0;
     }
 }
@@ -242,6 +242,24 @@
 }
 .hidden{
     @include hidden;
+}
+
+/* 재단소개 > CI */
+.ci{
+    &-title{
+        font: {
+            size: 3.6rem;
+            weight:400;
+        }
+        line-height: 5rem;
+        text-align: center;
+        span{
+            font: {
+                weight:500;
+            }
+            color:$color-main;
+        }
+    }
 }
 
 
