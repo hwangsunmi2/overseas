@@ -62,6 +62,16 @@
   font-weight: 500;
   border: 1px solid #d2d5dc;
 }
+.btn--radius {
+  width: 19rem;
+  height: 5.6rem;
+  border-radius: 2rem 0 2rem 0;
+}
+.btn--color-aliceblue {
+  background: #8daae0;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
 .btn-ps {
   font-size: 1.6rem;
   font-weight: 100;

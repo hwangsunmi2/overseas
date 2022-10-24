@@ -79,6 +79,18 @@
             }
         }
     }
+    &--radius{
+        width: 19rem;
+        height: 5.6rem;
+        border-radius: 2rem 0 2rem 0;
+    }
+    &--color{
+        &-aliceblue{
+            background: #8daae0;
+            color:#ffffff;
+            font-size: 1.8rem;
+        }
+    }
     
     &-ps{
         font: {

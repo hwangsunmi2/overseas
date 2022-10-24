@@ -210,6 +210,36 @@
   font-weight: 500;
   color: #4568a9;
 }
+.ci-text {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+.ci-wrap__bottom {
+  display: flex;
+  margin-top: 5rem;
+  margin-left: -4rem;
+  margin-right: -4rem;
+}
+.ci-wrap__bottom > div {
+  padding: 0 4rem;
+  flex: 1;
+}
+.ci-wrap__bottom img {
+  max-width: 100%;
+}
+.ci-bottom__text {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+.ci-bottom__txt {
+  margin-top: 3rem;
+}
+.ci-ps {
+  font-size: 1.6rem;
+  line-height: normal;
+}
 
 @media (max-width: 1400px) {
   .wayAbout-info {
@@ -275,5 +305,15 @@
   }
   .org-img img.org-img__m {
     display: block;
+  }
+  .ci-wrap__bottom {
+    flex-direction: column;
+    margin: 0;
+  }
+  .ci-wrap__bottom > div {
+    padding: 0;
+  }
+  .ci-wrap__bottom .img-wrap {
+    margin-top: 3rem;
   }
 }
