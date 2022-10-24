@@ -30,6 +30,12 @@
 .board-table__list thead .date {
   width: 12.9%;
 }
+.board-table__list thead .name {
+  width: 16.65%;
+}
+.board-table__list thead .callnum {
+  width: 16.79%;
+}
 .board-table__list tbody td {
   height: 6.8rem;
   padding: 2rem 0;
@@ -98,6 +104,10 @@
   background: #4568a9;
   color: #ffffff;
 }
+.board-table__list .td-work {
+  text-align: left;
+  line-height: normal;
+}
 .board-table__list--press thead .num {
   width: 8.572%;
 }
@@ -111,6 +121,13 @@
 }
 .board-table__list--qna thead .num, .board-table__list--qna thead .process, .board-table__list--qna thead .author {
   width: 8.572%;
+}
+.board-table__list--org thead tr {
+  height: 6rem;
+}
+.board-table__list--org tbody td {
+  height: 6rem;
+  padding: 1.5rem 0;
 }
 .board-table__view table {
   border-top: 2px solid #365ca3;

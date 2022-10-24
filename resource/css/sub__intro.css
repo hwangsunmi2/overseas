@@ -123,6 +123,9 @@
   margin: 0 auto;
   max-width: 100%;
 }
+.org-img img.org-img__m {
+  display: none;
+}
 .org-list {
   display: flex;
   justify-content: space-around;
@@ -182,6 +185,9 @@
   margin-left: 2.5rem;
   font-size: 1.8rem;
   color: #747478;
+}
+.org-table {
+  margin-top: 5rem;
 }
 
 .hidden {
@@ -249,5 +255,13 @@
   }
   .route-way__how-item--ps {
     line-height: normal;
+  }
+}
+@media (max-width: 768px) {
+  .org-img img.org-img__pc {
+    display: none;
+  }
+  .org-img img.org-img__m {
+    display: block;
   }
 }

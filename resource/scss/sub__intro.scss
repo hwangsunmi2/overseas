@@ -161,7 +161,15 @@
             display: block;
             margin: 0 auto;
             max-width:100%;
+            &.org{
+                &-img{
+                    &__m{
+                        display: none;
+                    }
+                }
+            }
         }
+        
     }
     &-list{
         display:flex;
@@ -227,6 +235,9 @@
         margin-left: 2.5rem;
         font-size:1.8rem;
         color:#747478;
+    }
+    &-table{
+        margin-top: 5rem
     }
 }
 .hidden{
@@ -305,6 +316,28 @@
                     line-height: normal;
                 }
             }
+        }
+    }
+}
+
+@include media-breakpoint-down(n-sm){ //1400
+    .org{
+        &-img{
+           
+            img{
+           
+                &.org{
+                    &-img{
+                        &__pc{
+                            display: none;
+                        }
+                        &__m{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }
