@@ -53,13 +53,20 @@
 
 @media (max-width: 1280px) {
   .board-table__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .board-table__bottom .btn-wrap--absolute {
     position: relative;
     top: 0;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .board-table__bottom .pagination-wrap {
     margin-top: 2rem;

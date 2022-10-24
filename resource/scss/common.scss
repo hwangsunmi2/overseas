@@ -48,6 +48,7 @@ header {
         font-size:1.6rem;
         .d-flex {
             align-items: center;
+
             .site {
                 position:relative;
                 display: inline-block;
@@ -108,23 +109,24 @@ header {
             
             &.active {
                 position:relative;
-                border-bottom:1px solid #ededed;
                 &::before {
-                    position:absolute;
-                    bottom: -0.1rem;
-                    left: -100%;
-                    width: 100%;
-                    height:1px;
-                    border-bottom:1px solid #ededed;
-                    content:'';
+                    position: absolute;
+                    top: 9.4rem;
+                    left: -25%;
+                    width: 150%;
+                    height: 41.6rem;
+                    background-color: #fff;
+                    z-index: 2;
+                    content: "";
                 }
                 &::after {
                     position:absolute;
-                    bottom: -0.1rem;
-                    right: -100%;
-                    width: 100%;
+                    top: 9.4rem;
+                    left: -25%;
+                    width: 150%;
                     height:1px;
                     border-bottom:1px solid #ededed;
+                    z-index: 2;
                     content:'';
                 }
             }
@@ -133,7 +135,7 @@ header {
                 position:absolute;
                 top:0;
                 height:9.4rem;
-                //padding: 0 10rem;
+                padding: 0 12rem;
                 left: 50%;
                 transform: translateX(-50%);
                 width:136rem;
@@ -176,10 +178,12 @@ header {
 
                     .depth2 {
                         display: none;
-                        width: calc( 100% - 1px);
+                        padding: 0;
+                        width: 100%;
                         background: transparent;
-                        height: 41.6rem;
-                        padding-top: 2rem;
+                        margin-top: 0.2rem;
+                        padding-top: 2.3rem;
+                        height: 39rem;
                         padding-bottom: 5.8rem;
                         border-right: 1px solid rgba(255, 255, 255, 0.2);
                         left: 50%;
@@ -198,10 +202,8 @@ header {
                                 width: auto;
                                 font-size: 1.8rem;
                                 color: #000;
-                                padding: 1.5rem 0;
+                                padding: 2rem 0;
                                 height: auto;
-                                padding-right: 2rem;
-                                padding-left: 2rem;
                                 overflow: hidden;
                                 display: -webkit-box;
                                 display: -ms-flexbox;
@@ -235,7 +237,18 @@ header {
                 display: block;
                     width:2.8rem;
                     height:3rem;
-                    background: url(../image/common/icon/icon_search_b..png) no-repeat center center;
+                    background: url(../image/common/icon/icon_search_b.png) no-repeat center center;
+                }
+            }
+            .mMenu {
+                display: none;
+                width:2.8rem;
+                height:3rem;
+                a {
+                display: block;
+                    width:2.8rem;
+                    height:3rem;
+                    background: url(../image/common/icon/icon_m.menu_b.png) no-repeat center center;
                 }
             }
             select {
@@ -427,4 +440,166 @@ footer {
             }
         }
     }
+}
+
+
+/* responsive */
+@media (max-width: 1920px) {
+    header {
+        .nav {
+            .navWrap{
+                padding: 0 1.5rem;
+            }
+        } 
+    }
+}
+
+
+@media (max-width: 1600px) {
+    header {
+        .nav {
+           .topRight {
+            select {
+                margin-left: 2rem;
+            }
+           }
+            
+            .navWrap {
+                h1 {
+                    overflow: hidden;
+                    width: 15%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                ul {
+                    padding: 0 15rem;
+                    width: 105rem;
+                    li {
+                        a {
+                            font-size: 1.8rem;
+                        }
+                        .depth2 {
+                            padding-top: 1rem;
+                            height: 35rem;
+                            li {
+                                a {
+                                    font-size: 1.4rem;
+                                    color: #000;
+                                    padding: 1.5rem 0;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        .gotoSite {
+            .d-flex{
+                display:block;
+                width:100%;
+                .site {
+                    width:100%;
+                    padding:1.8rem 0;
+                    text-align: center;
+                    cursor: pointer;
+                    &::after {
+                        position: absolute;
+                        top: 2.4rem;
+                        right: 40%;
+                        width: 1.1rem;
+                        height: 0.6rem;
+                        background: url(../image/common/icon/icon_arrowDown_w.png) no-repeat;
+                        background-size: contain;
+                        content: "";
+                    }
+                }
+                ul {
+                    display:none;
+                    width:100%;
+                    border-top:1px solid #3b5993;
+                    li {
+                        width:100%;
+                    }
+                }
+            }
+            &.on {
+                .site {
+                    &::after {
+                        position: absolute;
+                        top: 2.4rem;
+                        right: 40%;
+                        width: 1.1rem;
+                        height: 0.6rem;
+                        background: url(../image/common/icon/icon_arrowUp_w.png) no-repeat;
+                        background-size: contain;
+                        content: "";
+                    }
+                }
+            }
+        }
+
+        .nav {
+            .navWrap {
+                h1 {
+                    width: 25%;
+                }
+                ul {
+                    display:none;
+                }
+                
+            }
+            .topRight {
+                align-items: center;
+                .search {
+                    margin-top: -0.8rem;
+                    width:2.2rem;
+                    height:2.1rem;
+                    a {
+                        background-size: cover;
+                        background: url(../image/common/icon/icon_m.search_b.png) no-repeat center center;
+                    }
+                }
+                .mMenu {
+                    margin-top: -1rem;
+                    margin-left:3rem;
+                    display: block;
+                    width:2.2rem;
+                    height:1.6rem;
+                    a {
+                        display: block;
+                        background: url(../image/common/icon/icon_m.menu_b.png) no-repeat center center;
+                    }
+                }
+                select {
+                    display: none;
+                }
+            } 
+        }
+        
+    }
+}
+
+
+@media (max-width: 640px) {
+    header {
+        .nav {
+            .navWrap {
+                h1 {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+
 }
