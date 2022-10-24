@@ -4,7 +4,7 @@
 /** 재단소개 > 공지사항 */
 .subVisual{
     &--intro{
-        background-image:url('../image/sub/img-subVisual--01.jpg');
+        background-image:url('../image/sub/img-subVisual--05.jpg');
         background-position:center 0;
     }
 }
@@ -161,7 +161,15 @@
             display: block;
             margin: 0 auto;
             max-width:100%;
+            &.org{
+                &-img{
+                    &__m{
+                        display: none;
+                    }
+                }
+            }
         }
+        
     }
     &-list{
         display:flex;
@@ -228,8 +236,67 @@
         font-size:1.8rem;
         color:#747478;
     }
+    &-table{
+        margin-top: 5rem
+    }
+}
+.hidden{
+    @include hidden;
 }
 
+/* 재단소개 > CI */
+.ci{
+    &-title{
+        font: {
+            size: 3.6rem;
+            weight:400;
+        }
+        line-height: 5rem;
+        text-align: center;
+        span{
+            font: {
+                weight:500;
+            }
+            color:$color-main;
+        }
+    }
+    &-text{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        text-align: center;
+    }
+    &-wrap{
+        &__bottom{
+            display: flex;
+            margin-top: 5rem;
+            margin-left: -4rem;
+            margin-right: -4rem;
+            >div{
+                padding: 0 4rem;
+                flex: 1;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    &-bottom{
+        &__text{
+            margin-top: 3rem;
+            font: {
+                size: 1.8rem;
+            }
+            line-height: 3.2rem;
+        }
+        &__txt{
+            margin-top: 3rem;
+        }
+    }
+    &-ps{
+        font-size: 1.6rem;
+        line-height: normal;
+    }
+}
 
 
 // responsive
@@ -301,6 +368,42 @@
                 }
                 &--ps{
                     line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(n-sm){ //768px
+    .org{
+        &-img{
+           
+            img{
+           
+                &.org{
+                    &-img{
+                        &__pc{
+                            display: none;
+                        }
+                        &__m{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .ci{
+        &-wrap{
+            &__bottom{
+                flex-direction: column;
+                margin: 0;
+                >div{
+                    padding: 0;
+                }
+                .img-wrap{
+                    margin-top: 3rem;
                 }
             }
         }

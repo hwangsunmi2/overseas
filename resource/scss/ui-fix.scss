@@ -23,6 +23,9 @@
         }
     }
     &t{
+        &-10{
+            margin-top:10px;
+        }
         &-20{
             margin-top:20px;
         }
@@ -78,6 +81,13 @@
         }
         &--07{
             font-size:12px
+        }
+    }
+}
+.font{
+    &-weight{
+        &__r{
+            font-weight: 500;
         }
     }
 }

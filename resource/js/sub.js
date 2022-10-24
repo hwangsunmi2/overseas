@@ -7,6 +7,10 @@ $(function(){
     $(".org-item").click(function(){
         $(this).addClass("is-active");
         $(this).siblings().removeClass("is-active");
-    })
+    });
 
-})
+    
+
+});
+
+

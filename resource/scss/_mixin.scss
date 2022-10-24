@@ -36,6 +36,9 @@ $container-max-widths: (
   n-xl: 1140px
 );
 $n-breakpoint: map-get($n-breakpoints, n-sm);
+
+$color-main : #4568a9;
+
 // Respond above.
 @mixin mobileS {
     @media (min-width: #{$n-xxs}) {
@@ -229,4 +232,14 @@ $n-breakpoint: map-get($n-breakpoints, n-sm);
       -webkit-line-clamp: $lines;
       -webkit-box-orient: vertical;
     }
-  }
+ }
+
+
+ @mixin hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width:1px;
+    height:1px;
+    font-size:0;
+ }

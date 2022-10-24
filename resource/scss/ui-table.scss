@@ -33,6 +33,12 @@
             .date{
                 width: 12.9%;
             }
+            .name{
+                width:16.65%;
+            }
+            .callnum{
+                width:16.79%;
+            }
         }
         tbody{
             td{
@@ -97,6 +103,11 @@
                     }
                 }
             }
+            &-work{
+                text-align: left;
+                //@include ellipsis(1)
+                line-height: normal;
+            }
         }
         &--press{
             thead{
@@ -119,6 +130,19 @@
             thead{
                 .num, .process, .author{
                     width: 8.572%;
+                }
+            }
+        }
+        &--org{
+            thead{
+                tr{
+                    height: 6rem;
+                }
+            }
+            tbody{
+                td{
+                    height: 6rem;
+                    padding:1.5rem 0;
                 }
             }
         }
