@@ -318,28 +318,28 @@
   background-position: center center;
 }
 .pagination > a.link-first {
-  margin-right: 5px;
+  margin-right: -1px;
   background-image: url("../image/common/icon/icon-moveFirst.png");
 }
 .pagination > a.link-first.on {
   background-image: url("../image/common/icon/icon-moveFirst--on.png");
 }
 .pagination > a.link-prev {
-  margin-right: 5px;
+  margin-right: -1px;
   background-image: url("../image/common/icon/icon-movePrev.png");
 }
 .pagination > a.link-prev.on {
   background-image: url("../image/common/icon/icon-movePrev--on.png");
 }
 .pagination > a.link-next {
-  margin-left: 5px;
+  margin-left: -1px;
   background-image: url("../image/common/icon/icon-moveNext.png");
 }
 .pagination > a.link-next.on {
   background-image: url("../image/common/icon/icon-moveNext--on.png");
 }
 .pagination > a.link-last {
-  margin-left: 5px;
+  margin-left: -1px;
   background-image: url("../image/common/icon/icon-moveLast.png");
 }
 .pagination > a.link-last.on {
@@ -379,6 +379,15 @@
   color: #4568a9;
   background-repeat: no-repeat;
   background-position: 40px center;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
 }
 
 @media (max-width: 1400px) {

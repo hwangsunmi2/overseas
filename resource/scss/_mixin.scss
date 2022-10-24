@@ -36,6 +36,9 @@ $container-max-widths: (
   n-xl: 1140px
 );
 $n-breakpoint: map-get($n-breakpoints, n-sm);
+
+$color-main : #4568a9;
+
 // Respond above.
 @mixin mobileS {
     @media (min-width: #{$n-xxs}) {
