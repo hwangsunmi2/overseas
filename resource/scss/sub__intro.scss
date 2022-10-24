@@ -229,7 +229,9 @@
         color:#747478;
     }
 }
-
+.hidden{
+    @include hidden;
+}
 
 
 // responsive

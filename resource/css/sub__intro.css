@@ -184,6 +184,15 @@
   color: #747478;
 }
 
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+}
+
 @media (max-width: 1400px) {
   .wayAbout-info {
     padding: 2.5rem;
