@@ -8,3 +8,14 @@
         background-position:center 0;
     }
 }
+
+
+// 
+@include media-breakpoint-down(n-sm){ //768
+    .subVisual{
+        &--info{
+            background-image:url('../image/sub/img-subVisual--06_m.jpg');
+            background-position:center 0;
+        }
+    }
+}

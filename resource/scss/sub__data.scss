@@ -70,15 +70,27 @@
     }
 }
 @include media-breakpoint-down(n-sm){ //768
+    .subVisual{
+        &--data{
+            background-image:url('../image/sub/img-subVisual--01_m.png');
+        }
+    }
     .board{
         &-list{
             &--public{
+                margin: 0 -2rem -2rem -2rem;
                 .board{
                     &-item{
-                        width:calc(50% - 4rem);
+                        width:50%;
+                        margin: 0;
+                        padding: 2rem;
+                        &__tit{
+                            margin-top: 1.5rem;
+                        }
                     }
                 }
             }
+            
         }
     }
 }

@@ -208,6 +208,7 @@
                 &__inner{
                     position: relative;
                     overflow-x: scroll;
+                    -webkit-overflow-scrolling: touch;
                     &::before{
                         display: flex;
                         align-items: center;
@@ -233,9 +234,29 @@
                 min-width: 76.8rem;
             }
             thead {
-                .category{
-                    width: 9.6%; 
+                tr{
+                    height:5.9rem;
                 }
+                .category{
+                    width: 12%; 
+                }
+                .date{
+                    width:16%
+                }
+            }
+            tbody{
+                td{
+                    height: 5.8rem;
+                    padding: 1rem 0;
+                    font-size: 14px;
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+            th, td{
+                padding: 1rem 0;
+                font-size: 14px;
             }
             &--press{
                 thead{
