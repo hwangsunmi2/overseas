@@ -637,6 +637,12 @@
     .count-wrap *{
         font-size: 12px;
     }
+    .subVisual{
+        height: 120px;
+        &__tit{
+            font-size:22px;
+        }
+    }
 }
 @include media-breakpoint-down(n-xs){ //576
     .board{

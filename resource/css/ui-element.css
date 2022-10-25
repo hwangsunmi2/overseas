@@ -563,6 +563,12 @@
   .count-wrap * {
     font-size: 12px;
   }
+  .subVisual {
+    height: 120px;
+  }
+  .subVisual__tit {
+    font-size: 22px;
+  }
 }
 @media (max-width: 576px) {
   .board-info {
