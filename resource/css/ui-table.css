@@ -195,6 +195,9 @@
   .board-table__list table {
     min-width: 76.8rem;
   }
+  .board-table__list thead tr {
+    height: 5.9rem;
+  }
   .board-table__list thead .category {
     width: 12%;
   }
@@ -202,12 +205,15 @@
     width: 16%;
   }
   .board-table__list tbody td {
+    height: 5.8rem;
+    padding: 1rem 0;
     font-size: 14px;
   }
   .board-table__list tbody td a {
     font-size: 14px;
   }
   .board-table__list th, .board-table__list td {
+    padding: 1rem 0;
     font-size: 14px;
   }
   .board-table__list--press thead .press {

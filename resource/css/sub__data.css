@@ -44,6 +44,9 @@
   }
 }
 @media (max-width: 768px) {
+  .subVisual--data {
+    background-image: url("../image/sub/img-subVisual--01_m.png");
+  }
   .board-list--public {
     margin: 0 -2rem -2rem -2rem;
   }

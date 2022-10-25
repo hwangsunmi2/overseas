@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /** 소통마당 > 공지사항 */
 .subVisual--talk {
-  background-image: url("../image/sub/img-subVisual--01.jpg");
+  background-image: url("../image/sub/img-subVisual--04.jpg");
   background-position: center 0;
 }
 
@@ -63,5 +63,11 @@
   }
   .board-table__bottom .pagination-wrap {
     margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .subVisual--talk {
+    background-image: url("../image/sub/img-subVisual--04_m.png");
+    background-position: center 0;
   }
 }

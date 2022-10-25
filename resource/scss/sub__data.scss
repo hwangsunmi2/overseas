@@ -70,6 +70,11 @@
     }
 }
 @include media-breakpoint-down(n-sm){ //768
+    .subVisual{
+        &--data{
+            background-image:url('../image/sub/img-subVisual--01_m.png');
+        }
+    }
     .board{
         &-list{
             &--public{

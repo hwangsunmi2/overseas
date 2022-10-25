@@ -4,3 +4,10 @@
   background-image: url("../image/sub/img-subVisual--06.jpg");
   background-position: center 0;
 }
+
+@media (max-width: 768px) {
+  .subVisual--info {
+    background-image: url("../image/sub/img-subVisual--06_m.jpg");
+    background-position: center 0;
+  }
+}

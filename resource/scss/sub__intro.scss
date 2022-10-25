@@ -600,6 +600,12 @@
 }
 
 @include media-breakpoint-down(n-sm){ //768px
+    .subVisual{
+        &--intro{
+            background-image:url('../image/sub/img-subVisual--05_m.png');
+            background-position:center 0;
+        }
+    }    
     .org{
         &-img{
            

@@ -234,6 +234,9 @@
                 min-width: 76.8rem;
             }
             thead {
+                tr{
+                    height:5.9rem;
+                }
                 .category{
                     width: 12%; 
                 }
@@ -243,6 +246,8 @@
             }
             tbody{
                 td{
+                    height: 5.8rem;
+                    padding: 1rem 0;
                     font-size: 14px;
                     a{
                         font-size: 14px;
@@ -250,6 +255,7 @@
                 }
             }
             th, td{
+                padding: 1rem 0;
                 font-size: 14px;
             }
             &--press{
