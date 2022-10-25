@@ -484,7 +484,7 @@
   .ci-ps {
     font-size: 12px;
   }
-  .history-list__wrap li, .wayAbout-info dt, .wayAbout-info dd, .route-way__how-tit, .route-way__how-txt {
+  .history-list__wrap li, .wayAbout-info dt, .wayAbout-info dd, .route-way__how-tit, .route-way__how-txt, .ci-bottom__txt {
     font-size: 14px;
   }
   .route-way__txt {

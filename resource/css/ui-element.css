@@ -564,10 +564,16 @@
     font-size: 12px;
   }
   .subVisual {
+    justify-content: flex-start;
+    padding-top: 28px;
     height: 120px;
   }
   .subVisual__tit {
+    margin-bottom: 10px;
     font-size: 22px;
+  }
+  .subVisual__crumb li {
+    font-size: 12px;
   }
 }
 @media (max-width: 576px) {

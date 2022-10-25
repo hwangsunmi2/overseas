@@ -638,9 +638,17 @@
         font-size: 12px;
     }
     .subVisual{
+        justify-content: flex-start;
+        padding-top:28px;
         height: 120px;
         &__tit{
+            margin-bottom: 10px;
             font-size:22px;
+        }
+        &__crumb{
+            li{
+                font-size: 12px;
+            }
         }
     }
 }
