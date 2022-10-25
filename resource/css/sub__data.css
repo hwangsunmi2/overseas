@@ -44,7 +44,15 @@
   }
 }
 @media (max-width: 768px) {
+  .board-list--public {
+    margin: 0 -2rem -2rem -2rem;
+  }
   .board-list--public .board-item {
-    width: calc(50% - 4rem);
+    width: 50%;
+    margin: 0;
+    padding: 2rem;
+  }
+  .board-list--public .board-item__tit {
+    margin-top: 1.5rem;
   }
 }

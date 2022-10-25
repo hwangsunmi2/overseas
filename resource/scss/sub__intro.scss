@@ -317,7 +317,7 @@
             &_wrap {
                 position: relative;
                 overflow: hidden;
-                height: 200.5rem;
+                height: auto;
                 //max-width: 140rem;
                 overflow: visible;
             }
@@ -352,13 +352,14 @@
                 }
             }
             &_cont{
-                position: absolute;
-                overflow: visible;
                 display: none;
-                padding: 0 0 3.2rem 0;
-                width: 100%;
+                //position: absolute;
                 top: 8rem;
+                width: 100%;
+                height:100%;
+                padding: 0 0 3.2rem 0;
                 box-sizing: border-box;
+                overflow: visible;
                 &.on{
                     display: block;
                 }
@@ -384,6 +385,16 @@
                 
             }
         }
+        &__present{
+            .swiper-slide{
+                height: 238rem;
+            }
+        }
+        &__past{
+            .swiper-slide{
+                height: 208rem;
+            }
+        }
     }
     &-year{
         position: relative;
@@ -406,7 +417,11 @@
         margin-right: 8.8rem;
     }
     &-item{
+        height:100%;
         margin-top: 8.3rem;
+        &__inner{
+            height:100%;
+        }
         .history{
             &-list__wrap{
                 &::before{
@@ -425,6 +440,7 @@
         }
         &__content{
             display: flex;
+            height:100%;
         }
     }
     &-list{
@@ -439,7 +455,8 @@
                 top: 0;
                 left: -9.3rem;
                 width:2px;
-                height:100%;
+                height:calc(100% - 8rem);
+                //height:100%;
                 content:""
             }
             li{
@@ -466,6 +483,8 @@
     }
     &-swiper{
         overflow: visible;
+        width: auto;
+        height:100%;
         &__present{
             .history{
                 &-year{
@@ -489,11 +508,11 @@
                 }
             }
         }
-        .swiper{
-            &-slide{
-                width:auto;
-            }
-        }
+        // .swiper{
+        //     &-slide{
+        //         width:auto;
+        //     }
+        // }
         .history{
             &-year{
                 background-size: 18.6rem 21.6rem;
@@ -614,4 +633,18 @@
             }
         }
     }
+    .ci{
+        &-title{
+            br{
+                display: none;
+            }
+        }
+        &-text{
+            font-size: 14px;
+        }
+        &-ps{
+            font-size: 12px;
+        }
+    }
+    
 }

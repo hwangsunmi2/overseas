@@ -621,10 +621,18 @@
     }
 }
 @include media-breakpoint-down(n-sm){ //768
+    .subContent{
+        &__inner{
+            padding:0 15px;
+        }
+    }
     .board{
         &-item{
             width:calc(50% - 3rem);
         }
+    }
+    .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd{
+        font-size: 14px;
     }
 }
 @include media-breakpoint-down(n-xs){ //576

@@ -1,6 +1,6 @@
 $(function(){
-    $(".board-table__inner").mouseover(function(){
-        $(this).addClass("removeBefore")
+    $(".board-table__inner").on('mouseover focusin touchstart',  function(){
+        $(this).addClass("removeBefore");
     });
 
     //부서안내 클릭
