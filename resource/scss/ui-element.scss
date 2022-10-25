@@ -634,6 +634,9 @@
     .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd{
         font-size: 14px;
     }
+    .count-wrap *{
+        font-size: 12px;
+    }
 }
 @include media-breakpoint-down(n-xs){ //576
     .board{

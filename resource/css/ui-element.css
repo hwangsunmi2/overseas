@@ -560,6 +560,9 @@
   .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd {
     font-size: 14px;
   }
+  .count-wrap * {
+    font-size: 12px;
+  }
 }
 @media (max-width: 576px) {
   .board-info {

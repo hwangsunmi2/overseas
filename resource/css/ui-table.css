@@ -173,6 +173,7 @@
   .board-table__list .board-table__inner {
     position: relative;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   .board-table__list .board-table__inner::before {
     display: flex;
@@ -195,7 +196,19 @@
     min-width: 76.8rem;
   }
   .board-table__list thead .category {
-    width: 9.6%;
+    width: 12%;
+  }
+  .board-table__list thead .date {
+    width: 16%;
+  }
+  .board-table__list tbody td {
+    font-size: 14px;
+  }
+  .board-table__list tbody td a {
+    font-size: 14px;
+  }
+  .board-table__list th, .board-table__list td {
+    font-size: 14px;
   }
   .board-table__list--press thead .press {
     width: 12%;
