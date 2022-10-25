@@ -655,5 +655,26 @@
     .history-list__wrap li{
         font-size: 14px;
     }
-    
+    .wrap_map{
+        height:400px !important;
+    }
+    .wayAbout-info__inner {
+        flex-direction: column;
+        margin: -.5rem -2rem;
+        dl{
+           flex-direction: row; 
+            width:100%;
+            padding:.5rem 2rem;
+            dt{
+                margin-bottom: 0;
+                flex:none;
+            }
+        }
+    }
+    .wayAbout-route__inner table th{
+        padding: 0;
+    }
+    .wayAbout-route__th{
+        width: 12rem;
+    }
 }
