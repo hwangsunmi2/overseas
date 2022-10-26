@@ -16,8 +16,7 @@
   padding: 0rem 2rem;
   background: #fff;
   border: 3px solid #4568a9;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: left;
 }
 .integrateSearchArea__inner .btn-search {
@@ -50,12 +49,8 @@
   color: #4568a9;
 }
 .search-result__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 2rem;
   background: #fafafa;
 }
@@ -147,5 +142,29 @@
     width: 10rem;
     padding-left: 4rem;
     background-position: left 2rem center;
+  }
+}
+@media (max-width: 768px) {
+  .search-result {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .search-item__title {
+    font-size: 16px;
+  }
+  .search-item__content {
+    font-size: 14px;
+  }
+  .search-item__date {
+    font-size: 12px;
+  }
+  .search-result__header--left {
+    font-size: 14px;
+  }
+  .search-result__header--right button {
+    font-size: 14px;
+  }
+  .btn-prevPage button {
+    font-size: 14px;
   }
 }

@@ -304,6 +304,7 @@
     .tab-wrap{
         max-width: 140rem;
         margin: 0 auto;
+        margin-top: -40px;
     }
     .history-wrap__inner{
         width: 140rem;
@@ -686,5 +687,8 @@
     }
     .wayAbout-route__th{
         width: 12rem;
+    }
+    .subContent__inner--history .tab-wrap{
+        margin-top: -20px;
     }
 }

@@ -64,6 +64,9 @@
             flex:1 1 100%;
         }
     }
+    &-mobile{
+        display: none;
+    }
 }
 .subTab{
     margin-top:-40px;
@@ -659,6 +662,7 @@
             display: none;
         }
         &-mobile{
+            display: block;
             &__inner{
                 display: flex;
                 height:40px;
