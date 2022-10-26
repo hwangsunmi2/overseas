@@ -614,6 +614,7 @@
     background: url(../image/sub/icon-home.png) no-repeat center;
   }
   .tab-mobile__depth-fst {
+    max-width: 115px;
     border-right: 1px solid #9aa1ae;
   }
   .tab-mobile__depth-scd {
