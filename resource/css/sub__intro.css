@@ -493,6 +493,10 @@
   .route-way__how-item--ps {
     font-size: 12px;
   }
+  .ci-title {
+    font-size: 18px;
+    line-height: normal;
+  }
   .wrap_map {
     height: 400px !important;
   }

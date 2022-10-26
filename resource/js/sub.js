@@ -27,32 +27,20 @@ $(function(){
         $nListID.css('display','block');
     });
 
-    //history-swiper
-    var historySwiperPre = new Swiper(".history-swiper__present.swiper-container", {
-        //loop: true,
-        slidesPerView: "auto",
-        freeMode: true,
-        scrollbar: {
-            el: ".history-swiper__present .swiper-scrollbar",
-        },
-        mousewheel: true,
-        observer: true,	// 추가
-        observeParents: true,	// 추가
-        
-    });
+    
 
-    var historySwiperPst = new Swiper(".history-swiper__past.swiper-container", {
-        //loop: true,
-        slidesPerView: "auto",
-        freeMode: true,
-        scrollbar: {
-            el: ".history-swiper__past .swiper-scrollbar",
-        },
-        mousewheel: true,
-        observer: true,	// 추가
-        observeParents: true,	// 추가
-    });
+    //subTabMobile
+    var depSeleted = $(".depth-selected");
+    
 
+    // $(".depth-selected").click(function(){
+    //     console.log("a");
+    // })
+
+    $(depSeleted).on('click', function(){
+        //console.log("a");
+        $(this).next().slideToggle();
+    })
     
 
 });
