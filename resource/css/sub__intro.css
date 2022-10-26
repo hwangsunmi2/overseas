@@ -242,9 +242,6 @@
 }
 
 /* 재단소개 > 재단이 걸어온 길 */
-.subContent__inner--history {
-  max-width: 100%;
-}
 .subContent__inner--history .tab-wrap {
   max-width: 140rem;
   margin: 0 auto;
@@ -288,7 +285,6 @@
 }
 .history-wrap .tab_cont {
   display: none;
-  top: 8rem;
   width: 100%;
   height: 100%;
   padding: 0 0 3.2rem 0;
@@ -297,6 +293,9 @@
 }
 .history-wrap .tab_cont.on {
   display: block;
+}
+.history-tab__title {
+  display: flex;
 }
 .history-tab__list-now.on a {
   color: #8daae0;
@@ -309,6 +308,10 @@
 }
 .history-tab__past .swiper-slide {
   height: 208rem;
+}
+.history-tab__past .year-tab__list.on {
+  background: #eda39f;
+  border-color: #eda39f;
 }
 .history-year {
   position: relative;
@@ -390,11 +393,47 @@
   background: url(../image/sub/history-bg__now.png) no-repeat center;
   background-size: 18.6rem 21.6rem;
 }
+.history-swiper__present--tab .swiper-slide {
+  height: 3.4rem;
+}
 .history-swiper__past .history-year {
   background: url(../image/sub/history-bg__past.png) no-repeat;
 }
 .history-swiper .history-year {
   background-size: 18.6rem 21.6rem;
+}
+
+.history-year__tab {
+  display: none;
+  margin-top: 20px;
+}
+
+.year-tab__ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: -0.5px;
+}
+.year-tab__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: calc(25% - 1px);
+  max-width: 82px;
+  height: 34px;
+  margin: 0.5px;
+  font-size: 14px;
+  color: #b9b9b9;
+  border: 1px solid #d2d5dc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.year-tab__list.on {
+  background: #8daae0;
+  border-color: #8daae0;
+  box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
+  color: #ffffff;
 }
 
 @media (max-width: 1400px) {
@@ -520,7 +559,68 @@
   .wayAbout-route__th {
     width: 12rem;
   }
+  .subContent__inner--history .history-wrap__inner {
+    width: 100%;
+  }
   .subContent__inner--history .tab-wrap {
     margin-top: -20px;
+  }
+  .history-wrap .tab-title {
+    height: auto;
+  }
+  .history-wrap .tab-title.on .tab-title__link {
+    font-size: 26px;
+  }
+  .history-wrap .tab-title .tab-title__link {
+    font-size: 22px;
+  }
+  .history-wrap .tab-title:nth-child(2) {
+    margin-left: 20px;
+  }
+  .history-img {
+    display: none;
+  }
+  .history-year {
+    width: 100%;
+    height: auto;
+    background: none !important;
+    font-size: 28px;
+    line-height: normal;
+    text-shadow: none;
+  }
+  .history-year__tab {
+    display: block;
+  }
+  .history-item {
+    margin-top: 30px;
+  }
+  .history-item__content {
+    flex-direction: column;
+    height: auto;
+  }
+  .history-list__wrap {
+    margin-top: 30px;
+    padding-left: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .history-list__wrap::before {
+    left: 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .history-list__wrap li {
+    padding-left: 90px;
+  }
+  .history-swiper__present .history-year {
+    color: #8daae0;
+    text-align: center;
+  }
+  .history-swiper__past .history-year {
+    color: #eda39f;
+    text-align: center;
+  }
+  .history-wrap .tab_cont {
+    height: auto;
   }
 }
