@@ -351,19 +351,6 @@
                     }
                 }
             }
-            &_cont{
-                display: none;
-                //position: absolute;
-                //top: 8rem;
-                width: 100%;
-                height:100%;
-                padding: 0 0 3.2rem 0;
-                box-sizing: border-box;
-                overflow: visible;
-                &.on{
-                    display: block;
-                }
-            }
         }        
     }
     &-tab{
@@ -772,6 +759,21 @@
                 }
                 &:nth-child(2){
                     margin-left: 20px;
+                }
+            }
+            .tab{
+                &_cont{
+                    display: none;
+                    //position: absolute;
+                    //top: 8rem;
+                    width: 100%;
+                    height:100%;
+                    padding: 0 0 3.2rem 0;
+                    box-sizing: border-box;
+                    overflow: visible;
+                    &.on{
+                        display: block;
+                    }
                 }
             }
         }

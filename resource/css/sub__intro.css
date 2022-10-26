@@ -283,17 +283,6 @@
 .history-wrap .tab-title.on .tab-title__link {
   font-size: 7.2rem;
 }
-.history-wrap .tab_cont {
-  display: none;
-  width: 100%;
-  height: 100%;
-  padding: 0 0 3.2rem 0;
-  box-sizing: border-box;
-  overflow: visible;
-}
-.history-wrap .tab_cont.on {
-  display: block;
-}
 .history-tab__title {
   display: flex;
 }
@@ -576,6 +565,17 @@
   }
   .history-wrap .tab-title:nth-child(2) {
     margin-left: 20px;
+  }
+  .history-wrap .tab_cont {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 3.2rem 0;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  .history-wrap .tab_cont.on {
+    display: block;
   }
   .history-img {
     display: none;
