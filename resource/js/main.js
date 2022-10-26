@@ -1,15 +1,27 @@
 $(document).ready(function () {
     mainSwiper();
+    main2Swiper();
     mainTab();
     vrSwiper();
 
 });
 function mainSwiper() {
-    var mainswiper = new Swiper(".section1 .mySwiper", {
+    var mainswiper = new Swiper(".section1 .firstSwiper > .mySwiper", {
         pagination: {
           el: ".dot .swiper-pagination",
         },
+        observer: true,	// 추가
+      observeParents: true,	// 추가
     }); 
+}
+
+function main2Swiper() {
+  var main2swiper = new Swiper(".secondSwiper .mySwiper", {
+    slidesPerView: 3,
+    //spaceBetween: 10,
+    observer: true,	// 추가
+    observeParents: true,	// 추가
+  }); 
 }
 
 function mainTab() {

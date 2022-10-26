@@ -335,7 +335,7 @@ footer {
                 transform: translateY(-50%);
                 cursor: pointer;
                 &.off {
-                    background: url(../image/common/icon/icon_play_b.png) no-repeat center center;
+                    background: url(../image/common/icon/icon_play.m_b.png) no-repeat center center;
                 }
             }
         }
@@ -456,6 +456,7 @@ footer {
 
 
 @media (max-width: 1600px) {
+
     header {
         .nav {
            .topRight {
@@ -496,6 +497,24 @@ footer {
             }
         }
     }
+    
+    
+    footer {
+        .banner_zone {
+            .inner {
+                width:100%;
+                padding:0 1.5rem;
+                .swiper-container {
+                    width: calc(100% - 30rem);
+                    padding-left: 0.1rem;
+                }
+            }
+        }
+        .footerBottom {
+            padding:0 1.5rem;
+        }
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -584,6 +603,58 @@ footer {
         }
         
     }
+
+    footer {
+        .banner_zone {
+            .inner {
+                .swiper-container {
+                    width: calc(100% - 15rem);
+                    .swiper-slide {
+                        a {
+                            img {
+                                width:80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footerBottom {
+            .footer {
+                &.link {
+                    ul {
+                        justify-content: space-around;
+                    }
+                }
+                &.info {
+                    padding: 2.5rem 0 5rem 0;
+                    display:block;
+                    width:100%;
+                    h1 {
+                        width:25%;
+                        padding-bottom:2rem;
+                        text-align: center;
+                        margin:0 auto;
+                        img {
+                            width:100%;
+                        }
+                    }
+                    .addr {
+                        padding-left:0;
+                        margin:0 auto;
+                        p {
+                            text-align: center;
+                        }
+                        ul {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 
@@ -597,9 +668,77 @@ footer {
             }
         }
     }
+
+    footer {
+        .footerBottom {
+            .footer{
+                &.info {
+                    h1 {
+                        width: 45%;
+                    }
+                   .addr {
+                        address {  
+                            p {
+                                word-break: keep-all;
+                                line-height: 3rem;
+                            }
+                        }
+                   }
+                }
+            }
+        }
+    }
 }
 
 
 @media (max-width: 480px) {
+    footer {
+        .banner_zone {
+            .footerbtn {
+                width:10rem;
+                padding-right: 2rem;
+            }
+            .inner {
+                .swiper-container {
+                    width: calc(100% - 15rem);
+                    .swiper-slide {
+                        a {
+                            img {
+                                width:90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footerBottom {
+            .footer{
+                &.info {
+                    h1 {
+                        width: 45%;
+                    }
+                    .addr {
+                        address {   
+                            ul {
+                                li {
+                                    letter-spacing: -0.5px;
+                                    &+li {
+                                        margin-left:0;
+                                    }
+                                }
+                            }
+                            p {
+                                word-break: keep-all;
+                                line-height: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+       
+    }
+    
 
 }
