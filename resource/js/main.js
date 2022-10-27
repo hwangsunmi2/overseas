@@ -16,12 +16,20 @@ function mainSwiper() {
 }
 
 function main2Swiper() {
-  var main2swiper = new Swiper(".secondSwiper .mySwiper", {
+  var swiper_Thumbs1 = new Swiper(".secondSwiper .mySwiper", {
+    loop: true,
+    spaceBetween: 10,
     slidesPerView: 3,
-    //spaceBetween: 10,
-    observer: true,	// 추가
-    observeParents: true,	// 추가
-  }); 
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper_Thumbs1,
+    },
+  });
 }
 
 function mainTab() {

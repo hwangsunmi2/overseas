@@ -1,6 +1,6 @@
 .se1 {
     z-index: 1;
-    .section1 {
+    .section1 { 
         .firstSwiper{
             .swiper-slide {
                 width:100%;
@@ -8,7 +8,7 @@
                 background: url(../image/main/swiper_bg1_2560.png) no-repeat center top;
                 background-size: contain;
                 &:nth-child(2) {
-                    background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
+                    background: none;
                     background-size: contain;
                 }
                 .txtBox {
@@ -72,22 +72,25 @@
                             }
                         }
                     }
-                    .secondSwiper {
-                        margin-top:5rem;
-                        border:1px solid green;
-                        overflow: hidden;
-                        .swiper-slide {
-                            height:auto;
-                            background: none;
-                        }
-                    }
+                }
+            }
+            .secondSwiper {
+                .mySwiper {
+                    position:absolute;
+                    overflow: hidden;
+                    left:26%;
+                    transform: translateX(-26%);
+                    top:55rem;
+                    width:40.4rem;
+                    height:9.6rem;
+                    z-index: 2;
                 }
             }
             .dot {
                 position: absolute;
                 width: 48rem;
                 height:2rem;
-                top: 82rem;
+                top: 75rem;
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 1;
@@ -891,6 +894,55 @@ section{
             }
         }
     }
+    .se3 {
+        .se3Wrap {
+            .se3Box {
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            figure {
+                                position:relative;
+                                figcaption {
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba(140,168,219,0.95);
+                                    font-size:2.0rem;
+                                    padding:0 2rem;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    color: #fff;
+                                    text-align: center;
+                                    line-height: 2.5rem;
+                                    opacity: 0;
+                                    box-sizing: border-box;
+                                    transition: 0.3s;
+                                    span {
+                                        position:relative;
+                                        top:45%;
+                                        transform: translateY(-45%);
+                                        &.line2 {
+                                            position:relative;
+                                            top:35%;
+                                            transform: translateY(-35%);
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            &:hover {
+                                figcaption {
+                                    opacity: 1;
+                                }    
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    
 }
 
 /* responsive */
@@ -1023,12 +1075,57 @@ section{
                         background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
                         background-size: cover;
                     }
+
+                    .txtBox {
+                        top: 42rem;
+                        left: auto;
+                        right: 1.5rem;
+                        transform: none;
+                        .title {
+                            font-size: 6rem;
+                            text-shadow: 1px 1px 5px rgb(0 0 0 / 35%);
+                            p {
+                                font-size: 6rem;
+                                text-shadow: 1px 1px 5px rgb(0 0 0 / 35%);
+                            }
+                        }
+                        .number {
+                            font-size: 4rem;
+                            text-shadow: 1px 1px 5px rgb(0 0 0 / 35%);
+                        }
+                    }
+                }
+                .dot {
+                    position: absolute;
+                    width: 9rem;
+                    height: 2rem;
+                    top: 82rem;
+                    left: auto;
+                    right: 0;
+                    -webkit-transform: translateX(-50%);
+                    transform: none;
+                    z-index: 1;
                 }
             }
         }
 
         .tabBox {
             padding-left:1.5rem;
+            .tab_wrap {
+                h3 {
+                    font-size: 3.5rem;
+                    &:nth-child(3) {
+                        &::before {
+                            background-size: contain;
+                        }
+                    }
+                    &:nth-child(5) {
+                        &::before {
+                            background-size: contain;  
+                        }
+                    }
+                }
+            }
         }
     }
     /* se2 */
@@ -1099,6 +1196,11 @@ section{
             background: url(../image/main/section3_banner_m.png) no-repeat center center;
             background-size: cover;
             border-radius: 5rem 0 5rem 0;
+            a {
+                &::after {
+                    background-size: contain;
+                }
+            }
         }
         .se3Wrap {
             display: block;
@@ -1128,9 +1230,20 @@ section{
                     li + li + li + li + li {
                         display: none;
                     }
+                    li {
+                        a {
+                            figure {
+                                figcaption {
+                                    display:none;
+                                }
+                            }
+                        }
+                    }    
                 }
            }
         }
+
+                       
     }
     /* se4 */
     .se4 {
@@ -1204,14 +1317,23 @@ section{
         .se5Wrap {
             display: block;
             width:100%;
+            
             .se5Box {
                 width:100%;
-                top: -30rem;
+                bottom: 0;
                 .cont {
                     text-align: center;
                 }
+                &.goSite{
+                    height: 72rem;
+                    img {
+                        margin-left:0;
+                    }
+                }
                 &.sponsor {
                     z-index: 1;
+                    top: 5%;
+                    transform: translateY(-5%);
                     a {
                         position: relative;
                         margin: 3rem auto 8rem;
@@ -1246,8 +1368,31 @@ section{
 @media (max-width: 900px) {
     /* se1 */
     .se1 {
-        .tabBox {
-            padding-left:1.5rem;
+        .section1 {
+            .firstSwiper {
+                .swiper-slide{
+                    .txtBox {
+                        padding-left:1.5rem;
+                        top: 50rem;
+                        left: auto;
+                        right: 1.5rem;
+                        transform: none;
+                        .title {
+                            font-size: 6rem;
+                            p {
+                                font-size: 6rem;
+                            }
+                        }
+                        .number {
+                            font-size: 4rem;
+                        }
+                    }
+                }
+                .dot {
+                    top: 92rem;
+                }
+            }
+            
         }
     }
     /* se2 */
@@ -1277,19 +1422,133 @@ section{
     .se3 {
         .status {
             display:block;
-            padding:1.5rem 0;
+            padding:2.5rem;
+            text-align: center;
+            p {
+                position: relative;
+                top: 2.5rem;
+                text-align: center; 
+            }
+            a {
+                position: relative;
+                top: 7rem;
+            }
+        }
+        .se3Wrap {
+            height:auto;
+            .se3Box {
+                ul {
+                    li {
+                        width: 49%;
+                        &+li + li {
+                            padding-top:1rem;
+                        }
+                    }
+                }
+            }
         }
     }
     /* se4 */
     /* se5 */
+    .se5 {
+        .se5Wrap {
+            .se5Box {
+                &.goSite{
+                    height: 65rem;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     /* se2 */
+    .se1 {
+        .section1 {
+            .firstSwiper {
+                .swiper-slide {
+                    background-size: contain;
+                    .txtBox {
+                        top: 55rem;
+                    }
+                }
+                .dot {
+                    top: 95rem;
+                }
+            }
+        }
+        .tabBox {
+            bottom: -25rem;
+            .tab_wrap {
+                .tab_cont {
+                    top: 6rem;
+                }
+            }
+        }
+        
+    }
+    /* se2 */
     .se2Wrap {margin-top:2rem;}
+     /* se5 */
+     .se5 {
+        .se5Wrap {
+            .se5Box {
+                &.goSite{
+                    height: 60rem;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
+    /* se1 */
+    .se1 {
+        .section1 {
+            .firstSwiper {
+                .swiper-slide {
+                    .txtBox {
+                        top: 38rem;
+                        .title {
+                            font-size: 5rem;
+                            p {
+                                font-size: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .dot {
+                top: 76rem;
+            }
+        }
+        .tabBox {   
+            bottom: -14rem;
+            .tab_wrap {
+                h3 {
+                    
+                    &:nth-child(3) {
+                        position: relative;
+                        margin-left: 5rem;
+                        &::before {
+                            position: absolute;
+                            top: 1.2rem;
+                            left: -3rem;
+                        }
+                    }
+                    &:nth-child(5) {
+                        position: relative;
+                        margin-left: 5rem;
+                        &::before {
+                            position: absolute;
+                            top: 1.2rem;
+                            left: -3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
     /* se2 */
     .se2 {
         height: 90rem;
@@ -1349,4 +1608,30 @@ section{
             }
         }
     }
+    /* se5 */
+    .se5 {
+        .se5Wrap {
+            .se5Box {
+                &.goSite{
+                    height: 52rem;
+                }
+                &.sponsor{
+                    padding: 3rem;
+                }
+            }
+        }
+    } 
+} 
+
+@media (max-width: 400px) {
+    /* se5 */
+    .se5 {
+        .se5Wrap {
+            .se5Box {
+                &.goSite{
+                    height: 40rem;
+                }
+            }
+        }
+    } 
 } 

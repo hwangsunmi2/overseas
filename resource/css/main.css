@@ -8,7 +8,7 @@
   background-size: contain;
 }
 .se1 .section1 .firstSwiper .swiper-slide:nth-child(2) {
-  background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
+  background: none;
   background-size: contain;
 }
 .se1 .section1 .firstSwiper .swiper-slide .txtBox {
@@ -75,20 +75,22 @@
   padding-top: 2rem;
   font-size: 1.6rem;
 }
-.se1 .section1 .firstSwiper .swiper-slide .txtBox .secondSwiper {
-  margin-top: 5rem;
-  border: 1px solid green;
+.se1 .section1 .firstSwiper .secondSwiper .mySwiper {
+  position: absolute;
   overflow: hidden;
-}
-.se1 .section1 .firstSwiper .swiper-slide .txtBox .secondSwiper .swiper-slide {
-  height: auto;
-  background: none;
+  left: 26%;
+  -webkit-transform: translateX(-26%);
+          transform: translateX(-26%);
+  top: 55rem;
+  width: 40.4rem;
+  height: 9.6rem;
+  z-index: 2;
 }
 .se1 .section1 .firstSwiper .dot {
   position: absolute;
   width: 48rem;
   height: 2rem;
-  top: 82rem;
+  top: 75rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -121,7 +123,8 @@
   bottom: -42rem;
   z-index: 1;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 1;
 }
 .se1 .tabBox .tab_wrap {
@@ -472,7 +475,6 @@ section h2 {
   padding: 0 3rem;
   margin-top: 5rem;
   height: 9.3rem;
-<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -480,11 +482,6 @@ section h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: url(../image/main/section3_banner.png) no-repeat center center;
-=======
-  align-items: center;
-  justify-content: space-between;
-  background: url(../image/main/section3_banner.png) no-repeat center bottom;
->>>>>>> 953577168cf0dd1ebbc42e14ecdd75ffe3745c77
 }
 .se3 .status p {
   font-size: 2.4rem;
@@ -499,7 +496,8 @@ section h2 {
   color: #fff;
   background-color: #7a9dde;
   border-radius: 3rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se3 .status a {
   position: relative;
@@ -523,7 +521,8 @@ section h2 {
 .se3 .se3Wrap .se3Box {
   display: inline-block;
   padding: 4rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se3 .se3Wrap .se3Box.left {
   position: absolute;
@@ -548,11 +547,16 @@ section h2 {
 .se3 .se3Wrap .se3Box .tit {
   font-size: 2rem;
   font-weight: 600;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .se3 .se3Wrap .se3Box ul {
   padding-top: 3rem;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .se3 .se3Wrap .se3Box ul li + li {
   margin-left: 2rem;
@@ -570,8 +574,12 @@ section h2 {
 .se4 .se4Wrap .se4Box h2 {
   padding-top: 6rem;
   text-align: left;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .se4 .se4Wrap .se4Box h2 .vrBtn {
   position: relative;
@@ -663,7 +671,8 @@ section h2 {
   padding-bottom: 7rem;
   padding-right: 8.7rem;
   background-color: #f7faff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se4 .se4Wrap .se4Box.left::before {
   position: absolute;
@@ -699,7 +708,8 @@ section h2 {
   padding-bottom: 7rem;
   padding-left: 8.7rem;
   background-color: #fff8f8;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se4 .se4Wrap .se4Box.right::after {
   position: absolute;
@@ -738,7 +748,9 @@ section h2 {
   color: #545454;
 }
 .se4 .se4Wrap .se4Box .se4_cont .txt .youtubeRegDate {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
   padding: 2rem 0 3rem 0;
 }
@@ -773,7 +785,8 @@ section h2 {
   font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: -0.5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se4 .se4Wrap .se4Box .vedioLink a::after {
   position: absolute;
@@ -781,7 +794,8 @@ section h2 {
   height: 1.2rem;
   top: 53%;
   right: 2rem;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background: url(../image/common/icon/icon_arrownext_dg.png) no-repeat center center;
   content: "";
 }
@@ -825,7 +839,8 @@ section h2 {
 .se5 .se5Wrap .se5Box.sponsor {
   position: relative;
   padding: 3rem 9.3rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se5 .se5Wrap .se5Box.sponsor::after {
   position: absolute;
@@ -833,7 +848,8 @@ section h2 {
   height: 21.8rem;
   bottom: 0;
   right: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background: url(../image/main/section5_img.png) no-repeat center center;
   content: "";
 }
@@ -861,7 +877,8 @@ section h2 {
   background-color: #8daae0;
   font-size: 1.8rem;
   border-radius: 1rem 0 1rem 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se5 .se5Wrap .se5Box .se5img_m {
   display: none;
@@ -872,6 +889,45 @@ section h2 {
   .se1 .tabBox .tab_wrap .tab_cont ul li a:hover {
     background-color: #f5f8fe;
     border: 2px solid #8daae0;
+  }
+  .se3 .se3Wrap .se3Box ul li a {
+    display: block;
+  }
+  .se3 .se3Wrap .se3Box ul li a figure {
+    position: relative;
+  }
+  .se3 .se3Wrap .se3Box ul li a figure figcaption {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(140, 168, 219, 0.95);
+    font-size: 2rem;
+    padding: 0 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5rem;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .se3 .se3Wrap .se3Box ul li a figure figcaption span {
+    position: relative;
+    top: 45%;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
+  .se3 .se3Wrap .se3Box ul li a figure figcaption span.line2 {
+    position: relative;
+    top: 35%;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+  .se3 .se3Wrap .se3Box ul li a:hover figcaption {
+    opacity: 1;
   }
 }
 /* responsive */
@@ -961,8 +1017,47 @@ section h2 {
     background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
     background-size: cover;
   }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
+    top: 42rem;
+    left: auto;
+    right: 1.5rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title {
+    font-size: 6rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title p {
+    font-size: 6rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .number {
+    font-size: 4rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+  }
+  .se1 .section1 .firstSwiper .dot {
+    position: absolute;
+    width: 9rem;
+    height: 2rem;
+    top: 82rem;
+    left: auto;
+    right: 0;
+    -webkit-transform: translateX(-50%);
+    transform: none;
+    z-index: 1;
+  }
   .se1 .tabBox {
     padding-left: 1.5rem;
+  }
+  .se1 .tabBox .tab_wrap h3 {
+    font-size: 3.5rem;
+  }
+  .se1 .tabBox .tab_wrap h3:nth-child(3)::before {
+    background-size: contain;
+  }
+  .se1 .tabBox .tab_wrap h3:nth-child(5)::before {
+    background-size: contain;
   }
   /* se2 */
   .se2 {
@@ -971,8 +1066,13 @@ section h2 {
   .se2 ul {
     padding: 0 3rem;
     padding-top: 5rem;
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .se2 ul li + li + li + li {
     margin-top: 2rem;
@@ -1008,6 +1108,9 @@ section h2 {
     background-size: cover;
     border-radius: 5rem 0 5rem 0;
   }
+  .se3 .status a::after {
+    background-size: contain;
+  }
   .se3 .se3Wrap {
     display: block;
     height: 75rem;
@@ -1041,6 +1144,9 @@ section h2 {
             flex-flow: row wrap;
   }
   .se3 .se3Wrap .se3Box ul li + li + li + li + li {
+    display: none;
+  }
+  .se3 .se3Wrap .se3Box ul li a figure figcaption {
     display: none;
   }
   /* se4 */
@@ -1098,13 +1204,22 @@ section h2 {
   }
   .se5 .se5Wrap .se5Box {
     width: 100%;
-    top: -30rem;
+    bottom: 0;
   }
   .se5 .se5Wrap .se5Box .cont {
     text-align: center;
   }
+  .se5 .se5Wrap .se5Box.goSite {
+    height: 72rem;
+  }
+  .se5 .se5Wrap .se5Box.goSite img {
+    margin-left: 0;
+  }
   .se5 .se5Wrap .se5Box.sponsor {
     z-index: 1;
+    top: 5%;
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
   }
   .se5 .se5Wrap .se5Box.sponsor a {
     position: relative;
@@ -1132,8 +1247,25 @@ section h2 {
 }
 @media (max-width: 900px) {
   /* se1 */
-  .se1 .tabBox {
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
     padding-left: 1.5rem;
+    top: 50rem;
+    left: auto;
+    right: 1.5rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title {
+    font-size: 6rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title p {
+    font-size: 6rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .number {
+    font-size: 4rem;
+  }
+  .se1 .section1 .firstSwiper .dot {
+    top: 92rem;
   }
   /* se2 */
   .se2 ul li {
@@ -1157,18 +1289,94 @@ section h2 {
   /* se3 */
   .se3 .status {
     display: block;
-    padding: 1.5rem 0;
+    padding: 2.5rem;
+    text-align: center;
+  }
+  .se3 .status p {
+    position: relative;
+    top: 2.5rem;
+    text-align: center;
+  }
+  .se3 .status a {
+    position: relative;
+    top: 7rem;
+  }
+  .se3 .se3Wrap {
+    height: auto;
+  }
+  .se3 .se3Wrap .se3Box ul li {
+    width: 49%;
+  }
+  .se3 .se3Wrap .se3Box ul li + li + li {
+    padding-top: 1rem;
   }
   /* se4 */
   /* se5 */
+  .se5 .se5Wrap .se5Box.goSite {
+    height: 65rem;
+  }
 }
 @media (max-width: 768px) {
+  /* se2 */
+  .se1 .section1 .firstSwiper .swiper-slide {
+    background-size: contain;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
+    top: 55rem;
+  }
+  .se1 .section1 .firstSwiper .dot {
+    top: 95rem;
+  }
+  .se1 .tabBox {
+    bottom: -25rem;
+  }
+  .se1 .tabBox .tab_wrap .tab_cont {
+    top: 6rem;
+  }
   /* se2 */
   .se2Wrap {
     margin-top: 2rem;
   }
+  /* se5 */
+  .se5 .se5Wrap .se5Box.goSite {
+    height: 60rem;
+  }
 }
 @media (max-width: 576px) {
+  /* se1 */
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
+    top: 38rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title {
+    font-size: 5rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title p {
+    font-size: 5rem;
+  }
+  .se1 .section1 .dot {
+    top: 76rem;
+  }
+  .se1 .tabBox {
+    bottom: -14rem;
+  }
+  .se1 .tabBox .tab_wrap h3:nth-child(3) {
+    position: relative;
+    margin-left: 5rem;
+  }
+  .se1 .tabBox .tab_wrap h3:nth-child(3)::before {
+    position: absolute;
+    top: 1.2rem;
+    left: -3rem;
+  }
+  .se1 .tabBox .tab_wrap h3:nth-child(5) {
+    position: relative;
+    margin-left: 5rem;
+  }
+  .se1 .tabBox .tab_wrap h3:nth-child(5)::before {
+    position: absolute;
+    top: 1.2rem;
+    left: -3rem;
+  }
   /* se2 */
   .se2 {
     height: 90rem;
@@ -1212,5 +1420,18 @@ section h2 {
   }
   .se2 ul li:nth-child(5) .content::after {
     width: 70%;
+  }
+  /* se5 */
+  .se5 .se5Wrap .se5Box.goSite {
+    height: 52rem;
+  }
+  .se5 .se5Wrap .se5Box.sponsor {
+    padding: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  /* se5 */
+  .se5 .se5Wrap .se5Box.goSite {
+    height: 40rem;
   }
 }
