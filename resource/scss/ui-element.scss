@@ -650,6 +650,9 @@
         }
         &-item{
             width:calc(50% - 3rem);
+            &__date{
+                margin-top: 10px;
+            }
         }
         &-detail{
             &__capt{

@@ -575,6 +575,9 @@
   .board-item {
     width: calc(50% - 3rem);
   }
+  .board-item__date {
+    margin-top: 10px;
+  }
   .board-detail__capt {
     margin-left: -10px;
   }
