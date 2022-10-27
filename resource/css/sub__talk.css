@@ -70,4 +70,14 @@
     background-image: url("../image/sub/img-subVisual--04_m.png");
     background-position: center 0;
   }
+  .certi-wrap__inner {
+    padding: 3rem;
+  }
+  .certi-text {
+    font-size: 14px;
+    word-break: keep-all;
+  }
+  .certi-text br {
+    display: none;
+  }
 }
