@@ -137,12 +137,14 @@
             thead{
                 tr{
                     height: 6rem;
+                    border-top-width: 1px;
                 }
             }
             tbody{
                 td{
                     height: 6rem;
                     padding:1.5rem 0;
+                    border-color: #b5b5b5;
                 }
             }
         }

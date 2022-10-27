@@ -377,18 +377,28 @@
         }
         &__present{
             .swiper-slide{
+                width: auto;
                 height: 238rem;
             }
             
         }
         &__past{
             .swiper-slide{
+                width: auto;
                 height: 208rem;
             }
             .year-tab__list{
                 &.on{
                     background: #eda39f;
                     border-color: #eda39f;
+                }
+            }
+        }
+        &__content{
+            >.tab_cont{
+                display: none;
+                &.on{
+                    display: block;
                 }
             }
         }
@@ -685,11 +695,10 @@
                 }
                 .img-wrap{
                     margin-top: 3rem;
+                    text-align: center;
                 }
             }
         }
-    }
-    .ci{
         &-title{
             br{
                 display: none;

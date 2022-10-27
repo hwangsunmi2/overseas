@@ -4,7 +4,7 @@
 /** 자료마당 > 발간자료 > list */
 .subVisual{
     &--data{
-        background-image:url('../image/sub/img-subVisual--01.jpg');
+        background-image:url('../image/sub/img-subVisual--03.png');
         background-position:center 0;
     }
 }
@@ -72,7 +72,7 @@
 @include media-breakpoint-down(n-sm){ //768
     .subVisual{
         &--data{
-            background-image:url('../image/sub/img-subVisual--01_m.png');
+            background-image:url('../image/sub/img-subVisual--03_m.png');
         }
     }
     .board{

@@ -293,14 +293,22 @@
   color: #eda39f;
 }
 .history-tab__present .swiper-slide {
+  width: auto;
   height: 238rem;
 }
 .history-tab__past .swiper-slide {
+  width: auto;
   height: 208rem;
 }
 .history-tab__past .year-tab__list.on {
   background: #eda39f;
   border-color: #eda39f;
+}
+.history-tab__content > .tab_cont {
+  display: none;
+}
+.history-tab__content > .tab_cont.on {
+  display: block;
 }
 .history-year {
   position: relative;
@@ -503,6 +511,7 @@
   }
   .ci-wrap__bottom .img-wrap {
     margin-top: 3rem;
+    text-align: center;
   }
   .ci-title br {
     display: none;

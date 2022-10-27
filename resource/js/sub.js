@@ -1,6 +1,10 @@
 
 
 $(function(){
+    //sub footer
+    //$(".subContent-wrap").parents().find(".wrap").children("footer").addClass("sub-footer");
+
+
     $(".board-table__inner").on('mouseover focusin touchstart',  function(){
         $(this).addClass("removeBefore");
     });
@@ -14,7 +18,7 @@ $(function(){
     
 
     //tab
-    var $history = $('.tab_wrap');
+    var $history = $('.history-tab__title');
     var $historyTab = $history.find('h3');
     var $historyCont = $('.history-tab__content>.tab_cont');
 

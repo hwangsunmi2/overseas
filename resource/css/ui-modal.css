@@ -1,12 +1,13 @@
 @charset "UTF-8";
+
 /* 부트스트랩 모달 */
 .modal-open {
-  overflow: hidden;
+  overflow: hidden
 }
 
 .modal-open .modal {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: auto
 }
 
 .modal {
@@ -18,32 +19,59 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  outline: 0;
+  outline: 0
 }
 
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 0.5rem;
-  pointer-events: none;
+  margin: .5rem;
+  pointer-events: none
 }
 
 .modal.fade .modal-dialog {
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   -webkit-transform: translate(0, -50px);
-  transform: translate(0, -50px);
+  transform: translate(0, -50px)
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
   .modal.fade .modal-dialog {
-    transition: none;
+    transition: none
   }
 }
+
 .modal.show .modal-dialog {
   -webkit-transform: none;
-  transform: none;
+  transform: none
+}
+
+.modal.modal-static .modal-dialog {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02)
+}
+
+.modal-dialog-scrollable {
+  display: -ms-flexbox;
+  display: flex;
+  max-height: calc(100% - 1rem)
+}
+
+.modal-dialog-scrollable .modal-content {
+  max-height: calc(100vh - 1rem);
+  overflow: hidden
+}
+
+.modal-dialog-scrollable .modal-footer,
+.modal-dialog-scrollable .modal-header {
+  -ms-flex-negative: 0;
+  flex-shrink: 0
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto
 }
 
 .modal-dialog-centered {
@@ -51,13 +79,13 @@
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  min-height: calc(100% - 1rem);
+  min-height: calc(100% - 1rem)
 }
 
 .modal-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
-  content: "";
+  content: ""
 }
 
 .modal-dialog-centered.modal-dialog-scrollable {
@@ -65,15 +93,15 @@
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100%;
+  height: 100%
 }
 
 .modal-dialog-centered.modal-dialog-scrollable .modal-content {
-  max-height: none;
+  max-height: none
 }
 
 .modal-dialog-centered.modal-dialog-scrollable::before {
-  content: none;
+  content: none
 }
 
 .modal-content {
@@ -86,9 +114,9 @@
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0
 }
 
 .modal-backdrop {
@@ -98,24 +126,85 @@
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #000
 }
 
 .modal-backdrop.fade {
-  opacity: 0;
+  opacity: 0
 }
 
 .modal-backdrop.show {
-  opacity: 0.5;
+  opacity: .5
+}
+
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px)
+}
+
+.modal-header .close {
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5
+}
+
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem
+}
+
+.modal-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: .75rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(.3rem - 1px);
+  border-bottom-left-radius: calc(.3rem - 1px)
+}
+
+.modal-footer>* {
+  margin: .25rem
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll
 }
 
 /* //부트스트랩 모달 */
+
+
 .modal {
   padding-right: 0 !important;
 }
+
 .modal-dialog {
   justify-content: center;
 }
+
 .modal-content {
   width: auto;
   padding: 4rem 3rem;
@@ -123,35 +212,47 @@
   border: 1px solid #d2d5dc;
   border-radius: 0;
 }
+
 .modal-content__email .modal-tit {
   margin-bottom: 3rem;
   font-size: 2.4rem;
 }
+
 .modal-content__email .modal-img {
   display: block;
   margin-bottom: 2rem;
   text-align: center;
 }
+
 .modal-tit {
   margin-bottom: 2.5rem;
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
 }
+
 .modal-text {
   font-size: 1.8rem;
   line-height: 3.2rem;
   text-align: center;
 }
+
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.56);
 }
+
+
 
 @media (max-width: 768px) {
   .modal-content {
     max-width: 80%;
   }
+
   .modal-content .ui-input__width-400 {
     width: 100%;
   }
 }
+
+
+
+
