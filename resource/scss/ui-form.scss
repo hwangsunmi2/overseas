@@ -312,6 +312,28 @@
             }
         }
     }
+    .ui-file-input{
+        &__input{
+            font-size: 14px;
+        }
+        &__label{
+            height: 35px;
+            line-height: 35px;
+        }
+    }
+    .ui{
+        &-form{
+            input{
+                font-size: 14px;
+                height: 35px;
+                line-height: 35px;
+            }
+            textarea{
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(n-xs){ //576

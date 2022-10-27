@@ -272,6 +272,22 @@
     width: 5rem;
     background-size: 2.2rem 2.4rem;
   }
+  .ui-file-input__input {
+    font-size: 14px;
+  }
+  .ui-file-input__label {
+    height: 35px;
+    line-height: 35px;
+  }
+  .ui-form input {
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .ui-form textarea {
+    font-size: 14px;
+    line-height: normal;
+  }
 }
 @media (max-width: 576px) {
   .sch-wrap {
