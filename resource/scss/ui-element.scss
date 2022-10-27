@@ -264,7 +264,7 @@
             width:328px;
             height:auto;
             img{
-                width:100%;
+                max-width:100%;
             }
         }
         &__dl{
@@ -658,8 +658,13 @@
             }
         }
         &-detail{
+            &__tit{
+                margin-top: 20px;
+                font-size: 20px;
+            }
             &__capt{
                 margin-left: -10px;
+                margin-bottom: 20px;
                 span{
                     padding:0 10px;
                 }

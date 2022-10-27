@@ -236,7 +236,7 @@
   height: auto;
 }
 .board-info__img img {
-  width: 100%;
+  max-width: 100%;
 }
 .board-info__dl {
   display: flex;
@@ -581,8 +581,13 @@
   .board-item__tit {
     height: 38px;
   }
+  .board-detail__tit {
+    margin-top: 20px;
+    font-size: 20px;
+  }
   .board-detail__capt {
     margin-left: -10px;
+    margin-bottom: 20px;
   }
   .board-detail__capt span {
     padding: 0 10px;
