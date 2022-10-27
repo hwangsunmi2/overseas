@@ -271,8 +271,6 @@
             display:flex;
             flex-wrap:wrap;
             margin-top:40px;
-            margin-left: 30px;
-            margin-right: 30px;
             font-size:18px;
             dt, dd{
                 margin-top:20px;
@@ -638,6 +636,7 @@
         }
     }
     .board{
+
         &-list {
             margin: 0 -2rem -1rem -2rem;
             .board-item {
@@ -662,7 +661,9 @@
         &-detail{
             &__tit{
                 margin-top: 20px;
+                margin-bottom: 15px;
                 font-size: 20px;
+                line-height: 28px;
             }
             &__capt{
                 margin-left: -10px;
@@ -684,6 +685,13 @@
             &__inner{
                 padding: 2rem;
             }
+        }
+        &-info{
+            &__dl{
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            
         }
     }
     .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd{
@@ -808,7 +816,7 @@
             &__dl{
                 flex:1 1 100%;
                 margin-top:2rem;
-                margin-left:0;
+                // margin-left:0;
             }
         }
         &-file{

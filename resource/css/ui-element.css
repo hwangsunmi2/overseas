@@ -242,8 +242,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
   font-size: 18px;
 }
 .board-info__dl dt, .board-info__dl dd {
@@ -585,7 +583,9 @@
   }
   .board-detail__tit {
     margin-top: 20px;
+    margin-bottom: 15px;
     font-size: 20px;
+    line-height: 28px;
   }
   .board-detail__capt {
     margin-left: -10px;
@@ -599,6 +599,10 @@
   }
   .board-file__inner {
     padding: 2rem;
+  }
+  .board-info__dl {
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd {
     font-size: 14px;
@@ -710,7 +714,6 @@
   .board-info__dl {
     flex: 1 1 100%;
     margin-top: 2rem;
-    margin-left: 0;
   }
   .board-file__inner dl {
     flex-direction: column;
