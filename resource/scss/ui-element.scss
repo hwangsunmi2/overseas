@@ -636,8 +636,40 @@
         }
     }
     .board{
+        &-list {
+            margin: 0 -2rem -1rem -2rem;
+            .board-item {
+                width: 50%;
+                margin: 0;
+                padding: 2rem 1rem;
+                &__tit {
+                    margin-top: 1.5rem;
+                  }
+            }
+        }
         &-item{
             width:calc(50% - 3rem);
+        }
+        &-detail{
+            &__capt{
+                margin-left: -10px;
+                span{
+                    padding:0 10px;
+                }
+                
+            }
+        }
+        &-view{
+            &__inner{
+                *{
+                    font-size: 14px;
+                }
+            }
+        }
+        &-file{
+            &__inner{
+                padding: 2rem;
+            }
         }
     }
     .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd{
@@ -745,6 +777,9 @@
             background: url(../image/common/icon/icon-clampDown.png) no-repeat right 10px center;
         }
     }
+
+
+
 }
 @include media-breakpoint-down(n-xs){ //576
     .board{

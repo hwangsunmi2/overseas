@@ -284,12 +284,19 @@
   .sch-form__select {
     min-width: auto;
     flex: 1 1 30%;
+    line-height: 100%;
+    font-size: 14px;
   }
   .sch-form__label {
     flex: 1 1 70%;
   }
   .sch-form__input {
     width: calc(100% - 5rem);
+    line-height: 100%;
+    font-size: 14px;
+  }
+  .sch-form__input::placeholder {
+    font-size: 14px;
   }
   .count-wrap {
     margin-bottom: 1.5rem;

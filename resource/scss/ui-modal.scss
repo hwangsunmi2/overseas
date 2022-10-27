@@ -118,7 +118,9 @@
 
 .modal {
     padding-right: 0 !important;
-
+    &-body{
+        padding: 0;
+    }
     &-dialog {
         justify-content: center;
     }
@@ -177,6 +179,13 @@
 
             .ui-input__width-400 {
                 width: 100%;
+            }
+        }
+        &-text{
+            font-size: 14px;
+            word-break: keep-all;
+            br{
+                display: none;
             }
         }
     }

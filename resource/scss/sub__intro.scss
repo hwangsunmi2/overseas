@@ -714,12 +714,30 @@
     .history-list__wrap li, .wayAbout-info dt, .wayAbout-info dd, .route-way__how-tit, .route-way__how-txt, .ci-bottom__txt{
         font-size: 14px;
     }
-    .route-way__txt{
-        font-size: 13px;
+    .route{
+        &-way{
+            &__txt{
+                font-size: 13px;
+            }
+            &__how{
+                &-txt{
+                    &--next{
+                        margin: 0 2px;
+                    }
+                }
+                &-item--ps{
+                    font-size:12px;
+                }
+            }
+        }
+        
     }
-    .route-way__how-item--ps{
-        font-size:12px;
+    .root_daum_roughmap{
+        .wrap_map{
+            height: 300px !important;
+        }
     }
+    
     .ci-title{
         font-size: 18px;
         line-height: normal;
@@ -740,8 +758,13 @@
             }
         }
     }
-    .wayAbout-route__inner table th{
-        padding: 0;
+    .wayAbout-route__inner table {
+        th{
+            padding: 0;
+        }
+        th,td{
+            padding: 2rem;
+        }
     }
     .wayAbout-route__th{
         width: 12rem;

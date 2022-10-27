@@ -78,12 +78,12 @@
     .board{
         &-list{
             &--public{
-                margin: 0 -2rem -2rem -2rem;
+                margin: 0 -2rem -1rem -2rem;
                 .board{
                     &-item{
                         width:50%;
                         margin: 0;
-                        padding: 2rem;
+                        padding: 2rem 1rem;
                         &__tit{
                             margin-top: 1.5rem;
                         }
