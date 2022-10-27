@@ -610,6 +610,7 @@
   .subContent__tit {
     margin-top: 40px !important;
     margin-bottom: 30px !important;
+    font-size: 22px;
   }
   .tab-link {
     display: none;
