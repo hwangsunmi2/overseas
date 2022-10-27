@@ -63,6 +63,13 @@
   background: #000000;
   content: "";
 }
+.policyArea .table-wrap {
+  width: 100%;
+}
+.policyArea .table-wrap table {
+  border: 1px solid #ddd;
+  width: 72rem;
+}
 
 @media (max-width: 768px) {
   .sitemap-wrap__inner {
@@ -82,5 +89,12 @@
   }
   .policyArea * {
     font-size: 14px;
+  }
+  .policyArea .table-wrap {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .policyArea .table-wrap table {
+    width: 82rem;
   }
 }

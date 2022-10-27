@@ -73,6 +73,13 @@
                 content:""
             }
         }
+        .table-wrap{
+            width: 100%;
+            table{
+                border:1px solid #ddd;
+                width: 72rem;
+            }
+        }
     }
 }
 
@@ -103,6 +110,13 @@
     .policyArea{
         *{
             font-size: 14px;
+        }
+        .table-wrap{
+            width: 100%;
+            overflow-x: scroll;
+            table{
+                width: 82rem;
+            }
         }
     }
 }
