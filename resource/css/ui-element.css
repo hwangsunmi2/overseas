@@ -605,6 +605,10 @@
   .board-detail__capt span + span::before {
     height: 12px;
   }
+  .board-view__inner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
   .board-view__inner * {
     font-size: 14px;
   }
