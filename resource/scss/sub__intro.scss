@@ -700,6 +700,7 @@
             }
         }
         &-title{
+            line-height: 28px;
             br{
                 display: none;
             }
@@ -709,6 +710,7 @@
         }
         &-ps{
             font-size: 12px;
+            line-height: 20px;
         }
     }
     .history-list__wrap li, .wayAbout-info dt, .wayAbout-info dd, .route-way__how-tit, .route-way__how-txt, .ci-bottom__txt{

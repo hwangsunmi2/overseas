@@ -512,6 +512,9 @@
     margin-top: 3rem;
     text-align: center;
   }
+  .ci-title {
+    line-height: 28px;
+  }
   .ci-title br {
     display: none;
   }
@@ -520,6 +523,7 @@
   }
   .ci-ps {
     font-size: 12px;
+    line-height: 20px;
   }
   .history-list__wrap li, .wayAbout-info dt, .wayAbout-info dd, .route-way__how-tit, .route-way__how-txt, .ci-bottom__txt {
     font-size: 14px;
