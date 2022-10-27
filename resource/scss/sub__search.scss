@@ -198,4 +198,17 @@
     .btn-prevPage button{
         font-size: 14px;
     }
+    .integrateSearchArea{
+        padding: 2rem;
+        &__inner{
+            height: 5rem;
+            border-width: 2px;
+            .btn-search{
+                top:0;
+                right: 0;
+                width:5rem;
+                height:100%;
+            }
+        }
+    }
 }
