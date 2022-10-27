@@ -697,7 +697,13 @@
         &-file{
             &__inner{
                 margin-top: 20px;
-                padding: 2rem;
+                padding: 12px 2rem;
+                dt{
+                    margin-bottom: 10px;
+                }
+                .board-file__link + .board-file__link{
+                    margin-top: 6px;
+                }
             }
         }
         &-info{
@@ -840,7 +846,6 @@
                 }
                 dt{
                     margin-right: 0;
-                    margin-bottom: 2rem;
                 }
             }
         }
