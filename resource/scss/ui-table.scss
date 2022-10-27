@@ -19,7 +19,7 @@
                 height:6.9rem;
                 background:#fafcff;
                 border-top:2px solid #4568a9;
-                border-bottom:1px solid #4568a9;
+                border-bottom:1px solid #b5b5b5;
             }
             .num{
                 width: 9%;
@@ -137,6 +137,7 @@
             thead{
                 tr{
                     height: 6rem;
+                    border-top-width: 1px;
                 }
             }
             tbody{
@@ -150,7 +151,14 @@
     }
     &__view{
         table{
-            border-top:2px solid #365ca3;
+            tbody{
+                tr{
+                    &:nth-child(1){
+                        border-top:2px solid #365ca3;
+                    }
+                }
+            }
+            
         }
         .ver-th{
             width: 28rem;
@@ -271,6 +279,11 @@
                         width: 10%;
                     }
                 }
+            }
+        }
+        &__view{
+            .ver-th{
+                width: 25%;
             }
         }
     }

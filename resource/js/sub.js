@@ -1,4 +1,10 @@
+
+
 $(function(){
+    //sub footer
+    //$(".subContent-wrap").parents().find(".wrap").children("footer").addClass("sub-footer");
+
+
     $(".board-table__inner").on('mouseover focusin touchstart',  function(){
         $(this).addClass("removeBefore");
     });
@@ -9,10 +15,12 @@ $(function(){
         $(this).siblings().removeClass("is-active");
     });
 
+    
+
     //tab
-    var $history = $('.tab_wrap');
+    var $history = $('.history-tab__title');
     var $historyTab = $history.find('h3');
-    var $historyCont = $history.find('.tab_cont');
+    var $historyCont = $('.history-tab__content>.tab_cont');
 
     $historyTab.on('click focusin', function(e) {  
         e.preventDefault();
@@ -27,34 +35,42 @@ $(function(){
         $nListID.css('display','block');
     });
 
-    //history-swiper
-    var historySwiperPre = new Swiper(".history-swiper__present.swiper-container", {
-        //loop: true,
-        slidesPerView: "auto",
-        freeMode: true,
-        scrollbar: {
-            el: ".history-swiper__present .swiper-scrollbar",
-        },
-        mousewheel: true,
-        observer: true,	// 추가
-        observeParents: true,	// 추가
-        
+    $('.history-tab__present .year-tab__ul li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+        $('.history-tab__present .year-tab__ul li').removeClass('on');
+        $('.history-swiper__present .tab_cont').removeClass('on');
+
+        $(this).addClass('on');
+        $("#"+tab_id).addClass('on');
     });
 
-    var historySwiperPst = new Swiper(".history-swiper__past.swiper-container", {
-        //loop: true,
-        slidesPerView: "auto",
-        freeMode: true,
-        scrollbar: {
-            el: ".history-swiper__past .swiper-scrollbar",
-        },
-        mousewheel: true,
-        observer: true,	// 추가
-        observeParents: true,	// 추가
+    $('.history-tab__past .year-tab__ul li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+        $('.history-tab__past .year-tab__ul li').removeClass('on');
+        $('.history-swiper__past .tab_cont').removeClass('on');
+
+        $(this).addClass('on');
+        $("#"+tab_id).addClass('on');
     });
 
     
 
+    //subTabMobile
+    var depSeleted = $(".depth-selected");
+    
+
+    // $(".depth-selected").click(function(){
+    //     console.log("a");
+    // })
+
+    $(depSeleted).on('click', function(){
+        //console.log("a");
+        $(this).next().slideToggle();
+    })
+    
+
 });
+
+
 
 

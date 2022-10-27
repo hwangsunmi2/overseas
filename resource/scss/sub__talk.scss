@@ -104,4 +104,24 @@
             background-position:center 0;
         }
     }
+    .certi{
+        &-wrap{
+            &__inner{
+                padding: 3rem;
+                padding-top: 3.5rem;
+            }
+        }
+        &-text{
+            font-size: 14px;
+            word-break:keep-all;
+            br{
+                display: none;
+            }
+        }
+        &-img{
+            img{
+                margin: 20px auto;
+            }
+        }
+    }
 }

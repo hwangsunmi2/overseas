@@ -1,20 +1,17 @@
 .sch-form__btn {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 50px;
   background: #4568a9 url("../image/common/icon/icon-sch.png") no-repeat center center;
 }
 
 .btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .btn-wrap .btn {
   width: 13.2rem;
   height: 5.4rem;
   border-radius: 0;
+  font-size: 14px;
 }
 .btn-wrap .btn--width-auto {
   width: auto;
@@ -27,9 +24,7 @@
   height: 10rem;
 }
 .btn-wrap--center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .btn-wrap--center .btn {
   width: 13.2rem;
@@ -67,6 +62,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   border: 1px solid #d2d5dc;
+  color: #000000;
 }
 .btn--radius {
   width: 19rem;

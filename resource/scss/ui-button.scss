@@ -16,6 +16,8 @@
             width: 13.2rem;
             height:5.4rem;
             border-radius: 0;
+            font-size: 14px;
+            
             &--width{
                 &-auto{
                     width:auto;
@@ -76,6 +78,7 @@
                     weight:500;
                 }
                 border:1px solid #d2d5dc;
+                color:#000000;
             }
         }
     }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /** 자료마당 > 발간자료 > list */
 .subVisual--data {
-  background-image: url("../image/sub/img-subVisual--01.jpg");
+  background-image: url("../image/sub/img-subVisual--03.png");
   background-position: center 0;
 }
 
@@ -45,15 +45,15 @@
 }
 @media (max-width: 768px) {
   .subVisual--data {
-    background-image: url("../image/sub/img-subVisual--01_m.png");
+    background-image: url("../image/sub/img-subVisual--03_m.png");
   }
   .board-list--public {
-    margin: 0 -2rem -2rem -2rem;
+    margin: 0 -2rem -1rem -2rem;
   }
   .board-list--public .board-item {
     width: 50%;
     margin: 0;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
   .board-list--public .board-item__tit {
     margin-top: 1.5rem;
