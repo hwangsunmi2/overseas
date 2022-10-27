@@ -609,6 +609,7 @@
     font-size: 14px;
   }
   .board-file__inner {
+    margin-top: 20px;
     padding: 2rem;
   }
   .board-info__dl {
