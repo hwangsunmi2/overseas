@@ -703,8 +703,11 @@
                 dt{
                     margin-bottom: 10px;
                 }
-                .board-file__link + .board-file__link{
-                    margin-top: 6px;
+                .board-file__link{
+                    background-position: left top 2px;
+                    &+.board-file__link{
+                        margin-top: 6px;
+                    }
                 }
             }
         }
@@ -789,6 +792,7 @@
                     position: absolute;
                     left: -1px;
                     width:calc(100% + 2px);
+                    z-index: 11;
                 }
             }
             &__list{
