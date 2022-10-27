@@ -593,6 +593,7 @@
   }
   .board-detail__capt span {
     padding: 0 10px;
+    font-size: 12px;
   }
   .board-view__inner * {
     font-size: 14px;
