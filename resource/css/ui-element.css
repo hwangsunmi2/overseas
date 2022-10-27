@@ -242,6 +242,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
   font-size: 18px;
 }
 .board-info__dl dt, .board-info__dl dd {
