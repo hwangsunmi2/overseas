@@ -602,6 +602,9 @@
     padding: 0 10px;
     font-size: 12px;
   }
+  .board-detail__capt span + span::before {
+    height: 12px;
+  }
   .board-view__inner * {
     font-size: 14px;
   }
