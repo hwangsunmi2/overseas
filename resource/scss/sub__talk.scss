@@ -108,6 +108,7 @@
         &-wrap{
             &__inner{
                 padding: 3rem;
+                padding-top: 3.5rem;
             }
         }
         &-text{
@@ -115,6 +116,11 @@
             word-break:keep-all;
             br{
                 display: none;
+            }
+        }
+        &-img{
+            img{
+                margin: 20px auto;
             }
         }
     }

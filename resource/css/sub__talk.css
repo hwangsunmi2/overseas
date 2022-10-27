@@ -72,6 +72,7 @@
   }
   .certi-wrap__inner {
     padding: 3rem;
+    padding-top: 3.5rem;
   }
   .certi-text {
     font-size: 14px;
@@ -79,5 +80,8 @@
   }
   .certi-text br {
     display: none;
+  }
+  .certi-img img {
+    margin: 20px auto;
   }
 }
