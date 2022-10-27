@@ -633,6 +633,9 @@
   .history-list__wrap li + li {
     margin-top: 15px;
   }
+  .history-tab__title {
+    justify-content: center;
+  }
   .history-swiper__present .history-year {
     color: #8daae0;
     text-align: center;

@@ -850,6 +850,11 @@
                 }
             }
         }
+        &-tab{
+            &__title{
+                justify-content: center;
+            }
+        }
     }
     .history-swiper__present .history-year{
         color:#8daae0;
