@@ -591,6 +591,9 @@
     margin-left: -10px;
     margin-bottom: 20px;
   }
+  .board-detail__capt * {
+    font-size: 12px;
+  }
   .board-detail__capt span {
     padding: 0 10px;
     font-size: 12px;
