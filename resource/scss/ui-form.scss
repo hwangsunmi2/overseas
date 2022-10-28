@@ -334,10 +334,14 @@
                 font-size: 14px;
                 line-height: normal;
             }
-            &__capcha--left{
-                height: 35px;
-            }
         }
+    }
+}
+
+
+@include media-breakpoint-down(n-sm){ //768
+    .ui-form__captcha--left{
+        height:35px;
     }
 }
 

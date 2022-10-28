@@ -290,7 +290,9 @@
     font-size: 14px;
     line-height: normal;
   }
-  .ui-form__capcha--left {
+}
+@media (max-width: 768px) {
+  .ui-form__captcha--left {
     height: 35px;
   }
 }
