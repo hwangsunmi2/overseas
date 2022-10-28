@@ -37,6 +37,8 @@
 .ui-form input, .ui-form textarea {
   border: 1px solid #cbcfd6;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 .ui-form__captcha--left {
   display: flex;

@@ -43,6 +43,8 @@
         input,textarea{
             border:1px solid #cbcfd6;
             box-sizing: border-box;
+            -webkit-appearance: none;
+            -webkit-border-radius: 0;
         }
         &__captcha{
             &--left{
