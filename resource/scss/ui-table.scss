@@ -282,15 +282,27 @@
             }
         }
         &__view{
-            .ver-th{
-                width: 30%;
-            }
             th{
                 padding: 7px;
             }
             td{
                 padding:7px;
                 padding-right: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(n-xs){ //576
+    .board-table{
+        &__view{
+            &.ver{
+                table{
+                    table-layout: fixed;
+                }
+            }
+            .ver-th{
+                width: 30%;
             }
         }
     }

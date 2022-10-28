@@ -223,14 +223,19 @@
   .board-table__list--qna thead .num, .board-table__list--qna thead .author {
     width: 10%;
   }
-  .board-table__view .ver-th {
-    width: 30%;
-  }
   .board-table__view th {
     padding: 7px;
   }
   .board-table__view td {
     padding: 7px;
     padding-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .board-table__view.ver table {
+    table-layout: fixed;
+  }
+  .board-table__view .ver-th {
+    width: 30%;
   }
 }
