@@ -4,3 +4,13 @@
   background-image: url("../image/sub/img-subVisual--01.jpg");
   background-position: center 0;
 }
+
+.returnAssets-header__inner {
+  padding: 3rem 0;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: #ffffff;
+  background: #8daae0;
+  border-radius: 2rem 0 2rem 0;
+  text-align: center;
+}
