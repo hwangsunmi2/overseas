@@ -636,15 +636,8 @@
     font-size: 12px;
   }
   .subVisual {
-<<<<<<< HEAD
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-top: 28px;
-=======
     justify-content: flex-start;
     padding-top: 40px;
->>>>>>> 25494a58800819db192eb683bac81b2c010c6d43
     height: 120px;
   }
   .subVisual__tit {
