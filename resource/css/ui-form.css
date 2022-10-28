@@ -1,6 +1,7 @@
 .sch-wrap {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 .sch-form {
   display: flex;

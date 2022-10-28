@@ -216,6 +216,8 @@
   text-align: center;
 }
 .ci-wrap__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
   margin-left: -4rem;
@@ -223,7 +225,9 @@
 }
 .ci-wrap__bottom > div {
   padding: 0 4rem;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .ci-wrap__bottom img {
   max-width: 100%;
@@ -284,6 +288,8 @@
   font-size: 7.2rem;
 }
 .history-tab__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .history-tab__list-now.on a {
@@ -406,16 +412,27 @@
 }
 
 .year-tab__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   margin: -0.5px;
 }
 .year-tab__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   width: calc(25% - 1px);
   height: 34px;
   margin: 0.5px;
@@ -423,12 +440,14 @@
   color: #b9b9b9;
   border: 1px solid #d2d5dc;
   border-radius: 2px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .year-tab__list.on {
   background: #8daae0;
   border-color: #8daae0;
-  box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
+          box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
   color: #ffffff;
 }
 
@@ -502,7 +521,10 @@
     display: block;
   }
   .ci-wrap__bottom {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
   }
   .ci-wrap__bottom > div {
@@ -589,7 +611,8 @@
     width: 100%;
     height: auto;
     padding-bottom: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     overflow: visible;
   }
   .history-wrap .tab_cont.on {
@@ -613,7 +636,10 @@
     margin-top: 30px;
   }
   .history-item__content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
   }
   .history-list__wrap {
@@ -634,7 +660,9 @@
     margin-top: 15px;
   }
   .history-tab__title {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .history-swiper__present .history-year {
     color: #8daae0;

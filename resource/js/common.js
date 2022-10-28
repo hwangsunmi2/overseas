@@ -65,14 +65,23 @@ function searchModal() {
 
 function toggleSite() {
     var cont_w = $('.inner').width();
+
+
+    if(cont_w < 1200){
+        $('header .gotoSite .d-flex .site').on("click",function(){
+            $('header .gotoSite .d-flex ul' ).slideToggle('slow');
+            $('header .gotoSite').toggleClass('on');
+        });
+    }else{
+    }
 	
-	$('header .gotoSite .d-flex .site').click(function(){
+	/*$('header .gotoSite .d-flex .site').click(function(){
 		if(cont_w > 1200){
 		}else{
             $('header .gotoSite .d-flex ul' ).slideToggle('slow');
             $('header .gotoSite').toggleClass('on');
 		}
-    });
+    });*/
 
 }
 
