@@ -1013,11 +1013,15 @@
             spaceBetween: 10,
             slidesPerView: 3,
             freeMode: true,
+            draggable: false,
+            cssMode:true,
+            touchRatio:0,
             watchSlidesProgress: true,
           });
           var se2swiper = new Swiper(".swiper-test2", {
             spaceBetween: 10,
             slidesPerView: 1,
+            
             thumbs: {
               swiper: se2swiperThumb,
             },
@@ -1026,3 +1030,13 @@
 
 </body>
 </html>
+
+
+$( document ).ready( function() {
+    var jbWidth = $( 'p' ).width();
+    $( 'p' ).append( jbWidth );
+    $( window ).resize( function() {
+      jbWidth = $( 'p' ).width();
+      $( 'p' ).empty().append( jbWidth );
+    });
+  });

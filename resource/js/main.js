@@ -7,14 +7,11 @@ $(document).ready(function () {
 });
 function mainSwiper() {
     var mainswiper = new Swiper(".section1 .firstSwiper > .mySwiper", {
-        //noSwiping: true,
         pagination: {
-          clickable: true,
           el: ".dot .swiper-pagination",
         },
         observer: true,	// 추가
-        observeParents: true,	// 추가
-        nested: true,
+      observeParents: true,	// 추가
     }); 
 }
 
@@ -25,7 +22,6 @@ function main2Swiper() {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
-    nested: true,
   });
   var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
     loop: true,
@@ -33,7 +29,6 @@ function main2Swiper() {
     thumbs: {
       swiper: swiper_Thumbs1,
     },
-    nested: true,
   });
 }
 
