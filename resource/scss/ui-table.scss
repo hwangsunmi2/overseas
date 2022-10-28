@@ -283,7 +283,14 @@
         }
         &__view{
             .ver-th{
-                width: 25%;
+                width: 30%;
+            }
+            th{
+                padding: 7px;
+            }
+            td{
+                padding:7px;
+                padding-right: 0;
             }
         }
     }

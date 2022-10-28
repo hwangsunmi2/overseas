@@ -288,6 +288,9 @@
     font-size: 14px;
     line-height: normal;
   }
+  .ui-form__capcha--left {
+    height: 35px;
+  }
 }
 @media (max-width: 576px) {
   .sch-wrap {

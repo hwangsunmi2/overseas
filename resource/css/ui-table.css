@@ -224,6 +224,13 @@
     width: 10%;
   }
   .board-table__view .ver-th {
-    width: 25%;
+    width: 30%;
+  }
+  .board-table__view th {
+    padding: 7px;
+  }
+  .board-table__view td {
+    padding: 7px;
+    padding-right: 0;
   }
 }
