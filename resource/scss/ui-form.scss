@@ -20,6 +20,11 @@
             background-image: url('../image/common/icon/icon-clampDown.png');
             background-repeat:no-repeat;
             background-position:90% center;
+            &--width{
+                &-160{
+                    width:160px;
+                }
+            }
         }
         &__label{
             display:flex;
@@ -320,7 +325,7 @@
         }
         &__label{
             height: 35px;
-            line-height: 35px;
+            line-height: 36px;
         }
     }
     .ui{
@@ -364,7 +369,7 @@
         &-form{
             &__select{
                 min-width:auto;
-                flex:1 1 30%;
+                flex:1 1 50%;
                 line-height: 100%;
                 font-size: 14px;
             }
@@ -377,6 +382,22 @@
                 font-size: 14px;
                 &::placeholder{
                     font-size: 14px;
+                }
+            }
+            &__three{
+                flex-wrap: wrap;
+                height: auto;
+                .sch-form__select{
+                    flex:1;
+                    height: 5rem;
+                    margin-right: 0;
+                    &+.sch-form__select{
+                        margin-left: 3px;
+                    }
+                }
+                .sch-form__label{
+                    height: 5rem;
+                    margin-top: 3px;
                 }
             }
         }

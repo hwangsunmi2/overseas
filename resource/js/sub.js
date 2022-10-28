@@ -66,7 +66,26 @@ $(function(){
     $(depSeleted).on('click', function(){
         //console.log("a");
         $(this).next().slideToggle();
+    });
+
+    //FAQ
+    $(".qna-link").click(function(){
+        var qnaSib= $(this).parent().parent().siblings().removeClass("is-active");
+
+        var qnaClick= $(this).parent().parent().toggleClass("is-active");
+        var qnaActive= qnaClick.children(".qna-body");
+
+        
+        
+        qnaActive.slideToggle();
+        qnaSib.children(".qna-body").slideUp();
+
+        // if($("qna-item").hasClass("is-active")){
+        //     $(".qna-body").slideDown();
+        // }
+        
     })
+
     
 
 });

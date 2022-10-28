@@ -55,6 +55,16 @@
         font-size:3.2rem;
         font-weight:500;
     }
+    &__explain{
+        margin-bottom: 5rem;
+        font: {
+            size: 3.6rem;
+            weight:400;
+        }
+        line-height: 5rem;
+        text-align: center;
+        letter-spacing: -1px;
+    }
 }
 .tab{
     &-wrap{
@@ -741,10 +751,20 @@
         &Tab{
             margin-top: -20px;
         }
-        &Content__tit{
-            margin-top: 40px !important;
-            margin-bottom: 30px !important;
-            font-size:26px;
+        &Content{
+            &__tit{
+                margin-top: 40px !important;
+                margin-bottom: 30px !important;
+                font-size:26px;
+            }
+            &__explain{
+                margin-bottom: 20px;
+                font-size:20px;
+                word-break: keep-all;
+                br{
+                    display: none;
+                }
+            }
         }
     }
     .tab{

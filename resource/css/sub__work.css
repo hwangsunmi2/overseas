@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/** 사업소개 > 조사 */
+.subVisual--work {
+  background-image: url("../image/sub/img-subVisual--01.png");
+  background-position: center 0;
+}
+
+.subContent__inner--work {
+  max-width: 100%;
+}
+.subContent__inner--work .tab-wrap {
+  max-width: 140rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-work {
+  min-height: 72rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  background-color: #f8f8f9;
+}
+.content-work__research {
+  background-image: url(../image/sub/bg-research.jpg);
+}
+.content-work__return {
+  background-image: url(../image/sub/bg-return.jpg);
+}
+.content-work__support {
+  background-image: url(../image/sub/bg-support.jpg);
+}
+.content-work__cooperate {
+  background-image: url(../image/sub/bg-cooperate.jpg);
+}
+.content-work__legation {
+  background-image: url(../image/sub/bg-legation.jpg);
+}
+.content-work__inner {
+  display: flex;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+.work-item + .work-item {
+  margin-top: 5rem;
+}
+.work-title {
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+.work-cont {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.work-left {
+  flex: 0.4;
+}
+.work-left__inner {
+  padding-right: 6rem;
+}
+.work-right {
+  flex: 0.6;
+}
+.work-right .img-wrap img {
+  display: block;
+  max-width: 100%;
+  box-shadow: 1.6rem 1.6rem 3.6rem rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .subVisual--work {
+    background-image: url("../image/sub/img-subVisual--01_m.png");
+    background-position: center 0;
+  }
+  .content-work {
+    min-height: auto;
+    background: none;
+  }
+  .content-work__inner {
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+  .work-left__inner {
+    margin-top: 20px;
+  }
+  .work-item + .work-item {
+    margin-top: 15px;
+  }
+  .work-title {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .work-cont {
+    font-size: 14px;
+  }
+}

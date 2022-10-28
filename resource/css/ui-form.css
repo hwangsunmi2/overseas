@@ -18,6 +18,9 @@
   background-repeat: no-repeat;
   background-position: 90% center;
 }
+.sch-form__select--width-160 {
+  width: 160px;
+}
 .sch-form__label {
   display: flex;
   width: 40rem;
@@ -279,7 +282,7 @@
   }
   .ui-file-input__label {
     height: 35px;
-    line-height: 35px;
+    line-height: 36px;
   }
   .ui-form input {
     font-size: 14px;
@@ -313,7 +316,7 @@
   }
   .sch-form__select {
     min-width: auto;
-    flex: 1 1 30%;
+    flex: 1 1 50%;
     line-height: 100%;
     font-size: 14px;
   }
@@ -327,6 +330,22 @@
   }
   .sch-form__input::placeholder {
     font-size: 14px;
+  }
+  .sch-form__three {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .sch-form__three .sch-form__select {
+    flex: 1;
+    height: 5rem;
+    margin-right: 0;
+  }
+  .sch-form__three .sch-form__select + .sch-form__select {
+    margin-left: 3px;
+  }
+  .sch-form__three .sch-form__label {
+    height: 5rem;
+    margin-top: 3px;
   }
   .count-wrap {
     margin-bottom: 1.5rem;

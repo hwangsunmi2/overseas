@@ -1,0 +1,128 @@
+@charset 'utf-8';
+@import 'mixin';
+
+/** 사업소개 > 조사 */
+.subVisual{
+    &--work{
+        background-image:url('../image/sub/img-subVisual--01.png');
+        background-position:center 0;
+    }
+}
+.subContent__inner--work{
+    max-width: 100%;
+    .tab-wrap{
+        max-width: 140rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.content{
+    &-work{
+        min-height: 72rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+        background-color: #f8f8f9;
+        &__research{
+            background-image: url(../image/sub/bg-research.jpg);
+        }
+        &__return{
+            background-image: url(../image/sub/bg-return.jpg);
+        }
+        &__support{
+            background-image: url(../image/sub/bg-support.jpg);
+        }
+        &__cooperate{
+            background-image: url(../image/sub/bg-cooperate.jpg);
+        }
+        &__legation{
+            background-image: url(../image/sub/bg-legation.jpg);
+        }
+        &__inner{
+            display: flex;
+            max-width: 140rem;
+            margin: 0 auto;
+            padding-top: 10rem;
+        }
+    }
+}
+.work{
+    &-item{
+        &+&{
+            margin-top: 5rem;
+        }
+    }
+    &-title{
+        margin-bottom: 2rem;
+        font : {
+            size:3.2rem;
+            weight:500;
+        }
+        line-height: 5rem;
+    }
+    &-cont{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        word-break: keep-all;
+        letter-spacing: -1px;
+    }
+    &-left{
+        flex: .4;
+        &__inner{
+            padding-right: 6rem;
+        }
+    }
+    &-right{
+        flex: .6;
+        .img-wrap{
+            img{
+                display: block;
+                max-width: 100%;
+                box-shadow: 1.6rem 1.6rem 3.6rem rgba(0,0,0,0.18);
+            }
+        }
+    }
+}
+
+
+// responsive
+@include media-breakpoint-down(n-lg){ //n-lg: 1280px,
+   
+}
+@include media-breakpoint-down(n-sm){ //768px
+    .subVisual{
+        &--work{
+            background-image:url('../image/sub/img-subVisual--01_m.png');
+            background-position:center 0;
+        }
+    }   
+    .content{
+        &-work{
+            min-height: auto;
+            background: none;
+            &__inner{
+                flex-direction: column-reverse;
+                padding-top: 0;
+            }
+        }
+    }
+    .work{
+        &-left{
+            &__inner{
+                margin-top: 20px;
+            }
+        }
+        &-item{
+            &+&{
+                margin-top: 15px;
+            }
+        }
+        &-title{
+            font-size: 18px;
+            line-height: normal;
+        }
+        &-cont{
+            font-size: 14px;
+        }
+    }
+}

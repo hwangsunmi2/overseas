@@ -80,6 +80,91 @@
     }
 }
 
+/* 소통마당 > FAQ */ 
+.qna{
+    &-list{
+        &__inner{
+            margin-top: 3rem;
+            font-size: 1.8rem;
+            border-top:2px solid #3b60a5;
+        }
+    }
+    &-title{
+        display: flex;
+        align-items: flex-start;
+        padding: 3rem 0;
+        border-bottom:1px solid #ced1d8;
+    }
+    &-link{
+        display: flex;
+        padding-right: 9.7rem;
+        width:100%;
+        background: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='11'%3E%3Cpath fill-rule='evenodd' d='m17.524 2.064-6.469 6.469-1.991 1.991-8.459-8.46 1.99-1.99 6.469 6.469L15.533.074l1.991 1.99Z'/%3E%3C/svg%3E") no-repeat right 6rem center;
+        background-size: 1.8rem 1.1rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &-mark{
+        &__q, &__a{
+            display: inline-block;
+            width:12rem;
+            flex:none;
+            font: {
+                size:2.4rem;
+                weight: 500;
+            }
+            text-align: center;
+        }
+        &__q{
+            color: #4568a9;
+        }
+        &__a{
+            color: #ea9490;
+        }
+    }
+    &-body{
+        display: none;
+        &__inner{
+            display: flex;
+            padding:4rem 6rem 4rem 0;
+            background: #fafcff;
+            border-bottom:1px solid #d2d5dc;
+        }
+    }
+    &-content{
+        &__inner{
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+        }
+    }
+    &-file{
+        &__inner{
+            margin-top: 3rem;
+            dl {
+                display: flex;
+            }
+            dt, dd{
+                font-size: 1.6rem;
+            }
+            dt{
+                margin-right: 2.5rem;
+                font-weight: 500;
+                flex: none;
+            }
+        }
+        &__link{
+            display: block;
+            padding-left: 3rem;
+            background: url(../image/common/icon/icon-download.png) no-repeat left top .2rem;
+            background-size: 1.8rem;
+            line-height: normal;
+            &+&{
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
 
 // responsive
 @include media-breakpoint-down(n-lg){ //n-lg: 1280px,
@@ -121,6 +206,42 @@
         &-img{
             img{
                 margin: 20px auto;
+            }
+        }
+    }
+    .qna{
+        &-mark{
+            &__q, &__a{
+                width: 6rem;
+            }
+        }
+        &-link{
+            font-size: 14px;
+            padding-right: 4rem;
+            background-position: right 1rem center;
+        }
+        &-body{
+            &__inner{
+                padding: 2rem 3rem 2rem 0;
+                
+            }
+        }
+        &-content{
+            &__inner{
+                font-size: 12px;
+                *{
+                    font-size: 12px;
+                }
+            }
+        }
+        &-file{
+            &__inner{
+                dt{
+                    font-size: 12px;
+                }
+            }
+            &__link{
+                font-size: 12px;
             }
         }
     }
