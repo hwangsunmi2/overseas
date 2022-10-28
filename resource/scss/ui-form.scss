@@ -43,6 +43,8 @@
         input,textarea{
             border:1px solid #cbcfd6;
             box-sizing: border-box;
+            -webkit-appearance: none;
+            -webkit-border-radius: 0;
         }
         &__captcha{
             &--left{
@@ -336,6 +338,20 @@
     }
 }
 
+
+@include media-breakpoint-down(n-sm){ //768
+    .ui-form__captcha--left{
+        height:35px;
+    }
+    .ui-radio .ui-label__text, .ui-checkbox .ui-label__text{
+        font-size: 14px;
+    }
+    .ui-radio-input:checked + .ui-label .ui-radio-object, 
+    .ui-checkbox-input:checked + .ui-label .ui-radio-object{
+        border-width: 4px;
+    }
+}
+
 @include media-breakpoint-down(n-xs){ //576
     .sch{
         &-wrap{
@@ -373,6 +389,8 @@
 }
 
 @include media-breakpoint-down(n-ns){ //475
-    
+    .ui-input__width-m{
+        width:100%;
+    }
     
 }

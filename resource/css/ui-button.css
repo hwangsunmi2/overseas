@@ -15,7 +15,6 @@
   width: 13.2rem;
   height: 5.4rem;
   border-radius: 0;
-  font-size: 14px;
 }
 .btn-wrap .btn--width-auto {
   width: auto;
@@ -98,5 +97,10 @@
     width: 13.2rem;
     height: 5.4rem;
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .btn-wrap .btn {
+    font-size: 14px;
   }
 }
