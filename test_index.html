@@ -11,11 +11,13 @@
     <link type="text/css" rel="stylesheet" href="./resource/css/main.css">
     <link type="text/css" rel="stylesheet" href="./resource/css/swiper2.min.css">
     <link type="text/css" rel="stylesheet" href="./resource/css/ux-common.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="./resource/js/main.js"></script>
     <script type="text/javascript" src="./resource/js/common.js"></script>
     <script type="text/javascript" src="./resource/js/swiper2.min.js"></script>
     <script type="text/javascript" src="./resource/js/include.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -339,43 +341,38 @@
         <div class="container">
             <section class="se1">
                 <!-- Swiper -->
-                <div class="swiper-test">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="resource/image/main/swiper_bg1_2560.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="swiper-test2 swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./resource/image/main/swiper_bg2_2560.png">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./resource/image/main/swiper_bg2_2560.png">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./resource/image/main/swiper_bg2_2560.png">
-                                        </div>
-                                    </div>
+                <div class="main-slider">
+                    <div>
+                        <img src="resource/image/main/swiper_bg1_2560.png" alt="" style="width:100%;">
+                    </div>
+                    <div>
+                        <div class="swiper-test2 swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./resource/image/main/swiper_bg2_2560.png" style="width:100%;">
                                 </div>
-                                <div thumbsSlider="" class="swiper-test2__thum swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="resource/image/main/sum1.png">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="resource/image/main/sum2.png">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="resource/image/main/sum3.png">
-                                        </div>
-                                    </div>
+                                <div class="swiper-slide">
+                                    <img src="./resource/image/main/swiper_bg2_2560.png" style="width:100%;">
                                 </div>
-
+                                <div class="swiper-slide">
+                                    <img src="./resource/image/main/swiper_bg2_2560.png" style="width:100%;">
+                                </div>
                             </div>
                         </div>
+                        <div thumbsSlider="" class="swiper-test2__thum swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="resource/image/main/sum1.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="resource/image/main/sum2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="resource/image/main/sum3.png">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <!-- //Swiper -->
@@ -1001,31 +998,37 @@
 
     </div>
     <style>
+        .main-slider .slick-slide{position:relative;}
         .swiper-test2__thum{position:absolute;top:200px;left:0;width:600px;}
         .swiper-test2__thum .swiper-slide{width:200px;}
+        .swiper-test2__thum .swiper-slide-thumb-active{border:1px solid red;box-sizing:border-box;}
     </style>
 
     <script>
-        var se1swiper = new Swiper(".swiper-test .swiper", {
-            slidesPerView: 1,
-          });
+        $('.main-slider').slick({
+            infinite: false,
+            arrows: false,
+            fade: true,
+            slidesToShow: 1,
+        });
         var se2swiperThumb = new Swiper(".swiper-test2__thum", {
             spaceBetween: 10,
             slidesPerView: 3,
-            freeMode: true,
-            draggable: false,
+            allowTouchMove: false,
+            touchRatio: 0,
             cssMode:true,
-            touchRatio:0,
-            watchSlidesProgress: true,
-          });
-          var se2swiper = new Swiper(".swiper-test2", {
+        });
+        var se2swiper = new Swiper(".swiper-test2", {
             spaceBetween: 10,
             slidesPerView: 1,
-            
+            nested: true,
+            allowTouchMove: false,
+            touchRatio: 0,
+            cssMode:true,
             thumbs: {
-              swiper: se2swiperThumb,
+                swiper: se2swiperThumb,
             },
-          });
+        });
     </script>
 
 </body>
