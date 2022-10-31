@@ -13,6 +13,25 @@
                 &.two {
                     background: none;
                     background-size: contain;
+                    .swiper-thumbs {
+                        img {
+                            opacity:0.6;
+                        }
+                        .swiper-slide {
+                            height:9.6rem;
+                            box-sizing: border-box;
+                        }
+                        .swiper-slide-thumb-active {
+                            img {
+                                height:9.6rem;
+                                border:3px solid #8daae0;
+                                opacity:1;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+
+                    
                 }
                 .txtBox {
                     position: absolute;
@@ -78,7 +97,6 @@
                 }
             }
             .secondSwiper {
-                border:2px solid orange;
                 box-sizing: border-box;
                 .mySwiper {
                     position:absolute;
