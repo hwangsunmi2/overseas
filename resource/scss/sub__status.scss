@@ -148,21 +148,31 @@
         }
     }
 }
-@include media-breakpoint-down(n-xs){ //768px
+@include media-breakpoint-down(n-xs){ //576px
     .returnCultural{
+        &-header{
+            &__inner{
+                br{
+                    display: none;
+                }
+            }
+        }
         &List{
             flex-direction: column;
         }
         &-item{
-            width:100%;
+            width:calc(100% - 2rem);
+            &__inner{
+                flex-direction: row;
+            }
+            &__right{
+                margin-top: 0;
+                margin-left: 20px;
+            }
         }
         &-img{
-            width: 100%;
-            height: 100%;
-            img{
-                display: block;
-                margin: 0 auto;
-            }
+            width: 12rem;
+            height: 12rem;
         }
     }
 }
