@@ -151,7 +151,7 @@
     margin-bottom: 10px;
   }
   .returnCultural-name, .returnCultural-detail {
-    padding-left: 14rem;
+    padding-left: calc(12rem + 15px);
   }
   .returnCultural-detail dt + dt {
     margin-top: 5px;
