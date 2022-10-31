@@ -33,6 +33,22 @@
             weight: 100;
         }
     }
+    &-tab{
+        .tab_cont{
+            display: none;
+            &.on{
+                display: block;
+            }
+        }
+        &__link{
+            font-size: 2.4rem;
+            color:#b9b9b9;
+            &.on{
+                color: #4568a9;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 

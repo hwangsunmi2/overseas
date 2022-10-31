@@ -35,6 +35,7 @@ $(function(){
         $nListID.css('display','block');
     });
 
+    //재단이 걸어온 길 tab
     $('.history-tab__present .year-tab__ul li').click(function(){
         var tab_id = $(this).attr('data-tab');
         $('.history-tab__present .year-tab__ul li').removeClass('on');
@@ -44,10 +45,21 @@ $(function(){
         $("#"+tab_id).addClass('on');
     });
 
+    //부서안내 tab
     $('.org-wrap area').click(function(){
         var tab_id = $(this).attr('data-tab');
         $('.org-wrap area').removeClass('on');
         $('.org-wrap .tab_cont').removeClass('on');
+
+        $(this).addClass('on');
+        $("#"+tab_id).addClass('on');
+    });
+
+    //국외문화재현황 tab
+    $('.statistics-tab a').click(function(){
+        var tab_id = $(this).attr('data-tab');
+        $('.statistics-tab a').removeClass('on');
+        $('.statistics-tab .tab_cont').removeClass('on');
 
         $(this).addClass('on');
         $("#"+tab_id).addClass('on');

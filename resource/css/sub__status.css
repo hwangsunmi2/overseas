@@ -24,6 +24,20 @@
   font-size: 1.6rem;
   font-weight: 100;
 }
+.statistics-tab .tab_cont {
+  display: none;
+}
+.statistics-tab .tab_cont.on {
+  display: block;
+}
+.statistics-tab__link {
+  font-size: 2.4rem;
+  color: #b9b9b9;
+}
+.statistics-tab__link.on {
+  color: #4568a9;
+  font-weight: 400;
+}
 
 /** 문화재현황 > 환수문화재 */
 .returnCultural-header__inner {
