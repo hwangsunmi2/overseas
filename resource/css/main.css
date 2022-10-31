@@ -1506,7 +1506,7 @@ section h2 {
 }
 @media (max-width: 400px) {
   .se1 .tabBox {
-    bottom: -30rem;
+    bottom: -40rem;
   }
   .se1 .tabBox .tab_wrap h3 {
     font-size: 3rem;
