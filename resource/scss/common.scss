@@ -6,6 +6,7 @@
     width: 100%;
     height: auto;
     top: 0;
+    color:red;
     a {
         display: block;
         left: -9000px;
@@ -297,6 +298,7 @@ footer {
     .banner_zone {
         padding:2rem 0;
         .swiper-container {
+            overflow:hidden;
             width: calc(100% - 15rem);
             padding-left: 0.1rem;
         }
@@ -994,9 +996,10 @@ footer {
         .banner_zone {
             .footerbtn {
                 width:10rem;
-                padding-right: 2rem;
+                padding-right: 0;
             }
             .inner {
+                justify-content: space-around;
                 .swiper-container {
                     width: calc(100% - 15rem);
                     .swiper-slide {

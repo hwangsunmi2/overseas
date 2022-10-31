@@ -7,6 +7,7 @@ $(document).ready(function () {
 });
 function mainSwiper() {
     var mainswiper = new Swiper(".section1 .firstSwiper > .mySwiper", {
+        effect: "fade",
         pagination: {
           el: ".dot .swiper-pagination",
         },
@@ -17,16 +18,18 @@ function mainSwiper() {
 
 function main2Swiper() {
   var swiper_Thumbs1 = new Swiper(".secondSwiper .mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
+
+    // loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
     spaceBetween: 10,
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
   var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
+    effect: "fade",
     loop: true,
     autoplay: {
       delay: 3000,

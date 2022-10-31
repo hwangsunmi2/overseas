@@ -29,9 +29,7 @@
                                 box-sizing: border-box;
                             }
                         }
-                    }
-
-                    
+                    }                    
                 }
                 .txtBox {
                     position: absolute;
@@ -1092,12 +1090,14 @@ section{
         .section1 {
             .firstSwiper {
                 .swiper-slide{
-                    background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
-                    background-size: cover;
-                    &:nth-child(2) {
-                        background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
+                    &.one {
+                        background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
                         background-size: cover;
                     }
+                    &.two {
+                        background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
+                        background-size: cover;
+                    }s
 
                     .txtBox {
                         top: 42rem;
@@ -1490,7 +1490,12 @@ section{
         .section1 {
             .firstSwiper {
                 .swiper-slide {
-                    background-size: contain;
+                    &.one {
+                        background-size: contain;
+                    }
+                    &.two {
+                        background-size: contain;
+                    }
                     .txtBox {
                         top: 55rem;
                     }

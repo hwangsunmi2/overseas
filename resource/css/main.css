@@ -1030,30 +1030,30 @@ section h2 {
 }
 @media (max-width: 1200px) {
   /* se1 */
-  .se1 .section1 .firstSwiper .swiper-slide {
+  .se1 .section1 .firstSwiper .swiper-slide.one {
     background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
     background-size: cover;
   }
-  .se1 .section1 .firstSwiper .swiper-slide:nth-child(2) {
+  .se1 .section1 .firstSwiper .swiper-slide.two {
     background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
     background-size: cover;
   }
-  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
+  .se1 .section1 .firstSwiper .swiper-slide s .txtBox {
     top: 42rem;
     left: auto;
     right: 1.5rem;
     -webkit-transform: none;
             transform: none;
   }
-  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title {
+  .se1 .section1 .firstSwiper .swiper-slide s .txtBox .title {
     font-size: 6rem;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
   }
-  .se1 .section1 .firstSwiper .swiper-slide .txtBox .title p {
+  .se1 .section1 .firstSwiper .swiper-slide s .txtBox .title p {
     font-size: 6rem;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
   }
-  .se1 .section1 .firstSwiper .swiper-slide .txtBox .number {
+  .se1 .section1 .firstSwiper .swiper-slide s .txtBox .number {
     font-size: 4rem;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
   }
@@ -1339,7 +1339,10 @@ section h2 {
 }
 @media (max-width: 768px) {
   /* se2 */
-  .se1 .section1 .firstSwiper .swiper-slide {
+  .se1 .section1 .firstSwiper .swiper-slide.one {
+    background-size: contain;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two {
     background-size: contain;
   }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox {
