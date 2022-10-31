@@ -116,6 +116,7 @@
             &__inner{
                 padding: 2rem;
                 font-size: 14px;
+                line-height: normal;
             }
         }
         &List{
@@ -141,10 +142,11 @@
             }
         }
         &-text{
-            margin-top: 20px;
+            margin-top: 15px;
             font: {
                 size:14px;
             }
+            line-height: normal;
         }
     }
 }
@@ -163,16 +165,24 @@
         &-item{
             width:calc(100% - 2rem);
             &__inner{
+                position: relative;
                 flex-direction: row;
             }
             &__right{
                 margin-top: 0;
-                margin-left: 20px;
+                margin-left: 0px;
             }
         }
         &-img{
+            position: absolute;
             width: 12rem;
             height: 12rem;
+        }
+        &-name{
+            margin-bottom: 10px;
+        }
+        &-name, &-detail{
+            padding-left: 15rem;
         }
     }
 }

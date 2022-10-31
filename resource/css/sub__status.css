@@ -96,6 +96,7 @@
   .returnCultural-header__inner {
     padding: 2rem;
     font-size: 14px;
+    line-height: normal;
   }
   .returnCulturalList {
     margin: -1rem;
@@ -118,8 +119,9 @@
     line-height: normal;
   }
   .returnCultural-text {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 14px;
+    line-height: normal;
   }
 }
 @media (max-width: 576px) {
@@ -133,14 +135,22 @@
     width: calc(100% - 2rem);
   }
   .returnCultural-item__inner {
+    position: relative;
     flex-direction: row;
   }
   .returnCultural-item__right {
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .returnCultural-img {
+    position: absolute;
     width: 12rem;
     height: 12rem;
+  }
+  .returnCultural-name {
+    margin-bottom: 10px;
+  }
+  .returnCultural-name, .returnCultural-detail {
+    padding-left: 15rem;
   }
 }
