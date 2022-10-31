@@ -1496,6 +1496,10 @@ section h2 {
   .se2 ul li + li {
     margin-left: 10px;
   }
+  /* se3 */
+  .se3 .status {
+    padding: 20px;
+  }
   /* se5 */
   .se5 .se5Wrap .se5Box.goSite {
     height: 52rem;
