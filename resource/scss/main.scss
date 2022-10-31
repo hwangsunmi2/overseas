@@ -1636,7 +1636,19 @@ section{
                                 font-size: 5rem;
                             }
                         }
+                        &.slide2 {
+                            .title {
+                                font-size: 4rem;
+                            }
+                            .text {
+                                padding-top:30px;
+                                line-height:3rem;
+                            }
+                        }
                     }
+
+                   
+                    
                 }
             }
             .dot {
@@ -1671,7 +1683,6 @@ section{
         }
     }
 
-    
     /* se2 */
     .se2 {
         height: 90rem;

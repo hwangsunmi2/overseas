@@ -1425,6 +1425,13 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide .txtBox .title p {
     font-size: 5rem;
   }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .title {
+    font-size: 4rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .text {
+    padding-top: 30px;
+    line-height: 3rem;
+  }
   .se1 .section1 .dot {
     top: 76rem;
   }
