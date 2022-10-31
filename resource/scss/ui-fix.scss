@@ -92,9 +92,19 @@
         &__r{
             font-weight: 500;
         }
+        &__m{
+            font-weight: 500;
+        }
         &__b{
             font-weight: 500;
         }
+    }
+}
+
+//color
+.color{
+    &-blue{
+        color:#4568a9;
     }
 }
 

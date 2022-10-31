@@ -72,8 +72,15 @@
 .font-weight__r {
   font-weight: 500;
 }
+.font-weight__m {
+  font-weight: 500;
+}
 .font-weight__b {
   font-weight: 500;
+}
+
+.color-blue {
+  color: #4568a9;
 }
 
 .bg-gray {
