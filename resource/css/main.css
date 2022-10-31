@@ -22,6 +22,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: none;
+  pointer-events: visible;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs .swiper-slide-thumb-active img {
   width: 100%;
