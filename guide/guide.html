@@ -133,7 +133,7 @@
                             <h3 class="el-tab__tit mt-50">CSS 정의</h3>
                             <div class="mt-20">
                                 <div class="el-box-tip">
-                                    css 추가는 각 페이지 별로 따로 만들어 연결하되 공통 스타일은 <strong>common.css</strong> 쪽, 고정 style은 <strong>fix.css</strong>에 포함한다.<br/>
+                                    css 추가는 각 페이지 별로 따로 만들어 연결하되 공통 스타일은 <strong>common.css</strong> 쪽, 고정 style은 <strong>ui-fix.css</strong>에 포함한다.<br/>
                                     페이지 별 css는 <strong>sub__페이지명.css</strong>로 만들되 페이지별 head쪽 ux-common.css 아래에 선언한다.<br/>
                                     plugIn css의 경우 css폴더 내 lib 폴더에 넣어서 연결한다.
                                 </div>
@@ -211,8 +211,14 @@
                                                                 <li>main.css</li>
                                                                 <li>reset.css</li>
                                                                 <li>responsive.css</li>
-                                                                <li>sub__data.css</li>
+                                                                <li>sub__work.css</li>
                                                                 <li>sub__status.css</li>
+                                                                <li>sub__data.css</li>
+                                                                <li>sub__talk.css</li>
+                                                                <li>sub__intro.css</li>
+                                                                <li>sub__info.css</li>
+                                                                <li>sub__search.css</li>
+                                                                <li>sub__etc.css</li>
                                                                 <li>ui-button.css</li>
                                                                 <li>ui-element.css</li>
                                                                 <li>ui-fix.css</li>
@@ -451,21 +457,55 @@
 
                         <!-- FORM -->
                         <div class="el-tab__cont" id="tab-guide--6">
-                            <h3 class="el-tab__tit">FORM</h3>
+                            <h3 class="el-tab__tit">RADIO</h3>
                             <div class="mt-20">
                                 <div class="el-box-tip">
-                                    tip
+                                    .ui-radio
                                 </div>
                                 <div class="el-txt">
-                                    txt
+                                    radio
                                 </div>
 
                                 <div class="el-example lay-item--1600">
-                                    example
+                                    <div class="ui-radio">
+                                        <div class="ui-radio__inner">
+                                            <div class="ui-radio__item">
+                                                <input type="radio" class="ui-radio-input" id="radio1" name="radio1" checked="">
+                                                <label for="radio1" class="ui-label">
+                                                    <span class="ui-radio-object"></span>
+                                                    <span class="ui-label__text">비공개</span>
+                                                </label>
+                                            </div>
+                                            <div class="ui-radio__item ml-10">
+                                                <input type="radio" class="ui-radio-input" id="radio2" name="radio1">
+                                                <label for="radio2" class="ui-label">
+                                                    <span class="ui-radio-object"></span>
+                                                    <span class="ui-label__text">공개</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="el-code-wrap">
                                     <!-- 코드 삽입 -->
-                                    <pre class="language-html"><code>
+                                    <pre class="language-html"><code>&lt;div class="ui-radio"&gt;
+                                        &lt;div class="ui-radio__inner"&gt;
+                                            &lt;div class="ui-radio__item"&gt;
+                                                &lt;input type="radio" class="ui-radio-input" id="radio1" name="radio1" checked=""&gt;
+                                                &lt;label for="radio1" class="ui-label"&gt;
+                                                    &lt;span class="ui-radio-object"&gt;&lt;/span&gt;
+                                                    &lt;span class="ui-label__text"&gt;비공개&lt;/span&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="ui-radio__item ml-10"&gt;
+                                                &lt;input type="radio" class="ui-radio-input" id="radio2" name="radio1"&gt;
+                                                &lt;label for="radio2" class="ui-label"&gt;
+                                                    &lt;span class="ui-radio-object"&gt;&lt;/span&gt;
+                                                    &lt;span class="ui-label__text"&gt;공개&lt;/span&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
                                         </code>
                                     </pre>
                                 </div>
@@ -500,18 +540,161 @@
                             <h3 class="el-tab__tit">TABLE</h3>
                             <div class="mt-20">
                                 <div class="el-box-tip">
-                                    tip
+                                    table 공통 클래스는 <strong>.board-table</strong> 이며,
+                                    기본 list table 은 <strong>.board-table__list</strong> 로 감싸고,
+                                    수직형 테이블은 <strong>.board-table__view.ver</strong>로 감싸준다.
                                 </div>
                                 <div class="el-txt">
-                                    txt
+                                    기본 list
                                 </div>
 
                                 <div class="el-example lay-item--1600">
-                                    example
+                                    
+                                    <div class="board-table board-table__list">
+                                        <div class="board-table__inner">
+                                            <table>
+                                                <caption>공지사항 리스트</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="num">번호</th>
+                                                        <th scope="col" class="category">카테고리</th>
+                                                        <th scope="col" class="subject cat">제목</th>	
+                                                        <th scope="col" class="addfile">첨부</th>
+                                                        <th scope="col" class="date">등록일</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- 한 페이지 노출 게시물 개수: 10개 -->
+                                                    <tr class="notice">
+                                                        <td>100</td>
+                                                        <td>공지</td>
+                                                        <td class="td-title">
+                                                            <a href="" class="td-titlelink">코로나19 국민예방행동수칙 안내</a>
+                                                        </td>
+                                                        <td class="td-file">
+                                                            <a href="" download="" class="td-filelink"></a>
+                                                        </td>
+                                                        <td>2022-10-18</td>        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>99</td>
+                                                        <td>채용</td>
+                                                        <td class="td-title">
+                                                            <a href="" class="td-titlelink">&lt;2022 박물관·미술관 종사자 문화재 수집 윤리·실무 교육&gt; 접수 마감 안내</a>
+                                                        </td>
+                                                        <td class="td-file">
+                                                            <a href="" download="" class="td-filelink"></a>
+                                                        </td>
+                                                        <td>2022-10-04</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="el-txt">
+                                    수직형 list
+                                </div>
+                                <div class="el-example lay-item--1600">
+                                    <div class="board-table board-table__view ver ">
+                                        <div class="board-table__inner removeBefore">
+                                            <table>
+                                                <caption>Q&amp;A 등록</caption>
+                                                <colgroup>
+                                                    <col class="ver-th">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>제목</th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <input type="text" class="ui-input ui-input__full">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>작성자</th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <input type="text" class="ui-input ui-input__full">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>공개여부</th>
+                                                        <td class="">
+                                                            <div class="ui-radio">
+                                                                <div class="ui-radio__inner">
+                                                                    <div class="ui-radio__item">
+                                                                        <input type="radio" class="ui-radio-input" id="radio1" name="radio1" checked="">
+                                                                        <label for="radio1" class="ui-label">
+                                                                            <span class="ui-radio-object"></span>
+                                                                            <span class="ui-label__text">비공개</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="ui-radio__item ml-10">
+                                                                        <input type="radio" class="ui-radio-input" id="radio2" name="radio1">
+                                                                        <label for="radio2" class="ui-label">
+                                                                            <span class="ui-radio-object"></span>
+                                                                            <span class="ui-label__text">공개</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <!-- 코드 삽입 -->
-    <pre class="language-html"><code>
+    <pre class="language-html"><code>&lt;div class="board-table board-table__list"&gt;
+        &lt;div class="board-table__inner"&gt;
+            &lt;table&gt;
+                &lt;caption&gt;공지사항 리스트&lt;/caption&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th scope="col" class="num"&gt;번호&lt;/th&gt;
+                        &lt;th scope="col" class="category"&gt;카테고리&lt;/th&gt;
+                        &lt;th scope="col" class="subject cat"&gt;제목&lt;/th&gt;	
+                        &lt;th scope="col" class="addfile"&gt;첨부&lt;/th&gt;
+                        &lt;th scope="col" class="date"&gt;등록일&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;!-- 한 페이지 노출 게시물 개수: 10개 --&gt;
+                    &lt;tr class="notice"&gt;
+                        &lt;td&gt;100&lt;/td&gt;
+                        &lt;td&gt;공지&lt;/td&gt;
+                        &lt;td class="td-title"&gt;
+                            &lt;a href="" class="td-titlelink"&gt;코로나19 국민예방행동수칙 안내&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class="td-file"&gt;
+                            &lt;a href="" download="" class="td-filelink"&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;2022-10-18&lt;/td&gt;        
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;99&lt;/td&gt;
+                        &lt;td&gt;채용&lt;/td&gt;
+                        &lt;td class="td-title"&gt;
+                            &lt;a href="" class="td-titlelink"&gt;&lt;2022 박물관·미술관 종사자 문화재 수집 윤리·실무 교육&gt; 접수 마감 안내&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class="td-file"&gt;
+                            &lt;a href="" download="" class="td-filelink"&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;2022-10-04&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    </div>
         </code>
     </pre>
                             </div>

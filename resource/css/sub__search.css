@@ -16,8 +16,7 @@
   padding: 0rem 2rem;
   background: #fff;
   border: 3px solid #4568a9;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: left;
 }
 .integrateSearchArea__inner .btn-search {
@@ -50,12 +49,8 @@
   color: #4568a9;
 }
 .search-result__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 2rem;
   background: #fafafa;
 }

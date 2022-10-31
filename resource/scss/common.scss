@@ -6,7 +6,11 @@
     width: 100%;
     height: auto;
     top: 0;
+<<<<<<< HEAD
     color:red;
+=======
+    
+>>>>>>> 6e5c5d5228952f3b66d6e7ea4bd34280b125f33a
     a {
         display: block;
         left: -9000px;
@@ -470,7 +474,7 @@ footer {
             width:76rem;
             height:38.7rem;
             box-sizing: border-box;
-            z-index: 0;
+            z-index: 21;
             &::after {
                 position:absolute;
                 width:100%;
@@ -845,9 +849,7 @@ footer {
         .banner_zone {
             .inner {
                 .swiper-container {
-                    overflow:hidden;
                     width: calc(100% - 15rem);
-                    padding-left: 0.1rem;
                     .swiper-slide {
                         a {
                             img {

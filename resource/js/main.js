@@ -18,11 +18,15 @@ function mainSwiper() {
 
 function main2Swiper() {
   var swiper_Thumbs1 = new Swiper(".secondSwiper .mySwiper", {
+<<<<<<< HEAD
 
     // loop: true,
     // autoplay: {
     //   delay: 3000,
     // },
+=======
+    loop: true,
+>>>>>>> 6e5c5d5228952f3b66d6e7ea4bd34280b125f33a
     spaceBetween: 10,
     slidesPerView: 3,
     freeMode: true,
@@ -31,9 +35,6 @@ function main2Swiper() {
   var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
     effect: "fade",
     loop: true,
-    autoplay: {
-      delay: 3000,
-    },
     spaceBetween: 10,
     thumbs: {
       swiper: swiper_Thumbs1,
