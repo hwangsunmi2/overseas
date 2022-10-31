@@ -1505,6 +1505,9 @@ section h2 {
   }
 }
 @media (max-width: 400px) {
+  .se1 .section1 .firstSwiper .swiper-slide {
+    height: 100rem;
+  }
   .se1 .tabBox {
     bottom: -50rem;
   }

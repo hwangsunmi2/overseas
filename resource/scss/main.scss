@@ -1750,6 +1750,13 @@ section{
 
 @media (max-width: 400px) {
     .se1 {
+        .section1 {
+            .firstSwiper {
+                .swiper-slide {
+                    height:100rem;
+                }
+            }
+        }
         .tabBox {
             bottom: -50rem;
             .tab_wrap {
