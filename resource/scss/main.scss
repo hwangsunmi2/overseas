@@ -1668,6 +1668,8 @@ section{
             }
         }
     }
+
+    
     /* se2 */
     .se2 {
         height: 90rem;
@@ -1723,6 +1725,10 @@ section{
                         }
                     }   
                 }
+                &+ li {
+                    margin-left: 10px;
+                }
+                
                     
             }
         }
@@ -1745,7 +1751,7 @@ section{
 @media (max-width: 400px) {
     .se1 {
         .tabBox {
-            bottom: -40rem;
+            bottom: -43rem;
             .tab_wrap {
                 h3 {
                     font-size: 3rem;
