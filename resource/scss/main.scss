@@ -1748,10 +1748,18 @@ section{
     }
     /* se3 */
     .se3 {
+        .se3Wrap {
+            .se3Box {
+                ul {
+                    padding-top: 10px;
+                }
+            }
+        }
         .status {
             padding: 20px;
         }
     }
+
     /* se5 */
     .se5 {
         .se5Wrap {

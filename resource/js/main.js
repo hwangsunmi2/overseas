@@ -8,7 +8,6 @@ $(document).ready(function () {
 function mainSwiper() {
     var mainswiper = new Swiper(".section1 .firstSwiper > .mySwiper", {
         effect: "fade",
-        nested: true,
         slidesToShow: 1,
         pagination: {
           el: ".dot .swiper-pagination",
@@ -32,6 +31,7 @@ function main2Swiper() {
   });
   var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
     effect: "fade",
+    nested: true,
     // loop: true,
     // autoplay: {
     //   delay: 3000,
