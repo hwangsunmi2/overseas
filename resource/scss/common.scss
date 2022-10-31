@@ -1020,6 +1020,7 @@ footer {
                             ul {
                                 li {
                                     letter-spacing: -0.5px;
+                                    font-size: 1.7rem;
                                     &+li {
                                         margin-left:0;
                                     }
@@ -1028,6 +1029,16 @@ footer {
                             p {
                                 word-break: keep-all;
                                 line-height: 3rem;
+                            }
+                        }
+                    }
+                }
+                &.link {
+                    ul {
+                        li {
+                            a {
+                                color: #fff;
+                                font-size: 1.7rem;
                             }
                         }
                     }

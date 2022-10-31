@@ -876,6 +876,7 @@ footer .footerBottom .footer.info .addr address ul li span {
   }
   footer .footerBottom .footer.info .addr address ul li {
     letter-spacing: -0.5px;
+    font-size: 1.7rem;
   }
   footer .footerBottom .footer.info .addr address ul li + li {
     margin-left: 0;
@@ -883,5 +884,9 @@ footer .footerBottom .footer.info .addr address ul li span {
   footer .footerBottom .footer.info .addr address p {
     word-break: keep-all;
     line-height: 3rem;
+  }
+  footer .footerBottom .footer.link ul li a {
+    color: #fff;
+    font-size: 1.7rem;
   }
 }
