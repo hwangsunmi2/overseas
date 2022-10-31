@@ -150,6 +150,9 @@
   .returnCultural-name {
     margin-bottom: 10px;
   }
+  .returnCultural-detail {
+    min-height: 78px;
+  }
   .returnCultural-name, .returnCultural-detail {
     padding-left: calc(12rem + 15px);
   }

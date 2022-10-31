@@ -181,6 +181,9 @@
         &-name{
             margin-bottom: 10px;
         }
+        &-detail{
+            min-height: 78px;
+        }
         &-name, &-detail{
             padding-left: calc(12rem + 15px);
         }
