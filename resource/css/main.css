@@ -7,11 +7,15 @@
 }
 .se1 .section1 .firstSwiper .swiper-slide.one {
   background: url(../image/main/swiper_bg1_2560.png) no-repeat center top;
-  background-size: contain;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two {
-  background: none;
-  background-size: contain;
+  background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .txtBox {
+  display: none;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .swiper-slide-active .txtBox {
+  display: block;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs img {
   opacity: 0.6;
@@ -20,13 +24,22 @@
   height: 9.6rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: none;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs .swiper-slide-thumb-active img {
+  width: 100%;
   height: 9.6rem;
   border: 3px solid #8daae0;
   opacity: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .pc {
+  width: 100%;
+  height: 120.7rem;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .mo {
+  display: none;
 }
 .se1 .section1 .firstSwiper .swiper-slide .txtBox {
   position: absolute;
@@ -952,12 +965,6 @@ section h2 {
   }
 }
 /* responsive */
-@media (max-width: 1920px) {
-  .se1 .section1 .swiper-slide {
-    background: url(../image/main/swiper_bg1_1920.png) no-repeat center top;
-    background-size: contain;
-  }
-}
 @media (max-width: 1600px) {
   /* se1 */
   .se1 .tabBox {
@@ -1038,6 +1045,32 @@ section h2 {
     background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
     background-size: cover;
   }
+  .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs .swiper-slide img {
+    width: 100%;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox .title {
+    font-size: 6rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox .title p {
+    font-size: 6rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox .number {
+    font-size: 4rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox.slide2 {
+    width: 95%;
+    top: 25rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox.slide2 .title {
+    font-size: 5rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox.slide2 .text br {
+    display: none;
+  }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox {
     top: 42rem;
     left: auto;
@@ -1056,6 +1089,11 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide .txtBox .number {
     font-size: 4rem;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+  }
+  .se1 .section1 .firstSwiper .secondSwiper .mySwiper {
+    left: 1.5rem;
+    -webkit-transform: none;
+            transform: none;
   }
   .se1 .section1 .firstSwiper .dot {
     position: absolute;
@@ -1285,8 +1323,21 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide .txtBox .number {
     font-size: 4rem;
   }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 {
+    width: 95%;
+    left: 1.5rem;
+    right: 1.5rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .title {
+    font-size: 5rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .text br {
+    display: none;
+  }
   .se1 .section1 .firstSwiper .dot {
-    top: 92rem;
+    top: 80rem;
   }
   /* se2 */
   .se2 ul li {
@@ -1349,7 +1400,7 @@ section h2 {
     top: 55rem;
   }
   .se1 .section1 .firstSwiper .dot {
-    top: 95rem;
+    top: 65rem;
   }
   .se1 .tabBox {
     bottom: -25rem;
@@ -1454,6 +1505,12 @@ section h2 {
   }
 }
 @media (max-width: 400px) {
+  .se1 .tabBox .tab_wrap h3 {
+    font-size: 3rem;
+  }
+  .se1 .tabBox .tab_wrap .tab_cont ul li + li {
+    margin-left: 2rem;
+  }
   /* se5 */
   .se5 .se5Wrap .se5Box.goSite {
     height: 40rem;

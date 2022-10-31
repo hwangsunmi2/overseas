@@ -7,12 +7,20 @@
                 height:120.7rem;
                 &.one {
                     background: url(../image/main/swiper_bg1_2560.png) no-repeat center top;
-                    background-size: contain;
+                    
                 }
                 
                 &.two {
-                    background: none;
-                    background-size: contain;
+                    background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
+                    
+                    .txtBox {
+                        display: none;
+                    }
+                    .swiper-slide-active {
+                        .txtBox {
+                            display: block;
+                        }
+                    }
                     .swiper-thumbs {
                         img {
                             opacity:0.6;
@@ -20,16 +28,26 @@
                         .swiper-slide {
                             height:9.6rem;
                             box-sizing: border-box;
+                            background: none;
                         }
+                        
                         .swiper-slide-thumb-active {
                             img {
+                                width:100%;
                                 height:9.6rem;
                                 border:3px solid #8daae0;
                                 opacity:1;
                                 box-sizing: border-box;
                             }
                         }
-                    }                    
+                    } 
+                    .pc {
+                        width:100%;
+                        height: 120.7rem;
+                    }
+                    .mo {
+                        display:none;
+                    }
                 }
                 .txtBox {
                     position: absolute;
@@ -968,14 +986,22 @@ section{
 
 /* responsive */
 @media (max-width: 1920px) {
-    .se1 {
-        .section1 {
-            .swiper-slide {
-                background: url(../image/main/swiper_bg1_1920.png) no-repeat center top;
-                background-size: contain;
-            }
-        }
-    }
+    // .se1 {
+    //     .section1 {
+    //         .swiper-slide {
+    //             &.one {
+    //                 background: url(../image/main/swiper_bg1_1920.png) no-repeat center top;
+    //                 background-size: contain;
+    //             }
+                
+    //             &.two {
+    //                 background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
+    //                 background-size: contain;
+    //             background: url(../image/main/swiper_bg1_1920.png) no-repeat center top;
+    //             background-size: contain;
+    //         }
+    //     }
+    // }
 }
 
 @media (max-width: 1600px) {
@@ -1084,7 +1110,7 @@ section{
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) { 
     /* se1 */
     .se1 {
         .section1 {
@@ -1094,9 +1120,45 @@ section{
                         background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
                         background-size: cover;
                     }
-                    &.two {
+                    &.two { 
                         background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
                         background-size: cover;
+
+                        .swiper-thumbs {
+                            .swiper-slide {
+                                img {
+                                    width:100%;
+                                }
+                            } 
+                        }
+
+                        .txtBox {
+                            .title {
+                                font-size: 6rem;
+                                p {
+                                    font-size: 6rem;
+                                }
+                            }
+                            .number {
+                                font-size: 4rem;
+                            }
+                
+                            &.slide2 {
+                                width: 95%;
+                                top: 25rem;
+                                left: 1.5rem;
+                                right:1.5rem;
+                                transform: none;
+                                .title {
+                                    font-size: 5rem;
+                                }
+                                .text {
+                                    br {
+                                        display:none;
+                                    }
+                                }
+                            }
+                        }            
                     }
 
                     .txtBox {
@@ -1118,6 +1180,12 @@ section{
                         }
                     }
                 }
+                .secondSwiper {
+                    .mySwiper {
+                        left:1.5rem;
+                        transform: none;
+                    }
+                }
                 .dot {
                     position: absolute;
                     width: 9rem;
@@ -1130,6 +1198,8 @@ section{
                     z-index: 1;
                 }
             }
+
+          
         }
 
         .tabBox {
@@ -1150,6 +1220,12 @@ section{
                 }
             }
         }
+
+
+        
+               
+
+
     }
     /* se2 */
     .se2 {
@@ -1409,10 +1485,25 @@ section{
                         .number {
                             font-size: 4rem;
                         }
+
+                        &.slide2 {
+                            width: 95%;
+                            left: 1.5rem;
+                            right:1.5rem;
+                            transform: none;
+                            .title {
+                                font-size: 5rem;
+                            }
+                            .text {
+                                br {
+                                    display:none;
+                                }
+                            }
+                        }
                     }
                 }
                 .dot {
-                    top: 92rem;
+                    top: 80rem;
                 }
             }
             
@@ -1501,7 +1592,7 @@ section{
                     }
                 }
                 .dot {
-                    top: 95rem;
+                    top: 65rem;
                 }
             }
         }
@@ -1652,6 +1743,24 @@ section{
 } 
 
 @media (max-width: 400px) {
+    .se1 {
+        .tabBox {
+            .tab_wrap {
+                h3 {
+                    font-size: 3rem;
+                }
+                .tab_cont {
+                    ul {
+                        li {
+                            &+ li {
+                                margin-left: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     /* se5 */
     .se5 {
         .se5Wrap {
