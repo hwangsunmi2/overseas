@@ -1,10 +1,31 @@
 @charset "UTF-8";
-/** 문화재현황 > 웹VR */
+/** 문화재현황 */
 .subVisual--status {
   background-image: url("../image/sub/img-subVisual--01.jpg");
   background-position: center 0;
 }
 
+/** 문화재현황 > 국외문화재현황 */
+.statistics-header__inner {
+  margin-bottom: 4rem;
+  padding: 4.3rem 0;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #ffffff;
+  background: #8daae0;
+  border-radius: 2rem 0 2rem 0;
+  text-align: center;
+}
+.statistics-score {
+  font-size: 4.6rem;
+  font-weight: 400;
+}
+.statistics-date {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+/** 문화재현황 > 환수문화재 */
 .returnCultural-header__inner {
   margin-bottom: 4rem;
   padding: 3rem 0;
@@ -15,8 +36,6 @@
   border-radius: 2rem 0 2rem 0;
   text-align: center;
 }
-
-/** 문화재현황 > 환수문화재 */
 .returnCulturalList {
   display: flex;
   margin: -2rem;
