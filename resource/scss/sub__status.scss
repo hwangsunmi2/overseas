@@ -182,7 +182,14 @@
             margin-bottom: 10px;
         }
         &-name, &-detail{
-            padding-left: 15rem;
+            padding-left: 14rem;
+        }
+        &-detail{
+            dt{
+                &+dt{
+                    margin-top: 5px;
+                }
+            }
         }
     }
 }
