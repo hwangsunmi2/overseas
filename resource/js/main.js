@@ -8,21 +8,22 @@ $(document).ready(function () {
 function mainSwiper() {
     var mainswiper = new Swiper(".section1 .firstSwiper > .mySwiper", {
         effect: "fade",
+        nested: true,
+        slidesToShow: 1,
         pagination: {
           el: ".dot .swiper-pagination",
         },
         observer: true,	// 추가
-      observeParents: true,	// 추가
+        observeParents: true,	// 추가 
     }); 
 }
 
 function main2Swiper() {
   var swiper_Thumbs1 = new Swiper(".secondSwiper .mySwiper", {
-    // loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    // },
-    loop: true,
+    //loop: true,
+    autoplay: {
+      delay: 3000,
+    },
     spaceBetween: 10,
     slidesPerView: 3,
     freeMode: true,
@@ -31,6 +32,9 @@ function main2Swiper() {
   var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
     effect: "fade",
     loop: true,
+    autoplay: {
+      delay: 3000,
+    },
     spaceBetween: 10,
     thumbs: {
       swiper: swiper_Thumbs1,

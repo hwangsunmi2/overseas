@@ -95,7 +95,6 @@
                 }
             }
             .secondSwiper {
-                border:2px solid orange;
                 box-sizing: border-box;
                 .mySwiper {
                     position:absolute;
@@ -1098,7 +1097,7 @@ section{
                     &.two {
                         background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
                         background-size: cover;
-                    }s
+                    }
 
                     .txtBox {
                         top: 42rem;
