@@ -58,12 +58,18 @@
   border-top: 2px solid #3b60a5;
 }
 .qna-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 3rem 0;
   border-bottom: 1px solid #ced1d8;
 }
 .qna-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 9.7rem;
   width: 100%;
@@ -75,7 +81,9 @@
 .qna-mark__q, .qna-mark__a {
   display: inline-block;
   width: 12rem;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   font-size: 2.4rem;
   font-weight: 500;
   text-align: center;
@@ -90,6 +98,8 @@
   display: none;
 }
 .qna-body__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 4rem 6rem 4rem 0;
   background: #fafcff;
@@ -103,6 +113,8 @@
   margin-top: 3rem;
 }
 .qna-file__inner dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .qna-file__inner dt, .qna-file__inner dd {
@@ -111,7 +123,9 @@
 .qna-file__inner dt {
   margin-right: 2.5rem;
   font-weight: 500;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .qna-file__link {
   display: block;
@@ -126,13 +140,20 @@
 
 @media (max-width: 1280px) {
   .board-table__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .board-table__bottom .btn-wrap--absolute {
     position: relative;
     top: 0;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .board-table__bottom .pagination-wrap {
     margin-top: 2rem;
