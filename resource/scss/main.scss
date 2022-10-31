@@ -1242,42 +1242,44 @@ section{
                 &:nth-child(1){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
+
+                
                 &:nth-child(2){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(3){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(4){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(5){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(6){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
@@ -1676,7 +1678,7 @@ section{
         ul {
             padding: 0;
             li {
-                padding: 2rem 1rem;
+                padding: 20px 10px;
                 .content {
                     .num {
                         span {
