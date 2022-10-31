@@ -629,6 +629,87 @@
 }
 
 
+/* 재단소개 */ 
+.donation{
+    &-text{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        text-align: center;
+    }
+    &-info{
+        &__inner{
+            max-width: 98rem;
+            margin: 0 auto;
+        }
+        &__title{
+            margin-top: 7.5rem;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom:1px solid #ced1d8;
+            font : {
+                size: 3.2rem;
+                weight:500;
+            }
+            text-align: center;
+        }
+        &__content{
+            display: flex;
+            margin: -2rem;
+        }
+        &1{
+            margin-top: 3rem;
+            font : {
+                size: 2.4rem;
+                weight:500;
+            }
+        }
+        &2{
+            margin-top: 2rem;
+            font-size: 1.8rem;
+        }
+    }
+    &-item{
+        flex:1;
+        margin: 2rem;
+        padding: 2.8rem 0 4.8rem 0;
+        border:2px solid;
+        border-radius: 20px 0 20px 0;
+        box-sizing: border-box;
+        text-align: center;
+        &__blue{
+            border-color:#87a6de;
+            .donation-item__title{
+                background: #4568a9;
+            }
+            img{
+                display: block;
+                width: 8.1rem;
+                height: 7.1rem;
+                margin: 0 auto;
+            }
+        }
+        &__red{
+            border-color:#f1b6b3;
+            .donation-item__title{
+                background: #e86962;
+            }
+            img{
+                display: block;
+                width: 8.7rem;
+                height: 7rem;
+                margin: 0 auto;
+            }
+        }
+        &__title{
+            display:inline-block;
+            margin-bottom: 3rem;
+            padding:1.2rem 3.927rem;
+            font-size: 1.6rem;
+            border-radius: 2rem;
+            color:#ffffff;
+        }
+    }
+}
 
 
 
@@ -957,5 +1038,26 @@
             }
         }
     }
-    
+    .donation{
+        &-info{
+            &__content{
+                flex-direction: column;
+                margin: -5px;
+            }
+            &1, &2{
+                a{
+                    color:#000000;
+                }
+            }
+        }
+        &-text{
+            font-size: 14px;
+        }
+        &-item{
+            margin: 5px;
+            &__title{
+                font-size: 12px;
+            }
+        }
+    }
 }

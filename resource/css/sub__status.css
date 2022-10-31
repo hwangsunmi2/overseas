@@ -150,6 +150,7 @@
   .returnCultural-name {
     margin-bottom: 10px;
     padding-top: 5px;
+    line-height: normal;
   }
   .returnCultural-detail {
     min-height: 78px;
