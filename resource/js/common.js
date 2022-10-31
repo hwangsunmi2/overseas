@@ -99,19 +99,19 @@ function footerSwiper() {
             prevEl: ".footerbtn .swiper-button-prev",
         },
         breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        },
-        1400: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-        },
-        },
+            360: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            1400: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+        }
     }); 
     $('.footerbtn .swiper-button-pause').click(function () {
         if ($(this).hasClass('off')) {
