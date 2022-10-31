@@ -24,10 +24,11 @@ function main2Swiper() {
     // autoplay: {
     //   delay: 3000,
     // },
+    allowTouchMove: false,
+    touchRatio: 0,
+    cssMode:true,
     spaceBetween: 10,
     slidesPerView: 3,
-    freeMode: true,
-    watchSlidesProgress: true,
   });
   var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
     effect: "fade",
