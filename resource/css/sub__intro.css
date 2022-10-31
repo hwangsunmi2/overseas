@@ -114,6 +114,17 @@
 }
 
 /* 재단소개 > 부서안내 */
+.org-wrap .tab_cont {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+.org-wrap .tab_cont.on {
+  display: block;
+}
 .org-img {
   position: relative;
   width: 100%;
@@ -216,8 +227,6 @@
   text-align: center;
 }
 .ci-wrap__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
   margin-left: -4rem;
@@ -225,9 +234,7 @@
 }
 .ci-wrap__bottom > div {
   padding: 0 4rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .ci-wrap__bottom img {
   max-width: 100%;
@@ -288,8 +295,6 @@
   font-size: 7.2rem;
 }
 .history-tab__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .history-tab__list-now.on a {
@@ -329,6 +334,10 @@
   text-align: center;
   text-shadow: 0 0 0.5rem rgba(11, 46, 110, 0.28);
   z-index: 1;
+}
+.history-year__tab {
+  display: none;
+  margin-top: 20px;
 }
 .history-img {
   margin-right: 8.8rem;
@@ -406,33 +415,17 @@
   background-size: 18.6rem 21.6rem;
 }
 
-.history-year__tab {
-  display: none;
-  margin-top: 20px;
-}
-
 .year-tab__ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   margin: -0.5px;
 }
 .year-tab__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  align-items: center;
+  justify-content: center;
+  flex: none;
   width: calc(25% - 1px);
   height: 34px;
   margin: 0.5px;
@@ -440,15 +433,39 @@
   color: #b9b9b9;
   border: 1px solid #d2d5dc;
   border-radius: 2px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .year-tab__list.on {
   background: #8daae0;
   border-color: #8daae0;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
-          box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
+  box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
   color: #ffffff;
+}
+
+/* 인사말 */
+.subContent-wrap.gr-background {
+  margin-bottom: 0;
+  background: url(../image/sub/img-greeting.png) 100% 100% no-repeat;
+  background-position: center bottom;
+}
+
+.gr-wrap__inner {
+  padding-top: 40px;
+  padding-bottom: 153px;
+  padding-left: 50px;
+}
+.gr-title {
+  text-align: left;
+  font-size: 4.6rem;
+  font-weight: 200;
+  line-height: 5rem;
+  text-indent: -0.25px;
+}
+.gr-text {
+  text-align: left;
+  line-height: 36px;
+  font-size: 20px;
+  text-indent: 0.25px;
 }
 
 @media (max-width: 1400px) {
@@ -508,6 +525,9 @@
   .route-way__how-item--ps {
     line-height: normal;
   }
+  .subContent-wrap.gr-background {
+    background-position: right 10% bottom;
+  }
 }
 @media (max-width: 768px) {
   .subVisual--intro {
@@ -521,10 +541,7 @@
     display: block;
   }
   .ci-wrap__bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0;
   }
   .ci-wrap__bottom > div {
@@ -611,8 +628,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     overflow: visible;
   }
   .history-wrap .tab_cont.on {
@@ -636,10 +652,7 @@
     margin-top: 30px;
   }
   .history-item__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: auto;
   }
   .history-list__wrap {
@@ -660,9 +673,7 @@
     margin-top: 15px;
   }
   .history-tab__title {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .history-swiper__present .history-year {
     color: #8daae0;
@@ -671,5 +682,26 @@
   .history-swiper__past .history-year {
     color: #eda39f;
     text-align: center;
+  }
+  .subContent-wrap.gr-background {
+    background-image: url(../image/sub/bg-greeting.png);
+    background-position: right bottom;
+    background-size: 100%;
+  }
+  .gr-wrap__inner {
+    padding-left: 0;
+    padding-bottom: 90%;
+  }
+  .gr-title {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1px;
+  }
+  .gr-text {
+    font-size: 14px;
+    line-height: 3.2rem;
+  }
+  .gr-text:nth-child(n+2):nth-child(-n+4) br {
+    display: none;
   }
 }

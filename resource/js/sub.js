@@ -44,14 +44,15 @@ $(function(){
         $("#"+tab_id).addClass('on');
     });
 
-    $('.history-tab__past .year-tab__ul li').click(function(){
+    $('.org-wrap area').click(function(){
         var tab_id = $(this).attr('data-tab');
-        $('.history-tab__past .year-tab__ul li').removeClass('on');
-        $('.history-swiper__past .tab_cont').removeClass('on');
+        $('.org-wrap area').removeClass('on');
+        $('.org-wrap .tab_cont').removeClass('on');
 
         $(this).addClass('on');
         $("#"+tab_id).addClass('on');
     });
+
 
     
 
