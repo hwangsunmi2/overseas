@@ -64,7 +64,7 @@ table {
 
 /* 2022.11.01 : mod : 아이폰 이슈로 인한 position 삭제 */
 /* table caption{position:absolute;top:-9999px;left:-9999px;} */
-table caption{width:0.001px; height:0.001px; text-indent: -9999x;}
+table caption{width:0.001px; height:0.001px; font-size:0; text-indent: -9999x;}
 
 a{text-decoration:none; color: #000;} 
 
