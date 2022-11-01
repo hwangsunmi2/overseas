@@ -237,6 +237,9 @@
   .statistics-nation {
     font-size: 14px;
   }
+  .statistics-tab__link {
+    font-size: 15px;
+  }
   .sta-img__pc {
     display: none !important;
   }
