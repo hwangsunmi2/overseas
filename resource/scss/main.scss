@@ -1242,42 +1242,44 @@ section{
                 &:nth-child(1){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
+
+                
                 &:nth-child(2){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(3){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(4){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(5){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
                 &:nth-child(6){
                     .content {
                         &::after {
-                            background-size: contain;
+                            background-size: cover;
                         }
                     }
                 }
@@ -1634,7 +1636,19 @@ section{
                                 font-size: 5rem;
                             }
                         }
+                        &.slide2 {
+                            .title {
+                                font-size: 4rem;
+                            }
+                            .text {
+                                padding-top:30px;
+                                line-height:3rem;
+                            }
+                        }
                     }
+
+                   
+                    
                 }
             }
             .dot {
@@ -1669,14 +1683,13 @@ section{
         }
     }
 
-    
     /* se2 */
     .se2 {
         height: 90rem;
         ul {
             padding: 0;
             li {
-                padding: 2rem 1rem;
+                padding: 20px 10px;
                 .content {
                     .num {
                         span {
@@ -1733,6 +1746,20 @@ section{
             }
         }
     }
+    /* se3 */
+    .se3 {
+        .se3Wrap {
+            .se3Box {
+                ul {
+                    padding-top: 10px;
+                }
+            }
+        }
+        .status {
+            padding: 20px;
+        }
+    }
+
     /* se5 */
     .se5 {
         .se5Wrap {
@@ -1750,8 +1777,15 @@ section{
 
 @media (max-width: 400px) {
     .se1 {
+        .section1 {
+            .firstSwiper {
+                .swiper-slide {
+                    height:100rem;
+                }
+            }
+        }
         .tabBox {
-            bottom: -30rem;
+            bottom: -50rem;
             .tab_wrap {
                 h3 {
                     font-size: 3rem;

@@ -22,6 +22,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: none;
+  pointer-events: visible;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs .swiper-slide-thumb-active img {
   width: 100%;
@@ -1134,22 +1135,22 @@ section h2 {
     margin-top: 2rem;
   }
   .se2 ul li:nth-child(1) .content::after {
-    background-size: contain;
+    background-size: cover;
   }
   .se2 ul li:nth-child(2) .content::after {
-    background-size: contain;
+    background-size: cover;
   }
   .se2 ul li:nth-child(3) .content::after {
-    background-size: contain;
+    background-size: cover;
   }
   .se2 ul li:nth-child(4) .content::after {
-    background-size: contain;
+    background-size: cover;
   }
   .se2 ul li:nth-child(5) .content::after {
-    background-size: contain;
+    background-size: cover;
   }
   .se2 ul li:nth-child(6) .content::after {
-    background-size: contain;
+    background-size: cover;
   }
   /* se3 */
   .se3 h2 {
@@ -1425,6 +1426,13 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide .txtBox .title p {
     font-size: 5rem;
   }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .title {
+    font-size: 4rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .text {
+    padding-top: 30px;
+    line-height: 3rem;
+  }
   .se1 .section1 .dot {
     top: 76rem;
   }
@@ -1457,7 +1465,7 @@ section h2 {
     padding: 0;
   }
   .se2 ul li {
-    padding: 2rem 1rem;
+    padding: 20px 10px;
   }
   .se2 ul li .content .num span {
     color: #497ede;
@@ -1496,6 +1504,13 @@ section h2 {
   .se2 ul li + li {
     margin-left: 10px;
   }
+  /* se3 */
+  .se3 .se3Wrap .se3Box ul {
+    padding-top: 10px;
+  }
+  .se3 .status {
+    padding: 20px;
+  }
   /* se5 */
   .se5 .se5Wrap .se5Box.goSite {
     height: 52rem;
@@ -1505,8 +1520,11 @@ section h2 {
   }
 }
 @media (max-width: 400px) {
+  .se1 .section1 .firstSwiper .swiper-slide {
+    height: 100rem;
+  }
   .se1 .tabBox {
-    bottom: -30rem;
+    bottom: -50rem;
   }
   .se1 .tabBox .tab_wrap h3 {
     font-size: 3rem;
