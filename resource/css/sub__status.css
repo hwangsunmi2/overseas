@@ -72,6 +72,10 @@
   max-width: 100%;
 }
 
+.sta-img__mobile {
+  display: none !important;
+}
+
 .board-table__list--statistics thead tr {
   height: 6rem;
 }
@@ -226,6 +230,12 @@
   }
   .statistics-score {
     font-size: 22px;
+  }
+  .sta-img__pc {
+    display: none !important;
+  }
+  .sta-img__mobile {
+    display: block !important;
   }
 }
 @media (max-width: 576px) {

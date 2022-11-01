@@ -90,6 +90,13 @@
         }
     }
 }
+.sta{
+    &-img{
+        &__mobile{
+            display: none !important;
+        }
+    }
+}
 
 .board-table__list--statistics{
     // .talign_l{
@@ -286,6 +293,16 @@
     }
     .statistics-score{
         font-size: 22px;
+    }
+    .sta{
+        &-img{
+            &__pc{
+                display: none !important;
+            }
+            &__mobile{
+                display: block !important;
+            }
+        }
     }
 }
 @include media-breakpoint-down(n-xs){ //576px
