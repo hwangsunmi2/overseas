@@ -1782,8 +1782,14 @@ section{
             .firstSwiper {
                 .swiper-slide {
                     height:100rem;
+                    .txtBox {
+                        top: 33%;
+                    }
                 }
             }
+        }
+        .dot {
+            top: 60% !important;
         }
         .tabBox {
             bottom: -50rem;
@@ -1803,6 +1809,8 @@ section{
             }
         }
     }
+
+
     /* se5 */
     .se5 {
         .se5Wrap {

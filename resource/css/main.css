@@ -1526,6 +1526,12 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide {
     height: 100rem;
   }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
+    top: 33%;
+  }
+  .se1 .dot {
+    top: 60% !important;
+  }
   .se1 .tabBox {
     bottom: -50rem;
   }
