@@ -1,3 +1,6 @@
+.se1 {
+  position: relative;
+}
 .se1 .section1 .firstSwiper .swiper-slide {
   width: 100%;
   height: 120.7rem;
@@ -43,12 +46,14 @@
   position: absolute;
   font-size: 3.9rem;
   color: #fff;
-  width: 48rem;
+  width: 100%;
+  height: 55rem;
   top: 22.5rem;
-  left: 73%;
+  left: 75%;
+  padding-right: 10rem;
   text-align: right;
-  -webkit-transform: translateX(-73%);
-          transform: translateX(-73%);
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
   text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.22);
   letter-spacing: -0.5px;
 }
@@ -81,6 +86,7 @@
   width: 70rem;
   top: 16rem;
   left: 30%;
+  padding-right: 0;
   text-align: left;
   -webkit-transform: translateX(-30%);
           transform: translateX(-30%);
@@ -122,7 +128,7 @@
   position: absolute;
   width: 48rem;
   height: 2rem;
-  top: 75rem;
+  top: 74rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -152,7 +158,7 @@
   position: absolute;
   width: 100%;
   max-width: 1400px;
-  bottom: -42rem;
+  bottom: 0;
   z-index: 1;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -319,11 +325,9 @@ section h2 {
 .se2 {
   width: 100%;
   height: 68.8rem;
+  padding-top: 8rem;
   background: url(../image/main/section2_bg.png) no-repeat center bottom;
   background-size: cover;
-}
-.se2 h2 {
-  padding-top: 8rem;
 }
 .se2 ul {
   padding-top: 5rem;
@@ -963,6 +967,11 @@ section h2 {
   }
 }
 /* responsive */
+@media (min-width: 1920px) {
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
+    padding-right: 17vw;
+  }
+}
 @media (max-width: 1600px) {
   /* se1 */
   .se1 .tabBox {
@@ -1038,6 +1047,7 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide.one {
     background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
     background-size: cover;
+    height: 140rem;
   }
   .se1 .section1 .firstSwiper .swiper-slide.two {
     background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
@@ -1057,8 +1067,8 @@ section h2 {
   }
   .se1 .section1 .firstSwiper .swiper-slide.two .txtBox.slide2 {
     width: 95%;
-    top: 25rem;
-    left: 1.5rem;
+    top: 45%;
+    left: 0;
     right: 1.5rem;
     -webkit-transform: none;
             transform: none;
@@ -1070,9 +1080,12 @@ section h2 {
     display: none;
   }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox {
-    top: 42rem;
+    width: auto;
+    top: 55%;
     left: auto;
     right: 1.5rem;
+    height: auto;
+    padding-right: 1.5rem;
     -webkit-transform: none;
             transform: none;
   }
@@ -1089,22 +1102,25 @@ section h2 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
   }
   .se1 .section1 .firstSwiper .secondSwiper .mySwiper {
+    top: 70%;
     left: 1.5rem;
     -webkit-transform: none;
             transform: none;
   }
   .se1 .section1 .firstSwiper .dot {
-    position: absolute;
     width: 9rem;
     height: 2rem;
-    top: 82rem;
+    margin-left: auto;
+    top: auto;
+    bottom: 34rem;
     left: auto;
-    right: 0;
-    -webkit-transform: translateX(-50%);
-    transform: none;
+    right: 1.5rem;
+    -webkit-transform: none;
+            transform: none;
     z-index: 1;
   }
   .se1 .tabBox {
+    top: 110rem;
     padding-left: 1.5rem;
   }
   .se1 .tabBox .tab_wrap h3 {
@@ -1118,6 +1134,7 @@ section h2 {
   }
   /* se2 */
   .se2 {
+    padding-top: 15rem;
     height: 105rem;
   }
   .se2 ul {
@@ -1306,7 +1323,6 @@ section h2 {
   /* se1 */
   .se1 .section1 .firstSwiper .swiper-slide .txtBox {
     padding-left: 1.5rem;
-    top: 50rem;
     left: auto;
     right: 1.5rem;
     -webkit-transform: none;
@@ -1333,9 +1349,6 @@ section h2 {
   }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .text br {
     display: none;
-  }
-  .se1 .section1 .firstSwiper .dot {
-    top: 80rem;
   }
   /* se2 */
   .se2 ul li {
@@ -1387,26 +1400,39 @@ section h2 {
   }
 }
 @media (max-width: 768px) {
-  /* se2 */
-  .se1 .section1 .firstSwiper .swiper-slide.one {
-    background-size: contain;
-  }
-  .se1 .section1 .firstSwiper .swiper-slide.two {
-    background-size: contain;
-  }
+  /* se1 */
   .se1 .section1 .firstSwiper .swiper-slide .txtBox {
     top: 55rem;
   }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 {
+    top: 30% !important;
+  }
+  .se1 .section1 .firstSwiper .secondSwiper .mySwiper {
+    top: 58% !important;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.one {
+    height: auto;
+    background-size: contain;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two {
+    height: auto;
+    background-size: contain;
+  }
   .se1 .section1 .firstSwiper .dot {
-    top: 65rem;
+    bottom: 40rem;
   }
   .se1 .tabBox {
-    bottom: -25rem;
+    top: 85rem;
+    bottom: auto;
   }
   .se1 .tabBox .tab_wrap .tab_cont {
     top: 6rem;
   }
   /* se2 */
+  .se2 {
+    padding-top: 5rem;
+    height: 105rem;
+  }
   .se2Wrap {
     margin-top: 2rem;
   }
@@ -1417,9 +1443,6 @@ section h2 {
 }
 @media (max-width: 576px) {
   /* se1 */
-  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
-    top: 38rem;
-  }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox .title {
     font-size: 5rem;
   }
@@ -1436,12 +1459,6 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .text {
     padding-top: 30px;
     line-height: 3rem;
-  }
-  .se1 .section1 .dot {
-    top: 61% !important;
-  }
-  .se1 .tabBox {
-    bottom: -14rem;
   }
   .se1 .tabBox .tab_wrap h3:nth-child(3) {
     position: relative;
@@ -1525,16 +1542,35 @@ section h2 {
 }
 @media (max-width: 400px) {
   .se1 .section1 .firstSwiper .swiper-slide {
-    height: 80rem;
+    height: 100rem;
   }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox {
     top: 33%;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox.slide2 {
+    top: 25% !important;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox.slide2 .title {
+    font-size: 3.2rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .txtBox.slide2 .text {
+    padding-top: 20px;
+    font-size: 1.7rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs .swiper-slide-thumb-active img {
+    width: 100%;
+    height: 8rem;
+  }
+  .se1 .section1 .firstSwiper .secondSwiper .mySwiper {
+    top: 53% !important;
+    width: 35rem;
+    height: 8rem;
   }
   .se1 .dot {
     top: 60% !important;
   }
   .se1 .tabBox {
-    bottom: -50rem;
+    top: 65rem;
   }
   .se1 .tabBox .tab_wrap h3 {
     font-size: 3rem;
