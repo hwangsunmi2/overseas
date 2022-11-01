@@ -1,14 +1,10 @@
 .sch-form__btn {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 50px;
   background: #4568a9 url("../image/common/icon/icon-sch.png") no-repeat center center;
 }
 
 .btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .btn-wrap .btn {
@@ -28,9 +24,7 @@
   height: 10rem;
 }
 .btn-wrap--center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .btn-wrap--center .btn {
   width: 13.2rem;
@@ -75,10 +69,33 @@
   height: 5.6rem;
   border-radius: 2rem 0 2rem 0;
 }
+.btn--radius + .btn--radius {
+  margin-left: 2rem;
+}
 .btn--color-aliceblue {
   background: #8daae0;
   color: #ffffff;
   font-size: 1.8rem;
+}
+.btn--color-lightRed {
+  background: #f7b3b0;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.btn--icon-download-w {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20.3rem;
+}
+.btn--icon-download-w::before {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 1rem;
+  background: url(../image/common/icon/icon-download--color-white.png) no-repeat left center;
+  vertical-align: middle;
+  content: "";
 }
 .btn-ps {
   font-size: 1.6rem;

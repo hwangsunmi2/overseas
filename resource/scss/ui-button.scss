@@ -85,6 +85,9 @@
         width: 19rem;
         height: 5.6rem;
         border-radius: 2rem 0 2rem 0;
+        &+&{
+            margin-left: 2rem;
+        }
     }
     &--color{
         &-aliceblue{
@@ -92,6 +95,33 @@
             color:#ffffff;
             font-size: 1.8rem;
         }
+        &-light{
+            &Red{
+                background: #f7b3b0;
+                color:#ffffff;
+                font-size: 1.8rem;
+            }
+        }
+    }
+    &--icon{
+        &-download{
+            &-w{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:20.3rem;
+                &::before{
+                    display: inline-block;
+                    width:1.8rem;
+                    height:1.8rem;
+                    margin-right: 1rem;
+                    background: url(../image/common/icon/icon-download--color-white.png) no-repeat left center;
+                    vertical-align: middle;
+                    content:"";
+                }
+            }
+        }
+        
     }
     
     &-ps{

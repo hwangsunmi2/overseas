@@ -56,9 +56,9 @@ $(function(){
     });
 
     //국외문화재현황 tab
-    $('.statistics-tab a').click(function(){
+    $('.statistics-tab .statistics-tab__link').click(function(){
         var tab_id = $(this).attr('data-tab');
-        $('.statistics-tab a').removeClass('on');
+        $('.statistics-tab .statistics-tab__link').removeClass('on');
         $('.statistics-tab .tab_cont').removeClass('on');
 
         $(this).addClass('on');

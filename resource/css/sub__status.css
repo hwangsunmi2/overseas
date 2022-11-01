@@ -30,13 +30,70 @@
 .statistics-tab .tab_cont.on {
   display: block;
 }
+.statistics-tab__list {
+  display: flex;
+}
 .statistics-tab__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
   font-size: 2.4rem;
   color: #b9b9b9;
+  flex: 1;
+  text-align: center;
+  background: #fafafa;
+  border: 1px solid #d6d8e0;
+  border-bottom-color: #3258a0;
 }
 .statistics-tab__link.on {
   color: #4568a9;
   font-weight: 400;
+  background: #ffffff;
+  border-color: #3258a0;
+  border-bottom-color: #ffffff;
+}
+.statistics-tab__link + .statistics-tab__link {
+  border-left: 0;
+}
+.statistics-tab__link + .statistics-tab__link.on {
+  margin-left: -1px;
+  border-left: 1px solid #3258a0;
+}
+.statistics-cont__inner {
+  padding-top: 5rem;
+}
+.statistics-box + .statistics-box {
+  margin-top: 6rem;
+}
+.statistics-box .img-wrap img {
+  display: block;
+  margin: 0 auto;
+}
+
+.board-table__list--statistics thead tr {
+  height: 6rem;
+}
+.board-table__list--statistics thead tr th:not(:last-child) {
+  border-right: 1px solid #d6d8df;
+}
+.board-table__list--statistics tbody td {
+  height: auto;
+  padding: 1.48rem 0;
+}
+.board-table__list--statistics tbody td.sta-where {
+  text-align: left !important;
+  padding-left: 4.4rem;
+}
+.board-table__list--statistics tbody td:not(:last-child) {
+  border-right: 1px solid #d6d8df;
+}
+
+.sta-text__lang {
+  font-size: 1.4rem;
+}
+.sta-text__per {
+  font-size: 1.4rem;
 }
 
 /** 문화재현황 > 환수문화재 */
@@ -51,8 +108,6 @@
   text-align: center;
 }
 .returnCulturalList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: -2rem;
 }
@@ -68,8 +123,6 @@
   border-radius: 2rem 0 2rem 0;
 }
 .returnCultural-item__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .returnCultural-item__right {
@@ -145,10 +198,7 @@
     margin: 1rem;
   }
   .returnCultural-item__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .returnCultural-item__right {
     margin-top: 20px;
@@ -169,20 +219,14 @@
     display: none;
   }
   .returnCulturalList {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .returnCultural-item {
     width: calc(100% - 2rem);
   }
   .returnCultural-item__inner {
     position: relative;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .returnCultural-item__right {
     margin-top: 0;
