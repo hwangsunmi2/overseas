@@ -1242,7 +1242,7 @@ section{
                 &:nth-child(1){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
@@ -1251,35 +1251,35 @@ section{
                 &:nth-child(2){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(3){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(4){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(5){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(6){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
@@ -1781,7 +1781,7 @@ section{
         .section1 {
             .firstSwiper {
                 .swiper-slide {
-                    height:100rem;
+                    height:80rem;
                     .txtBox {
                         top: 33%;
                     }
