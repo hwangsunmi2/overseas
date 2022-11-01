@@ -291,8 +291,16 @@
         padding: 2rem;
         line-height: normal;
     }
-    .statistics-score{
-        font-size: 22px;
+    .statistics{
+        &-score{
+            font-size: 22px;
+        }
+        &-date{
+            font-size: 12px;
+        }
+        &-nation{
+            font-size: 14px;
+        }
     }
     .sta{
         &-img{

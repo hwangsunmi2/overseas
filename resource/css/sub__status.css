@@ -231,6 +231,12 @@
   .statistics-score {
     font-size: 22px;
   }
+  .statistics-date {
+    font-size: 12px;
+  }
+  .statistics-nation {
+    font-size: 14px;
+  }
   .sta-img__pc {
     display: none !important;
   }
