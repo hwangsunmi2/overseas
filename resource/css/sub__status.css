@@ -69,6 +69,7 @@
 .statistics-box .img-wrap img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .board-table__list--statistics thead tr {
@@ -212,6 +213,12 @@
     margin-top: 15px;
     font-size: 14px;
     line-height: normal;
+  }
+  .sta-text__lang {
+    font-size: 12px;
+  }
+  .board-table__list--statistics tbody td, .board-table__list--statistics tbody td.sta-where {
+    padding: 1rem 1.5rem;
   }
 }
 @media (max-width: 576px) {
