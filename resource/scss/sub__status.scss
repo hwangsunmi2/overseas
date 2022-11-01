@@ -280,6 +280,13 @@
     .board-table__list--statistics tbody td, .board-table__list--statistics tbody td.sta-where{
         padding: 1rem 1.5rem;
     }
+    .statistics-header__inner{
+        padding: 2rem;
+        line-height: normal;
+    }
+    .statistics-score{
+        font-size: 22px;
+    }
 }
 @include media-breakpoint-down(n-xs){ //576px
     .returnCultural{
