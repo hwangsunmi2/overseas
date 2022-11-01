@@ -353,12 +353,12 @@
                             <article class="subContent__inner">
                                 <div class="tab-wrap subTab">
                                     <div class="tab-link">
-                                        <a href="" >인사말</a>
-                                        <a href="" >부서안내</a>
-                                        <a href="">재단이 걸어온 길</a>
-                                        <a href="">CI</a>
-                                        <a href="" class="active">오시는 길</a>
-                                        <a href="">기부금(후원) 안내</a>
+                                        <a href="./greeting.html"  >인사말</a>
+                                        <a href="./org.html" >부서안내</a>
+                                        <a href="./history.html" >재단이 걸어온 길</a>
+                                        <a href="./ci.html"  >CI</a>
+                                        <a href="./route.html" class="active">오시는 길</a>
+                                        <a href="./donation.html">기부금(후원) 안내</a>
                                     </div>
                                     <!-- 모바일 location -->
                                     <div class="tab-mobile">
@@ -396,27 +396,12 @@
                                 
                                 <div class="map-wrap">
                                     <!-- 지도 API 영역 -->
-
-                                    <!-- 퍼블 임시 지도 -->
-                                    <!-- * 카카오맵 - 지도퍼가기 -->
-                                    <!-- 1. 지도 노드 -->
-                                    <div id="daumRoughmapContainer1666256860220" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
-
-                                    <!--
-                                        2. 설치 스크립트
-                                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                                    -->
-                                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-                                    <!-- 3. 실행 스크립트 -->
-                                    <script charset="UTF-8">
-                                        new daum.roughmap.Lander({
-                                            "timestamp" : "1666256860220",
-                                            "key" : "2c55t",
-                                            //"mapWidth" : "640",
-                                            "mapHeight" : "700"
-                                        }).render();
-                                    </script>
+                                    
+                                    <!-- 퍼블 임시 지도 :: 개발시 해당 영역 삭제 해주세요 -->
+                                    <p style="font-size:25px">카카오맵 API 연동</p>
+                                    <img src="../../resource/image/sub/img-map.jpg" alt="">
+                                    <!-- //퍼블 임시 지도 -->
+                                    
 
                                     <!-- //지도 API 영역 -->
                                 </div>
