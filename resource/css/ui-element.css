@@ -660,16 +660,20 @@
     margin-left: 30px;
     margin-right: 30px;
   }
-  .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd {
+  .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd, .list-dot li {
     font-size: 14px;
   }
   .count-wrap * {
     font-size: 12px;
   }
+  .list-dot li {
+    line-height: 3.2rem;
+  }
+  .list-dot li::before {
+    top: 1.3rem;
+  }
   .subVisual {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     padding-top: 40px;
     height: 120px;
   }

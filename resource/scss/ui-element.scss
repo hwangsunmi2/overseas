@@ -755,11 +755,17 @@
             
         }
     }
-    .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd{
+    .link-post > * a, .txt-depth--04, .link-post__capt, .board-info__dl dt, .board-info__dl dd, .list-dot li{
         font-size: 14px;
     }
     .count-wrap *{
         font-size: 12px;
+    }
+    .list-dot li{
+        line-height: 3.2rem;
+        &::before{
+            top: 1.3rem;
+        }
     }
     .sub{
         &Visual{
