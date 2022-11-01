@@ -29,6 +29,7 @@
                             height:9.6rem;
                             box-sizing: border-box;
                             background: none;
+                            pointer-events:visible;
                         }
                         
                         .swiper-slide-thumb-active {
@@ -1242,7 +1243,7 @@ section{
                 &:nth-child(1){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
@@ -1251,35 +1252,35 @@ section{
                 &:nth-child(2){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(3){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(4){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(5){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
                 &:nth-child(6){
                     .content {
                         &::after {
-                            background-size: cover;
+                            background-size: contain;
                         }
                     }
                 }
@@ -1633,8 +1634,12 @@ section{
                         .title {
                             font-size: 5rem;
                             p {
+                                padding-top: 10px;
                                 font-size: 5rem;
                             }
+                        }
+                        .number {
+                            padding-top: 20px;
                         }
                         &.slide2 {
                             .title {
@@ -1646,13 +1651,10 @@ section{
                             }
                         }
                     }
-
-                   
-                    
                 }
             }
             .dot {
-                top: 76rem;
+                top: 61% !important;
             }
         }
         .tabBox {   
@@ -1780,9 +1782,15 @@ section{
         .section1 {
             .firstSwiper {
                 .swiper-slide {
-                    height:100rem;
+                    height:80rem;
+                    .txtBox {
+                        top: 33%;
+                    }
                 }
             }
+        }
+        .dot {
+            top: 60% !important;
         }
         .tabBox {
             bottom: -50rem;
@@ -1802,6 +1810,8 @@ section{
             }
         }
     }
+
+
     /* se5 */
     .se5 {
         .se5Wrap {

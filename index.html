@@ -15,6 +15,7 @@
     <script type="text/javascript" src="./resource/js/main.js"></script>
     <script type="text/javascript" src="./resource/js/common.js"></script>
     <script type="text/javascript" src="./resource/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./resource/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./resource/js/include.js"></script>
 </head>
 <body>
@@ -952,7 +953,7 @@
                     <div class="footer link"> 
                         <ul class="d-flex">
                             <li><a href="javascript:void(0);">개인정보처리방침</a></li>
-                            <li><a href="javascript:void(0);">이메일무단수집거부</a></li>
+                            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalEmail">이메일무단수집거부</a></li>
                             <li><a href="javascript:void(0);">사이트맵</a></li>
                         </ul>
                     </div>
@@ -1020,6 +1021,27 @@
             </div>
         </div>
         <!-- //Modal -->
+
+        <!-- 모달 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <h6 class="modal-tit">비밀번호를 입력해 주세요.</h6>
+                        <div class="ui-form">
+                            <input type="password" class="ui-input ui-input__width-400 ui-input__bg-gray" />
+                        </div>
+                        <div class="btn-wrap btn-wrap--center mt-20">
+                            <button type="button" class="btn btn--list">확인</button>
+                            <button type="button" class="btn btn--border-color-gray" data-dismiss="modal">취소</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- //모달 -->
 
     </div>
 

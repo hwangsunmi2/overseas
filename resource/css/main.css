@@ -1135,22 +1135,22 @@ section h2 {
     margin-top: 2rem;
   }
   .se2 ul li:nth-child(1) .content::after {
-    background-size: cover;
+    background-size: contain;
   }
   .se2 ul li:nth-child(2) .content::after {
-    background-size: cover;
+    background-size: contain;
   }
   .se2 ul li:nth-child(3) .content::after {
-    background-size: cover;
+    background-size: contain;
   }
   .se2 ul li:nth-child(4) .content::after {
-    background-size: cover;
+    background-size: contain;
   }
   .se2 ul li:nth-child(5) .content::after {
-    background-size: cover;
+    background-size: contain;
   }
   .se2 ul li:nth-child(6) .content::after {
-    background-size: cover;
+    background-size: contain;
   }
   /* se3 */
   .se3 h2 {
@@ -1424,7 +1424,11 @@ section h2 {
     font-size: 5rem;
   }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox .title p {
+    padding-top: 10px;
     font-size: 5rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox .number {
+    padding-top: 20px;
   }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .title {
     font-size: 4rem;
@@ -1434,7 +1438,7 @@ section h2 {
     line-height: 3rem;
   }
   .se1 .section1 .dot {
-    top: 76rem;
+    top: 61% !important;
   }
   .se1 .tabBox {
     bottom: -14rem;
@@ -1521,7 +1525,13 @@ section h2 {
 }
 @media (max-width: 400px) {
   .se1 .section1 .firstSwiper .swiper-slide {
-    height: 100rem;
+    height: 80rem;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
+    top: 33%;
+  }
+  .se1 .dot {
+    top: 60% !important;
   }
   .se1 .tabBox {
     bottom: -50rem;
