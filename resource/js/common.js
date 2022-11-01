@@ -4,7 +4,10 @@ $(document).ready(function () {
     searchModal();
     toggleSite();
     footerSwiper();
+
+    
 });
+
 
 
 function nav() {
