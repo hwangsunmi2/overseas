@@ -22,6 +22,15 @@
                             display: block;
                         }
                     }
+                    .swiper-thumb-wrap{
+                        position:absolute;
+                        max-width:1400px;
+                        top:55rem;
+                        left:50%;
+                        width:100%;
+                        transform:translateX(-50%);
+                        z-index: 10;
+                    }
                     .swiper-thumbs {
                         img {
                             opacity:0.6;
@@ -90,12 +99,12 @@
                     }
                     &.slide2 {
                         position: absolute;
-                        width: 70rem;
+                        max-width: 1400px;
                         top: 16rem;
-                        left: 30%;
+                        left: 50%;
                         padding-right:0;
                         text-align: left;
-                        transform: translateX(-30%);
+                        transform: translateX(-50%);
                         .title {
                             font-size:6.6rem;
                             font-weight:500;
@@ -122,9 +131,9 @@
                 .mySwiper {
                     position:absolute;
                     overflow: hidden;
-                    left:26%;
-                    transform: translateX(-26%);
-                    top:55rem;
+                    left:0;
+                    transform:none;
+                    top:0;
                     width:40.4rem;
                     height:9.6rem;
                     z-index: 2;
@@ -1018,10 +1027,27 @@ section{
 @media (max-width: 1600px) {
     /* se1 */
     .se1 {
+        .section1 {
+            .firstSwiper {
+                .swiper-slide {
+                    .txtBox.slide2 {
+                        padding-left: 1.5rem;
+                    }
+                    &.two {
+                        .swiper-thumb-wrap {
+                            margin-left:1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    
         .tabBox {
             padding-left:1.5rem;
         }
     }
+
+
     /* se2 */
     .se2 {
         .se2Wrap {
@@ -1136,13 +1162,18 @@ section{
                         background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
                         background-size: cover;
 
-                        .swiper-thumbs {
-                            .swiper-slide {
-                                img {
-                                    width:100%;
-                                }
-                            } 
+                        .swiper-thumb-wrap {
+                            top:70%;
+                            .swiper-thumbs {
+                                .swiper-slide {
+                                    img {
+                                        width:100%;
+                                    }
+                                } 
+                            }
                         }
+
+                        
 
                         .txtBox {
                             .title {
@@ -1197,8 +1228,7 @@ section{
                 }
                 .secondSwiper {
                     .mySwiper {
-                        top:70%;
-                        left:1.5rem;
+                        left:0;
                         transform: none;
                     }
                 }
@@ -1237,11 +1267,6 @@ section{
                 }
             }
         }
-
-
-        
-               
-
 
     }
     /* se2 */
@@ -1594,13 +1619,13 @@ section{
 @media (max-width: 768px) {
     /* se1 */
     .se1 .section1 .firstSwiper .swiper-slide .txtBox{
-        top:55rem;
+        top:53rem;
     }
     .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2{
         top: 30% !important;
     }
     .se1 .section1 .firstSwiper .secondSwiper .mySwiper {
-        top: 58% !important;
+        top: 56% !important;
     }
     
     .se1 {
@@ -1614,6 +1639,9 @@ section{
                     &.two {
                         height:auto;
                         background-size: contain;
+                        .swiper-thumb-wrap {
+                            top: 58%;
+                        }
                     }
                 }
                 .dot{
@@ -1801,6 +1829,12 @@ section{
 } 
 
 @media (max-width: 400px) {
+    section {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    /* se1 */
     .se1 {
         .section1 {
             .firstSwiper {
@@ -1822,19 +1856,22 @@ section{
                                 }
                             }
                         }
-                        .swiper-thumbs {
-                            .swiper-slide-thumb-active {
-                                img {
-                                    width: 100%;
-                                    height: 8rem;
+                        .swiper-thumb-wrap {
+                            top: 54%;
+                            .swiper-thumbs {
+                                .swiper-slide-thumb-active {
+                                    img {
+                                        width: 100%;
+                                        height: 8rem;
+                                    }
                                 }
                             }
                         }
+                        
                     }
                 }
                 .secondSwiper {
                     .mySwiper {
-                        top: 53% !important;
                         width: 35rem;
                         height: 8rem;
                     }
@@ -1850,7 +1887,25 @@ section{
             top:65rem;
             .tab_wrap {
                 h3 {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
+                    &:nth-child(3) {
+                        position: relative;
+                        margin-left: 4rem;
+                        &::before {
+                            position: absolute;
+                            top: 1rem;
+                            left: -2.8rem;
+                        }
+                    }
+                    &:nth-child(5) {
+                        position: relative;
+                        margin-left: 4rem;
+                        &::before {
+                            position: absolute;
+                            top: 1rem;
+                            left: -2.8rem;
+                        }
+                    }
                 }
                 .tab_cont {
                     ul {
@@ -1864,7 +1919,73 @@ section{
             }
         }
     }
+    /* se2 */
+    .se2 {
+        ul {
+            li {
+                padding: 20px 5px;
+                .tit{
+                    font-size:1.8rem;
+                }
+                .content {
+                        font-size: 1.5rem;
+                        letter-spacing: -0.5px;
+                    .num {
+                        span {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    .detail {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    /* se3 */
+    .se3 {
+        .status {
+            padding: 20px 10px;
+            p {
+                font-size: 2.2rem;
+                letter-spacing: -0.5px;
+                span {
+                    padding: 5px 10px;
+                    font-size: 2.2rem;
+                    letter-spacing: -0.5px;
+                }
+            }
+        }
+    }
 
+    /* se4 */
+    .se4 {
+        .se4Wrap {
+            .se4Box {
+                &.right {
+                    h2 {
+                        padding-left: 8rem;
+                    }
+                    .vrBtn {
+                        float: right;
+                        top: 1.3rem;
+                        right: 0;
+                    }
+                }
+               
+                .vedioLink {
+                    a {
+                        line-height: 2rem;
+                        padding-top: 20px;
+                        padding-right: 20px;
+                        vertical-align: middle;
+                        word-break: keep-all;
+                    }
+                }
+
+            }
+        }
+    }
 
     /* se5 */
     .se5 {
@@ -1877,3 +1998,27 @@ section{
         }
     } 
 } 
+
+@media (max-width: 365px) {
+    /* se4 */
+    .se4Wrap {
+        .se4Box {
+            .vedioLink {
+                a {
+                    padding-top: 12px !important;
+                }
+            }
+        }
+    }
+
+    /* se5 */
+    .se5 {
+        .se5Wrap {
+            .se5Box{
+                &.goSite {
+                    height: 35rem;
+                }
+            }
+        }
+    }
+}

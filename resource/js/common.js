@@ -99,7 +99,7 @@ function footerSwiper() {
             prevEl: ".footerbtn .swiper-button-prev",
         },
         breakpoints: {
-            360: {
+            320: {
                 slidesPerView: 2,
                 spaceBetween: 10,
             },

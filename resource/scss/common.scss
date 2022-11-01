@@ -1040,6 +1040,9 @@ footer {
                                 color: #fff;
                                 font-size: 1.7rem;
                             }
+                            &+li {
+                                margin-left:1.5rem;
+                            }
                         }
                     }
                 }

@@ -889,4 +889,7 @@ footer .footerBottom .footer.info .addr address ul li span {
     color: #fff;
     font-size: 1.7rem;
   }
+  footer .footerBottom .footer.link ul li + li {
+    margin-left: 1.5rem;
+  }
 }
