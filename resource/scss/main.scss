@@ -1633,8 +1633,12 @@ section{
                         .title {
                             font-size: 5rem;
                             p {
+                                padding-top: 10px;
                                 font-size: 5rem;
                             }
+                        }
+                        .number {
+                            padding-top: 20px;
                         }
                         &.slide2 {
                             .title {
@@ -1646,13 +1650,10 @@ section{
                             }
                         }
                     }
-
-                   
-                    
                 }
             }
             .dot {
-                top: 76rem;
+                top: 61% !important;
             }
         }
         .tabBox {   
