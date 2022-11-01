@@ -37,8 +37,6 @@
   background-image: url(../image/sub/bg-legation.jpg);
 }
 .content-work__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 140rem;
   margin: 0 auto;
@@ -61,23 +59,18 @@
   letter-spacing: -1px;
 }
 .work-left {
-  -webkit-box-flex: 0.4;
-      -ms-flex: 0.4;
-          flex: 0.4;
+  flex: 0.4;
 }
 .work-left__inner {
   padding-right: 6rem;
 }
 .work-right {
-  -webkit-box-flex: 0.6;
-      -ms-flex: 0.6;
-          flex: 0.6;
+  flex: 0.6;
 }
 .work-right .img-wrap img {
   display: block;
   max-width: 100%;
-  -webkit-box-shadow: 1.6rem 1.6rem 3.6rem rgba(0, 0, 0, 0.18);
-          box-shadow: 1.6rem 1.6rem 3.6rem rgba(0, 0, 0, 0.18);
+  box-shadow: 1.6rem 1.6rem 3.6rem rgba(0, 0, 0, 0.18);
 }
 
 @media (max-width: 768px) {
@@ -90,10 +83,7 @@
     background: none;
   }
   .content-work__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     padding-top: 0;
   }
   .work-left__inner {
