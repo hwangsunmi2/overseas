@@ -1454,6 +1454,21 @@ section h2 {
     padding-top: 5rem;
     height: 105rem;
   }
+  .se2 ul li:nth-child(1) {
+    background-size: cover;
+  }
+  .se2 ul li:nth-child(2) {
+    background-size: cover;
+  }
+  .se2 ul li:nth-child(3) {
+    background-size: cover;
+  }
+  .se2 ul li:nth-child(4) {
+    background-size: cover;
+  }
+  .se2 ul li:nth-child(5) {
+    background-size: cover;
+  }
   .se2Wrap {
     margin-top: 2rem;
   }
