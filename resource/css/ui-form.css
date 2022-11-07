@@ -306,6 +306,9 @@
 .ui-checkbox-input:checked + .ui-label .ui-radio-object {
     border-width: 4px;
   }
+  .sch-form__three .sch-form__label {
+    width: auto;
+  }
 }
 @media (max-width: 576px) {
   .sch-wrap {
