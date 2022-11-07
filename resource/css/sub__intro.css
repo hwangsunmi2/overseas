@@ -57,27 +57,16 @@
   font-weight: 500;
 }
 .route-way__how-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .route-way__how-item--left, .route-way__how-item--right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .route-way__how-item * {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .route-way__how-item + .route-way__how-item {
   margin-top: 1rem;
@@ -130,8 +119,7 @@
   width: 100%;
   height: auto;
   padding-bottom: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow: visible;
 }
 .org-wrap .tab_cont.on {
@@ -150,11 +138,8 @@
   display: none;
 }
 .org-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   position: absolute;
   bottom: 7%;
   left: 0;
@@ -165,8 +150,7 @@
   width: calc(20% - 8.7rem);
   height: 6.5rem;
   border: 1px solid #aab0bd;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 2px;
   background: #f5f5f5;
 }
@@ -183,8 +167,7 @@
   border-radius: 100%;
   border: 1px solid #8c8c8c;
   background: #ffffff;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 .org-item::after {
@@ -193,25 +176,17 @@
   width: 1px;
   height: 4rem;
   background: #8c8c8c;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: -1;
 }
 .org-item.is-active {
   background: #ebf2ff;
-  -webkit-box-shadow: 1rem 1rem 2rem rgba(9, 14, 46, 0.13);
-          box-shadow: 1rem 1rem 2rem rgba(9, 14, 46, 0.13);
+  box-shadow: 1rem 1rem 2rem rgba(9, 14, 46, 0.13);
 }
 .org-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   font-size: 1.8rem;
@@ -252,8 +227,6 @@
   text-align: center;
 }
 .ci-wrap__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
   margin-left: -4rem;
@@ -261,9 +234,7 @@
 }
 .ci-wrap__bottom > div {
   padding: 0 4rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .ci-wrap__bottom img {
   max-width: 100%;
@@ -299,12 +270,8 @@
   overflow: visible;
 }
 .history-wrap .tab-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   height: 7.2rem;
   position: relative;
   padding: 0;
@@ -313,7 +280,7 @@
   float: left;
   text-align: left;
   cursor: pointer;
-  z-index: 10;
+  z-index: 6;
 }
 .history-wrap .tab-title:nth-child(n+2) {
   margin-left: 7rem;
@@ -328,8 +295,6 @@
   font-size: 7.2rem;
 }
 .history-tab__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .history-tab__list-now.on a {
@@ -358,9 +323,7 @@
 }
 .history-year {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 18.6rem;
   height: 21.6rem;
   margin-top: -1rem;
@@ -393,8 +356,6 @@
   background: url(../image/sub/history-line__now.png);
 }
 .history-item__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -414,12 +375,8 @@
   content: "";
 }
 .history-list__wrap li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   position: relative;
   font-size: 1.8rem;
   padding-left: 11.5rem;
@@ -459,27 +416,16 @@
 }
 
 .year-tab__ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   margin: -0.5px;
 }
 .year-tab__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  align-items: center;
+  justify-content: center;
+  flex: none;
   width: calc(25% - 1px);
   height: 34px;
   margin: 0.5px;
@@ -487,14 +433,12 @@
   color: #b9b9b9;
   border: 1px solid #d2d5dc;
   border-radius: 2px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .year-tab__list.on {
   background: #8daae0;
   border-color: #8daae0;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
-          box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
+  box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.13);
   color: #ffffff;
 }
 
@@ -544,8 +488,6 @@
   text-align: center;
 }
 .donation-info__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: -2rem;
 }
@@ -559,15 +501,12 @@
   font-size: 1.8rem;
 }
 .donation-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin: 2rem;
   padding: 2.8rem 0 4.8rem 0;
   border: 2px solid;
   border-radius: 20px 0 20px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 .donation-item__blue {
@@ -608,21 +547,13 @@
     padding: 2.5rem;
   }
   .wayAbout-info__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: -1.5rem -2rem;
   }
   .wayAbout-info__inner dl {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 50%;
     padding: 1.5rem 2rem;
   }
@@ -639,13 +570,8 @@
     width: 17.5rem;
   }
   .route-way__how-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .route-way__how-item + .route-way__how-item {
     margin-top: 1.5rem;
@@ -689,10 +615,7 @@
     display: block;
   }
   .ci-wrap__bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0;
   }
   .ci-wrap__bottom > div {
@@ -735,25 +658,17 @@
     height: 400px !important;
   }
   .wayAbout-info__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: -0.5rem -2rem;
   }
   .wayAbout-info__inner dl {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 100%;
     padding: 0.5rem 2rem;
   }
   .wayAbout-info__inner dl dt {
     margin-bottom: 0;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    flex: none;
   }
   .wayAbout-route__inner table th {
     padding: 0;
@@ -787,8 +702,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     overflow: visible;
   }
   .history-wrap .tab_cont.on {
@@ -812,10 +726,7 @@
     margin-top: 30px;
   }
   .history-item__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: auto;
   }
   .history-list__wrap {
@@ -836,9 +747,7 @@
     margin-top: 15px;
   }
   .history-tab__title {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .history-swiper__present .history-year {
     color: #8daae0;
@@ -870,10 +779,7 @@
     display: none;
   }
   .donation-info__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: -5px;
   }
   .donation-info1 a, .donation-info2 a {
