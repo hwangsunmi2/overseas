@@ -126,5 +126,7 @@ function footerSwiper() {
           $(this).addClass('off');
           footerswiper.autoplay.stop();
         }
-    });   
+    });  
+
 }
+
