@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../resource/css/ux-common.css">
     <link rel="stylesheet" href="../../resource/css/sub__talk.css">
+    <link type="text/css" rel="stylesheet" href="../../resource/css/sub__search.css">
 
     <script src="../../resource/js/jquery-1.12.4.min.js"></script>
     <script src="../../resource/js/swiper.min.js"></script>
@@ -559,6 +560,49 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Modal -->
+                <div class="modal fade search" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-bg"></div>
+                    <div class="modal-dialog modal-dialog-centered modal-auto ">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <h6 class="modal-tit">통합검색</h6>
+                                <a  class="modal-close" href="javascript:void(0);" class="modalClose"><img src="../../resource/image/common/icon/icon_modalClose.png" tit="창 닫기" /></a>
+                                <div class="ui-form">
+                                    <div class="search-box__inner">
+                                        <div class="integrateSearchArea">
+                                            <div class="integrateSearchArea__inner">
+                                                <label for="search" class="hidden">검색어 입력</label>
+                                                <input type="search" class="input-search" name="totalSearch" placeholder="검색어를 입력하세요">
+                                                <button type="button" name="btnSearch" class="btn-search"><span class="hidden">통합검색</span></button>
+                                            </div>		
+                                        </div>
+                                    </div>
+
+                                    <div class="keyword">
+                                        <div class="tit">추천키워드</div>
+                                        <ul class="d-flex">
+                                            <li><a href="javascript:void(0);">#문화재</a></li>
+                                            <li><a href="javascript:void(0);">#반환</a></li>
+                                            <li><a href="javascript:void(0);">#국외문화재</a></li>
+                                            <li><a href="javascript:void(0);">#발간자료</a></li>
+                                            <li><a href="javascript:void(0);">#주미대한제국공사관</a></li>
+                                            <li><a href="javascript:void(0);">#반환</a></li>
+                                            <li><a href="javascript:void(0);">#발간자료</a></li>
+                                            <li><a href="javascript:void(0);">#주미대한제국공사관</a></li>
+                                            <li><a href="javascript:void(0);">#반환</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            <!-- //Modal -->
 
             <!-- 모달 -->
             <div class="modal fade" id="modalEmail" tabindex="-1" aria-labelledby="modalEmailLabel" aria-hidden="true">
