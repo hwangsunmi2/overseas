@@ -12,7 +12,38 @@
   background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two .txtBox {
+  display: none;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .swiper-slide-active .txtBox {
   display: block;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumb-wrap {
+  position: absolute;
+  max-width: 1400px;
+  top: 55rem;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs img {
+  opacity: 0.6;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs .swiper-slide {
+  height: 9.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  pointer-events: visible;
+}
+.se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumbs .swiper-slide-thumb-active img {
+  width: 100%;
+  height: 9.6rem;
+  border: 3px solid #8daae0;
+  opacity: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two .pc {
   width: 100%;
@@ -766,7 +797,6 @@ section h2 {
   line-height: 2.5rem;
 }
 .se4 .se4Wrap .se4Box .se4_cont .txt p {
-  padding-bottom: 7.5rem;
   font-size: 1.8rem;
   letter-spacing: -0.5px;
   color: #545454;
@@ -1216,9 +1246,6 @@ section h2 {
   .se3 .se3Wrap .se3Box ul li + li + li + li + li {
     display: none;
   }
-  .se3 .se3Wrap .se3Box ul li {
-    height: auto;
-  }
   .se3 .se3Wrap .se3Box ul li a figure figcaption {
     display: none;
   }
@@ -1260,9 +1287,6 @@ section h2 {
   }
   .se4 .se4Wrap .se4Box .vBox img {
     width: 100%;
-  }
-  .se4 .se4Wrap .se4_cont .txt p {
-    padding-bottom: 4rem !important;
   }
   .se4 .se4Wrap .se4_cont .txt p.vrContent br {
     display: none;
@@ -1413,17 +1437,18 @@ section h2 {
     top: 56% !important;
   }
   .se1 .section1 .firstSwiper .swiper-slide.one {
-    height: 128rem;
+    height: auto;
     background-size: contain;
   }
   .se1 .section1 .firstSwiper .swiper-slide.two {
+    height: auto;
     background-size: contain;
   }
   .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumb-wrap {
     top: 58%;
   }
   .se1 .section1 .firstSwiper .dot {
-    bottom: 46rem;
+    bottom: 40rem;
   }
   .se1 .tabBox {
     top: 85rem;
@@ -1462,9 +1487,6 @@ section h2 {
 }
 @media (max-width: 576px) {
   /* se1 */
-  .se1 .section1 .firstSwiper .swiper-slide.one {
-    height: 105rem;
-  }
   .se1 .section1 .firstSwiper .swiper-slide .txtBox .title {
     font-size: 5rem;
   }
@@ -1481,9 +1503,6 @@ section h2 {
   .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 .text {
     padding-top: 30px;
     line-height: 3rem;
-  }
-  .se1 .section1 .firstSwiper .dot {
-    bottom: 43rem !important;
   }
   .se1 .tabBox .tab_wrap h3:nth-child(3) {
     position: relative;
@@ -1598,7 +1617,7 @@ section h2 {
     height: 8rem;
   }
   .se1 .dot {
-    top: 55% !important;
+    top: 60% !important;
   }
   .se1 .tabBox {
     top: 65rem;
@@ -1679,13 +1698,6 @@ section h2 {
   }
 }
 @media (max-width: 365px) {
-  /* se01 */
-  .se1 .section1 .firstSwiper .swiper-slide .txtBox {
-    top: 31%;
-  }
-  .dot {
-    top: 39% !important;
-  }
   /* se4 */
   .se4Wrap .se4Box .vedioLink a {
     padding-top: 12px !important;

@@ -1,5 +1,6 @@
 $(document).ready(function () {
     mainSwiper();
+    main2Swiper();
     mainTab();
     vrSwiper();
 
@@ -16,6 +17,31 @@ function mainSwiper() {
     }); 
 }
 
+function main2Swiper() {
+  var swiper_Thumbs1 = new Swiper(".secondSwiper .mySwiper", {
+    /*loop: true,*/
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    allowTouchMove: false,
+    touchRatio: 0,
+    cssMode:true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+  });
+  var swiper_Thumbs2 = new Swiper(".secondSwiper .mySwiper2", {
+    effect: "fade",
+    nested: true,
+    // loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper_Thumbs1,
+    },
+  });
+}
 
 function mainTab() {
     var $notice = $('.tab_wrap');
