@@ -604,6 +604,11 @@ section h2 {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
+.se3 .se3Wrap .se3Box ul li {
+  width: 13.7rem;
+  height: 16.1rem;
+  overflow: hidden;
+}
 .se3 .se3Wrap .se3Box ul li + li {
   margin-left: 2rem;
 }
@@ -612,6 +617,9 @@ section h2 {
 }
 .se3 .se3Wrap .se3Box ul li + li + li + li + li {
   margin-top: 2.2rem;
+}
+.se3 .se3Wrap .se3Box ul li img {
+  max-width: 100%;
 }
 
 .se4 .se4Wrap .se4Box {
