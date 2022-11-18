@@ -43,6 +43,7 @@
   max-width: 140rem;
   margin: 0 auto;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .work-item + .work-item {
