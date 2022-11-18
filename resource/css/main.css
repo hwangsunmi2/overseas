@@ -712,6 +712,8 @@ section h2 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  height: 7rem;
+  margin-bottom: 7rem;
 }
 .se4 .se4Wrap .se4Box.left .vedio .tit {
   position: relative;
@@ -747,8 +749,9 @@ section h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
+  height: 25rem;
 }
 .se4 .se4Wrap .se4Box .se4_cont {
   margin-top: 2.8rem;

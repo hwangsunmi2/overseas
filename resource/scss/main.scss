@@ -697,6 +697,8 @@ section{
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
+                    height: 7rem;
+                    margin-bottom: 7rem;
                 }
                 .vedio {
                     .tit {
@@ -733,8 +735,9 @@ section{
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
-                    -webkit-line-clamp: 4;
+                    -webkit-line-clamp: 7;
                     -webkit-box-orient: vertical;
+                    height: 25rem;
                 }
             }
             .se4_cont {
