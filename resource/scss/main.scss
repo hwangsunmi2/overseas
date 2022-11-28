@@ -6,14 +6,25 @@
             .swiper-slide {
                 width:100%;
                 height:120.7rem;
-                &.one {
-                    background: url(../image/main/swiper_bg1_2560.png) no-repeat center top;
-                    
+                picture {
+                    source {
+                        display: block;
+                        width: 100%;
+                        height:auto;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                    img {
+                        display: block;
+                        width: 100%;
+                        height:auto;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
                 }
-                
+                &.one {
+                }
                 &.two {
-                    background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
-                    
                     .txtBox {
                         display: block;
                     }
@@ -979,24 +990,29 @@ section{
     .se1 .section1 .firstSwiper .swiper-slide .txtBox{
         padding-right:17vw;
     }
+    
 }
 @media (max-width: 1920px) {
-    // .se1 {
-    //     .section1 {
-    //         .swiper-slide {
-    //             &.one {
-    //                 background: url(../image/main/swiper_bg1_1920.png) no-repeat center top;
-    //                 background-size: contain;
-    //             }
-                
-    //             &.two {
-    //                 background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
-    //                 background-size: contain;
-    //             background: url(../image/main/swiper_bg1_1920.png) no-repeat center top;
-    //             background-size: contain;
-    //         }
-    //     }
-    // }
+    .se1 {
+        .section1 {
+            .firstSwiper {
+                .swiper-slide {
+                    picture {
+                        source {
+                            display: block;
+                            width: 150%;
+                            transform: translateX(-20%);
+                        }  
+                        img {
+                            display: block;
+                            width: 150%;
+                            transform: translateX(-20%);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1600px) {
@@ -1128,14 +1144,30 @@ section{
         .section1 {
             .firstSwiper {
                 .swiper-slide{
+
+                    picture {
+                        source {
+                            display: block;
+                            width: 150%;
+                            transform: translateX(-20%);
+                        }  
+                        img {
+                            display: block;
+                            width: 100%;
+                            transform: none;
+                        }
+                    }
+
+
                     &.one {
-                        background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
-                        background-size: cover;
-                        height:140rem;
+                        // background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
+                        // background-size: cover;
+                         height:140rem;
+
                     }
                     &.two { 
-                        background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
-                        background-size: cover;
+                        // background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
+                        // background-size: cover;
 
                         .swiper-thumb-wrap {
                             top:70%;

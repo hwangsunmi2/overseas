@@ -5,11 +5,19 @@
   width: 100%;
   height: 120.7rem;
 }
-.se1 .section1 .firstSwiper .swiper-slide.one {
-  background: url(../image/main/swiper_bg1_2560.png) no-repeat center top;
+.se1 .section1 .firstSwiper .swiper-slide picture source {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
 }
-.se1 .section1 .firstSwiper .swiper-slide.two {
-  background: url(../image/main/swiper_bg2_2560.png) no-repeat center top;
+.se1 .section1 .firstSwiper .swiper-slide picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 .se1 .section1 .firstSwiper .swiper-slide.two .txtBox {
   display: block;
@@ -963,6 +971,20 @@ section h2 {
     padding-right: 17vw;
   }
 }
+@media (max-width: 1920px) {
+  .se1 .section1 .firstSwiper .swiper-slide picture source {
+    display: block;
+    width: 150%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  .se1 .section1 .firstSwiper .swiper-slide picture img {
+    display: block;
+    width: 150%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
 @media (max-width: 1600px) {
   /* se1 */
   .se1 .section1 .firstSwiper .swiper-slide .txtBox.slide2 {
@@ -1041,14 +1063,20 @@ section h2 {
 }
 @media (max-width: 1200px) {
   /* se1 */
-  .se1 .section1 .firstSwiper .swiper-slide.one {
-    background: url(../image/main/swiper_bg1_m.png) no-repeat center top;
-    background-size: cover;
-    height: 140rem;
+  .se1 .section1 .firstSwiper .swiper-slide picture source {
+    display: block;
+    width: 150%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
-  .se1 .section1 .firstSwiper .swiper-slide.two {
-    background: url(../image/main/swiper_bg2_m.png) no-repeat center top;
-    background-size: cover;
+  .se1 .section1 .firstSwiper .swiper-slide picture img {
+    display: block;
+    width: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .se1 .section1 .firstSwiper .swiper-slide.one {
+    height: 140rem;
   }
   .se1 .section1 .firstSwiper .swiper-slide.two .swiper-thumb-wrap {
     top: 70%;
