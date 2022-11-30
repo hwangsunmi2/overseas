@@ -262,204 +262,6 @@
     @include hidden;
 }
 
-.team{
-    &_list {
-        flex-wrap: wrap;
-        position: relative;
-        margin: 0 auto;
-        margin-bottom: 5rem;
-        z-index: 1;
-        .box {
-            p {
-                font-size:2.2rem;
-            }
-            &__head {
-                position:relative;
-                &::after {
-                    position:absolute;
-                    width:1px;
-                    height:4rem;
-                    left:50%;
-                    bottom:-4rem;
-                    transform: translate(-50%);
-                    background-color: #000;
-                    content:'';
-                }
-                &>div {
-                    position: relative;
-                    width: 22.4rem;
-                    height: 6.3rem;
-                    line-height:6.3rem;
-                    margin: 0 auto;
-                    border-radius: 0.5rem;
-                    font-size:2.2rem;
-                    color:#fff;
-                    background-color: #4568a9;
-                    box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-                    text-align: center;
-                    z-index: 3;
-                }
-            }
-            &__subhead {
-                position:relative;
-                margin-top:4rem;
-                &::before {
-                    position:absolute;
-                    width:1.2rem;
-                    height:1.2rem;
-                    left:50%;
-                    top:-0.5rem;
-                    transform: translate(-50%);
-                    background-color: #fff;
-                    border:1px solid #3259a0;
-                    border-radius: 50%;
-                    z-index: 3;
-                    content:'';
-                }
-                &::after {
-                    position:absolute;
-                    width:1px;
-                    height:2rem;
-                    left:50%;
-                    bottom:-2rem;
-                    transform: translate(-50%);
-                    background-color: #000;
-                    content:'';
-                }
-                &>div {
-                    position: relative;
-                    display: block;
-                    margin:0 auto;
-                    width: 22.4rem;
-                    height: 6.3rem;
-                    line-height:6.3rem;
-                    border-radius: 0.5rem;
-                    font-size:2.2rem;
-                    font-weight:500;
-                    color:#365ca2;
-                    background-color: #f0f5ff;
-                    border:1px solid #3259a0;
-                    box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-                    text-align: center;
-                    z-index: 2;
-                }
-            }
-            &__subhead2 {
-                position:relative;
-                margin-top:2rem;
-                &::before {
-                    position:absolute;
-                    width:1.2rem;
-                    height:1.2rem;
-                    left:50%;
-                    top:-0.5rem;
-                    transform: translate(-50%);
-                    background-color: #fff;
-                    border:1px solid #df4039;
-                    border-radius: 50%;
-                    z-index: 3;
-                    content:'';
-                }
-                &::after {
-                    position:absolute;
-                    width:1px;
-                    height:4rem;
-                    left:50%;
-                    bottom:-4rem;
-                    transform: translate(-50%);
-                    background-color: #000;
-                    content:'';
-                }
-                &>div {
-                    position: relative;
-                    display: block;
-                    margin:0 auto;
-                    width: 22.4rem;
-                    height: 6.3rem;
-                    line-height:6.3rem;
-                    border-radius: 0.5rem;
-                    font-size:2.2rem;
-                    font-weight:500;
-                    color:#dd3c35;
-                    background-color: #fff6f6;
-                    border:1px solid #df3d35;
-                    box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-                    text-align: center;
-                    z-index: 2;
-                }
-            }
-        }
-        .organ-group {
-            position:relative;
-            display: flex;
-            width: 100%;
-            &::before {
-                position:absolute;
-                width:86%;
-                height:1px;
-                top:3.9rem;
-                left:50%;
-                transform: translateX(-50%);
-                background-color: #000;
-                content:'';
-            }
-            ul {
-                position: relative;
-                padding-top:8rem;
-                width: 16.666%;
-                &+ul {
-                    margin-left: 4rem;
-                }
-                li {
-                    position:relative;
-                    height: 6.4rem;
-                    line-height:6.4rem;
-                    color: #000;
-                    font-size: 1.8rem;
-                    font-weight: 500;
-                    border-radius: 0.5rem;
-                    border:1px solid #000;
-                    text-align: center;
-                    cursor: pointer;
-                    &.on {
-                        border: 1px solid #4671c1;
-                        background-color: #ebf2ff;
-                        box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-                    }
-                    &::before {
-                        position:absolute;
-                        width:1.2rem;
-                        height:1.2rem;
-                        left:50%;
-                        top:-4.6rem;
-                        transform: translate(-50%);
-                        background-color: #fff;
-                        border:1px solid #000;
-                        border-radius: 50%;
-                        z-index: 3;
-                        content:'';
-                    }
-                    &::after {
-                        position:absolute;
-                        width:1px;
-                        height:4rem;
-                        top:-4.1rem;
-                        left:50%;
-                        transform: translateX(-50%);
-                        background-color: #000;
-                        content:'';
-                    }
-                }
-            }
-        }
-        .reference {
-            padding-top:3.6rem;
-            font-size:1.8rem;
-            color:#66666a;
-        }
-    }
-}
-
 /* 재단소개 > CI */
 .ci{
     &-title{
@@ -829,8 +631,6 @@
 
 /* 재단소개 */ 
 .donation{
-    &-wrap {
-    }
     &-text{
         font-size: 1.8rem;
         line-height: 3.2rem;
@@ -838,112 +638,35 @@
     }
     &-info{
         &__inner{
+            max-width: 98rem;
             margin: 0 auto;
-            img {
-                margin:0 auto;
-                width:100%;
-            }
         }
         &__title{
             margin-top: 7.5rem;
-            margin-bottom: 4.3rem;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom:1px solid #ced1d8;
             font : {
                 size: 3.2rem;
                 weight:500;
             }
-            text-align: left;
+            text-align: center;
         }
-        &-subtitle {
-            padding-top:3rem;
-            font-size:2.6rem;
-            font-weight:500;
-            color:#000;
+        &__content{
+            display: flex;
+            margin: -2rem;
         }
-        .download {
-            margin-top:4rem;
-            padding:4rem;
-            box-sizing: border-box;
-            background-color: #f8f8f8;
-            .downInfo {
-                padding-bottom:2.5rem;
-                font-size:1.8rem;
-                line-height:2.8rem;
-                p {
-                    margin-top:1.5rem;
-                }
-            }
-            &__down {
-                display: flex;
-                padding-top:2.5rem;
-                align-items: center;
-                &>div {
-                    width:25rem;
-                    font-size:1.8rem;
-                    font-weight:500;
-                }
-                a{
-                    &.hwp {
-                        display: inline-block;
-                        padding:0.7rem 1.4rem 0.7rem 4.5rem;
-                        border:1px solid #1d99d6;
-                        color:#1d99d6;
-                        font-size:1.6rem;
-                        font-weight:500;
-                        background: #fff url('../image/sub/icon-hwp.png') no-repeat 20% center;
-                        background-size:2.5rem 2.5rem;
-                        box-sizing: border-box;
-                    }
-                    &.docx {
-                        display: inline-block;
-                        margin-left:1rem;
-                        padding:0.7rem 1.4rem 0.7rem 4.5rem;
-                        border:1px solid #1565c0;
-                        color:#1565c0;
-                        font-size:1.6rem;
-                        font-weight:500;
-                        background: #fff url('../image/sub/icon-docx.png') no-repeat 20% center;
-                        background-size:2.5rem 2.5rem;
-                        box-sizing: border-box;
-                    }
-                }
-
+        &1{
+            margin-top: 3rem;
+            font : {
+                size: 2.4rem;
+                weight:500;
             }
         }
-        .board-table__list{
-            thead {
-                tr {
-                    border-top:1px solid #8daae0;
-                }
-            }
-            tbody {
-                tr {
-                    td {
-                        padding: 1rem 2rem;
-                        text-align: left;
-                        box-sizing: border-box;
-                        letter-spacing: -1px;
-                        line-height:3rem;
-                        p {
-                            font-size:1.5rem;
-                            color:#262626;
-                            letter-spacing: -0.5px;
-                        }
-                    }
-                }
-            }
-            &.giver {
-                tbody {
-                    td {
-                        text-align: center;
-                        &+td {
-                            border-left: 1px solid #dadce2;
-                        }
-                    }
-                }
-            }
+        &2{
+            margin-top: 2rem;
+            font-size: 1.8rem;
         }
-        
-        
     }
     &-item{
         flex:1;
@@ -963,7 +686,6 @@
                 width: 8.1rem;
                 height: 7.1rem;
                 margin: 0 auto;
-                border:1px solid red;
             }
         }
         &__red{
@@ -1071,40 +793,7 @@
     }
 }
 @include media-breakpoint-down(n-md){ //1024
-    /* org :: 부서안내 */
-    .team_list {
-        .box__subhead2 {
-            &::after {
-                display: none;
-            }
-        }
-        .organ-group {
-            flex-flow: row wrap;
-            justify-content: space-between;
-            &::before {
-                display: none;
-            }
-            ul {
-                padding-top: 4rem;
-                width: 49%;
-                &+ul {
-                    margin-left:0;
-                }
-                &:nth-child(2n){
-                    margin-left:1rem;
-                }
-                li {
-                    &::before {
-                        display: none;
-                    }
-                    &::after {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-
+    
 }
 @include media-breakpoint-down(n-sm){ //768px
     .subVisual{
@@ -1368,19 +1057,6 @@
             margin: 5px;
             &__title{
                 font-size: 12px;
-            }
-        }
-    }
-}
-
-@include media-breakpoint-down(n-ns){//475px;
-    /* donation :: 기부금안내 */
-    .donation-info {
-        .download__down {
-            display: block;
-            &>div {
-                width:100%;
-                padding-bottom:2rem;
             }
         }
     }

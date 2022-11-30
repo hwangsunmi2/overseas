@@ -235,215 +235,6 @@
   font-size: 0;
 }
 
-.team_list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  z-index: 1;
-}
-.team_list .box p {
-  font-size: 2.2rem;
-}
-.team_list .box__head {
-  position: relative;
-}
-.team_list .box__head::after {
-  position: absolute;
-  width: 1px;
-  height: 4rem;
-  left: 50%;
-  bottom: -4rem;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #000;
-  content: "";
-}
-.team_list .box__head > div {
-  position: relative;
-  width: 22.4rem;
-  height: 6.3rem;
-  line-height: 6.3rem;
-  margin: 0 auto;
-  border-radius: 0.5rem;
-  font-size: 2.2rem;
-  color: #fff;
-  background-color: #4568a9;
-  -webkit-box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-          box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-  text-align: center;
-  z-index: 3;
-}
-.team_list .box__subhead {
-  position: relative;
-  margin-top: 4rem;
-}
-.team_list .box__subhead::before {
-  position: absolute;
-  width: 1.2rem;
-  height: 1.2rem;
-  left: 50%;
-  top: -0.5rem;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #fff;
-  border: 1px solid #3259a0;
-  border-radius: 50%;
-  z-index: 3;
-  content: "";
-}
-.team_list .box__subhead::after {
-  position: absolute;
-  width: 1px;
-  height: 2rem;
-  left: 50%;
-  bottom: -2rem;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #000;
-  content: "";
-}
-.team_list .box__subhead > div {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 22.4rem;
-  height: 6.3rem;
-  line-height: 6.3rem;
-  border-radius: 0.5rem;
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: #365ca2;
-  background-color: #f0f5ff;
-  border: 1px solid #3259a0;
-  -webkit-box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-          box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-  text-align: center;
-  z-index: 2;
-}
-.team_list .box__subhead2 {
-  position: relative;
-  margin-top: 2rem;
-}
-.team_list .box__subhead2::before {
-  position: absolute;
-  width: 1.2rem;
-  height: 1.2rem;
-  left: 50%;
-  top: -0.5rem;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #fff;
-  border: 1px solid #df4039;
-  border-radius: 50%;
-  z-index: 3;
-  content: "";
-}
-.team_list .box__subhead2::after {
-  position: absolute;
-  width: 1px;
-  height: 4rem;
-  left: 50%;
-  bottom: -4rem;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #000;
-  content: "";
-}
-.team_list .box__subhead2 > div {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 22.4rem;
-  height: 6.3rem;
-  line-height: 6.3rem;
-  border-radius: 0.5rem;
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: #dd3c35;
-  background-color: #fff6f6;
-  border: 1px solid #df3d35;
-  -webkit-box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-          box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-  text-align: center;
-  z-index: 2;
-}
-.team_list .organ-group {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-.team_list .organ-group::before {
-  position: absolute;
-  width: 86%;
-  height: 1px;
-  top: 3.9rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #000;
-  content: "";
-}
-.team_list .organ-group ul {
-  position: relative;
-  padding-top: 8rem;
-  width: 16.666%;
-}
-.team_list .organ-group ul + ul {
-  margin-left: 4rem;
-}
-.team_list .organ-group ul li {
-  position: relative;
-  height: 6.4rem;
-  line-height: 6.4rem;
-  color: #000;
-  font-size: 1.8rem;
-  font-weight: 500;
-  border-radius: 0.5rem;
-  border: 1px solid #000;
-  text-align: center;
-  cursor: pointer;
-}
-.team_list .organ-group ul li.on {
-  border: 1px solid #4671c1;
-  background-color: #ebf2ff;
-  -webkit-box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-          box-shadow: 6px 8px 20px 0px rgba(9, 14, 46, 0.13);
-}
-.team_list .organ-group ul li::before {
-  position: absolute;
-  width: 1.2rem;
-  height: 1.2rem;
-  left: 50%;
-  top: -4.6rem;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 50%;
-  z-index: 3;
-  content: "";
-}
-.team_list .organ-group ul li::after {
-  position: absolute;
-  width: 1px;
-  height: 4rem;
-  top: -4.1rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #000;
-  content: "";
-}
-.team_list .reference {
-  padding-top: 3.6rem;
-  font-size: 1.8rem;
-  color: #66666a;
-}
-
 /* 재단소개 > CI */
 .ci-title {
   font-size: 3.6rem;
@@ -740,100 +531,32 @@
   text-align: center;
 }
 .donation-info__inner {
+  max-width: 98rem;
   margin: 0 auto;
-}
-.donation-info__inner img {
-  margin: 0 auto;
-  width: 100%;
 }
 .donation-info__title {
   margin-top: 7.5rem;
-  margin-bottom: 4.3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ced1d8;
   font-size: 3.2rem;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
 }
-.donation-info-subtitle {
-  padding-top: 3rem;
-  font-size: 2.6rem;
-  font-weight: 500;
-  color: #000;
-}
-.donation-info .download {
-  margin-top: 4rem;
-  padding: 4rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #f8f8f8;
-}
-.donation-info .download .downInfo {
-  padding-bottom: 2.5rem;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-}
-.donation-info .download .downInfo p {
-  margin-top: 1.5rem;
-}
-.donation-info .download__down {
+.donation-info__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: -2rem;
 }
-.donation-info .download__down > div {
-  width: 25rem;
+.donation-info1 {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.donation-info2 {
+  margin-top: 2rem;
   font-size: 1.8rem;
-  font-weight: 500;
-}
-.donation-info .download__down a.hwp {
-  display: inline-block;
-  padding: 0.7rem 1.4rem 0.7rem 4.5rem;
-  border: 1px solid #1d99d6;
-  color: #1d99d6;
-  font-size: 1.6rem;
-  font-weight: 500;
-  background: #fff url("../image/sub/icon-hwp.png") no-repeat 20% center;
-  background-size: 2.5rem 2.5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.donation-info .download__down a.docx {
-  display: inline-block;
-  margin-left: 1rem;
-  padding: 0.7rem 1.4rem 0.7rem 4.5rem;
-  border: 1px solid #1565c0;
-  color: #1565c0;
-  font-size: 1.6rem;
-  font-weight: 500;
-  background: #fff url("../image/sub/icon-docx.png") no-repeat 20% center;
-  background-size: 2.5rem 2.5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.donation-info .board-table__list thead tr {
-  border-top: 1px solid #8daae0;
-}
-.donation-info .board-table__list tbody tr td {
-  padding: 1rem 2rem;
-  text-align: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  letter-spacing: -1px;
-  line-height: 3rem;
-}
-.donation-info .board-table__list tbody tr td p {
-  font-size: 1.5rem;
-  color: #262626;
-  letter-spacing: -0.5px;
-}
-.donation-info .board-table__list.giver tbody td {
-  text-align: center;
-}
-.donation-info .board-table__list.giver tbody td + td {
-  border-left: 1px solid #dadce2;
 }
 .donation-item {
   -webkit-box-flex: 1;
@@ -858,7 +581,6 @@
   width: 8.1rem;
   height: 7.1rem;
   margin: 0 auto;
-  border: 1px solid red;
 }
 .donation-item__red {
   border-color: #f1b6b3;
@@ -953,40 +675,6 @@
   }
   .subContent-wrap.gr-background {
     background-position: right 10% bottom;
-  }
-}
-@media (max-width: 1024px) {
-  /* org :: 부서안내 */
-  .team_list .box__subhead2::after {
-    display: none;
-  }
-  .team_list .organ-group {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .team_list .organ-group::before {
-    display: none;
-  }
-  .team_list .organ-group ul {
-    padding-top: 4rem;
-    width: 49%;
-  }
-  .team_list .organ-group ul + ul {
-    margin-left: 0;
-  }
-  .team_list .organ-group ul:nth-child(2n) {
-    margin-left: 1rem;
-  }
-  .team_list .organ-group ul li::before {
-    display: none;
-  }
-  .team_list .organ-group ul li::after {
-    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -1199,15 +887,5 @@
   }
   .donation-item__title {
     font-size: 12px;
-  }
-}
-@media (max-width: 475px) {
-  /* donation :: 기부금안내 */
-  .donation-info .download__down {
-    display: block;
-  }
-  .donation-info .download__down > div {
-    width: 100%;
-    padding-bottom: 2rem;
   }
 }

@@ -10,9 +10,11 @@ $(function(){
     });
 
     //부서안내 클릭
-    $(".org-item").click(function(){
-        $(this).addClass("is-active");
-        $(this).siblings().removeClass("is-active");
+    $(".team_list .organ-group ul li").click(function(){
+        $(".team_list .organ-group ul li").removeClass('on');
+        $(".tab_cont").removeClass('on');
+        $(this).addClass('on');
+        $("#"+$(this).data('id')).addClass('on');
     });
 
     
