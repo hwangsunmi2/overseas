@@ -835,6 +835,18 @@
 .donation-info .board-table__list.giver tbody td + td {
   border-left: 1px solid #dadce2;
 }
+.donation-info .board-table__list.donation td {
+  text-align: center;
+}
+.donation-info .board-table__list.donation td.td-title {
+  text-align: left;
+}
+.donation-info .donationPc {
+  display: block;
+}
+.donation-info .donationM {
+  display: none;
+}
 .donation-item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1190,6 +1202,12 @@
   }
   .donation-info1 a, .donation-info2 a {
     color: #000000;
+  }
+  .donation-info .donationPc {
+    display: none;
+  }
+  .donation-info .donationM {
+    display: block;
   }
   .donation-text {
     font-size: 14px;

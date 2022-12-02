@@ -573,6 +573,9 @@ section{
                     width:13.7rem;
                     height:16.1rem;
                     overflow: hidden;
+                    background-color: #fafafa;
+                    border:1px solid blue;
+                    box-sizing: border-box;
                     &+li {
                         margin-left:2rem;
                     }

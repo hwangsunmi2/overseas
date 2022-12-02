@@ -941,6 +941,21 @@
                     }
                 }
             }
+            &.donation {
+                td {
+                    text-align: center;
+                    &.td-title {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .donationPc {
+            display: block;
+        }
+        .donationM {
+            display: none;
         }
         
         
@@ -1317,8 +1332,6 @@
             }
         }
     }
-   
-    
     .subContent-wrap{
         &.gr-background{
             background-image: url(../image/sub/bg-greeting.png);
@@ -1359,6 +1372,13 @@
                 a{
                     color:#000000;
                 }
+            }
+
+            .donationPc {
+                display: none;
+            }
+            .donationM {
+                display: block;
             }
         }
         &-text{
